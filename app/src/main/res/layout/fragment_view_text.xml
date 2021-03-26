@@ -90,7 +90,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:background="@android:color/transparent"
-                    android:paddingTop="24dp"
                     app:contentInsetStartWithNavigation="0dp"
                     app:layout_collapseMode="pin"
                     app:menu="@menu/menu_photo_detail"
