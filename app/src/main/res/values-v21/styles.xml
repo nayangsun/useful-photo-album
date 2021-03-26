@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Photo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/photo_yellow_500</item>
+        <item name="colorPrimaryDark">@color/photo_green_700</item>
+        <item name="colorOnSurface">@color/photo_black</item>
+        <item name="colorAccent">@color/photo_green_700</item>
+        <item name="colorSurface">@color/photo_gray_50</item>
+        <item name="colorSecondary">@color/photo_yellow_500</item>
+        <item name="android:colorBackground">@color/white</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+</resources>

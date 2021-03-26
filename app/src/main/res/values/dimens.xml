@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_item_image_height">95dp</dimen>
+    <dimen name="photo_detail_app_bar_height">278dp</dimen>
+    <dimen name="photo_header_margin">72dp</dimen>
+    <dimen name="photo_description_min_height">555dp</dimen>
+
+
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+
+    <dimen name="fab_bottom_padding">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+
+    <!-- Theme List Header margin -->
+    <dimen name="header_margin">24dp</dimen>
+
+    <!-- elevation for photo Detail toolbar - used to convert to pixels when hiding/showing -->
+    <dimen name="toolbar_elevation">5dp</dimen>
+    <dimen name="header_height">200dp</dimen>
+
+    <dimen name="bottom_toolbar_bottom_padding">60dp</dimen>
+
+</resources>

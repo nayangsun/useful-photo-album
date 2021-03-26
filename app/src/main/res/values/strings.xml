@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">useful-photo-album</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="a11y_photo_item_image" translation_description="Accessibility text for each of the photo images shown in the 'My Gallery' and 'Photo list' screens.">Picture of plant</string>
+    <string name="gallery_content_description" translation_description="Content description for the clickable image to navigate to the gallery screen">Navigate to gallery screen</string>
+
+    <string name="menu_item_share_photo" translation_description="The label for the Share menu item">Share</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="menu_filter_by_grow_zone" translation_description="The label for the menu item to filter the displayed plants by grow zone.">Filter by grow zone</string>
+
+    <string name="feature_detail_image_content_description" translation_description="Content description for the header / hero image that is show at the top of the photo detail screen.">Image of Write</string>
+
+    <string name="write_empty" translation_description="Text that is shown on the 'Home Photo' screen when no writes have been added to the user's Gallery">Your photo is empty</string>
+    <string name="add_photo" translation_description="Button text that prompts user to navigate to the Photo List to add photos to their empty Gallery.">Add photo</string>
+
+    <string name="image_content_description" translation_description="Content description for the header / hero image that is show at the top of the home photo screen.">Image of write</string>
+
+    <string name="menu_submit" translation_description="The label for the menu item to submit">Submit</string>
+
+
+
+</resources>

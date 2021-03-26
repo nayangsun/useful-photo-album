@@ -1,0 +1,25 @@
+<resources>
+    <style name="Base.Theme.Photo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/photo_yellow_500</item>
+        <item name="colorPrimaryDark">@color/photo_green_700</item>
+        <item name="colorOnSurface">@color/photo_black</item>
+        <item name="colorAccent">@color/photo_green_700</item>
+        <item name="colorSurface">@color/photo_gray_50</item>
+        <item name="colorSecondary">@color/photo_yellow_500</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+
+    <style name="Theme.Photo" parent="Base.Theme.Photo"/>
+    <style name="Theme.photo.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+    <style name="TextAppearance.photo.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="Widget.Theme.Photo.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

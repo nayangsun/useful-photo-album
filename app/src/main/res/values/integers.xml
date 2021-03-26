@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Number of columns for photo list grid -->
+    <integer name="grid_photo_columns">2</integer>
+
+    <!-- Number of columns for theme list grid -->
+    <integer name="grid_theme_columns">3</integer>
+
+</resources>
