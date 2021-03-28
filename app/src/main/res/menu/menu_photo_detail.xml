@@ -23,4 +23,10 @@
         android:icon="@drawable/ic_detail_share"
         android:title="@string/menu_item_share_photo"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/full_screen"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_item_share_photo"
+        app:showAsAction="ifRoom" />
 </menu>

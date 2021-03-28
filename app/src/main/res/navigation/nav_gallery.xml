@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_home_photo_fragment_to_select_photo_fragment"
             app:destination="@id/select_photo_fragment" />
+        <action
+            android:id="@+id/action_home_photo_fragment_to_fullscreenFragment"
+            app:destination="@id/fullscreenFragment" />
     </fragment>
 
     <fragment
@@ -61,7 +64,9 @@
             app:argType="string" />
         <action
             android:id="@+id/action_write_fragment_to_home_photo_fragment"
-            app:destination="@id/home_photo_fragment" />
+            app:destination="@id/home_photo_fragment"
+            app:popUpTo="@+id/home_photo_fragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -83,4 +88,9 @@
             android:id="@+id/action_selectPhotoFragment_to_photo_list_fragment"
             app:destination="@id/photo_list_fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fullscreenFragment"
+        android:name="com.example.useful_photo_album.FullscreenFragment"
+        android:label="fragment_fullscreen"
+        tools:layout="@layout/fragment_fullscreen" />
 </navigation>

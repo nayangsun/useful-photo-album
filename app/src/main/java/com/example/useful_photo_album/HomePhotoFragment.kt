@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.useful_photo_album.adapters.HomePhotoAdapter
 import com.example.useful_photo_album.databinding.FragmentHomePhotoBinding
 import com.example.useful_photo_album.viewmodels.HomePhotoViewModel
+import com.google.android.material.appbar.AppBarLayout
 import dagger.hilt.android.AndroidEntryPoint
+import kotlin.math.abs
 
 @AndroidEntryPoint
 class HomePhotoFragment : Fragment() {
@@ -44,10 +46,23 @@ class HomePhotoFragment : Fragment() {
                         }
                         true
                     }
+                    R.id.full_screen -> {
+                        view?.let {
+                            navigateToSelectFullScreen(it)
+                        }
+                        true
+                    }
                     else -> false
                 }
             }
+
+            appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
+                val percent =
+                    (abs(verticalOffset)).toFloat() / appBarLayout?.totalScrollRange!! // 0F to 1F
+                appbarContainer.alpha = 1F - percent
+            })
         }
+
         subscribeUi(adapter, binding)
         return binding.root
     }
@@ -62,6 +77,12 @@ class HomePhotoFragment : Fragment() {
     private fun navigateToSelectPhotoPage(view: View) {
         val direction =
             HomePhotoFragmentDirections.actionHomePhotoFragmentToSelectPhotoFragment()
+        view.findNavController().navigate(direction)
+    }
+
+    private fun navigateToSelectFullScreen(view: View) {
+        val direction =
+            HomePhotoFragmentDirections.actionHomePhotoFragmentToFullscreenFragment()
         view.findNavController().navigate(direction)
     }
 }
