@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,7 +28,23 @@ class HomePhotoFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomePhotoBinding.inflate(inflater, container, false)
-
+        /**
+         * binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home_photo, container, false)
+         * 이부분은 이미 binding 변수의 타입을 미리 알고 있냐? 차이인 것 같습니다.
+         * (저는 그렇게 알고 사용하고 있어요..ㅎㅎ 이론적인 부분은 사실...패스...)
+         * 변수의 타입이 FragmentHomePhotoBinding 라는걸 이미 알고 있기때문에
+         * FragmentHomePhotoBinding 로 inflate 할때는 별도의 layout resource 가 포함이 안되구요,
+         * 반대로 DataBindingUtil 의 경우엔 타입을 모르기때문에 layout resource Id 가 추가로 포함되는 것입니다.
+         *
+         * DataBindingUtil 같은경우엔 뭐 예를들며 BaseFragment 에서 공용코드로 사용할때 Generic 타입을 이요해서 많이 사용합니다.
+         * class BaseFragment<BINDING: ViewDataBinding> {
+         *     lateinit var binding: BINDING
+         *     ...
+         *     binding = DataBindingUtil.inflate(inflater, {layoutId}, container, false)
+         * }
+         *
+         * 어느것을 많이 사용한다는 뭐 상황에 따라 다르거나 개발자 취향 아닐까 싶네요. 저는 그렇게 생각합니다 ㅋㅋ
+         */
         val adapter = HomePhotoAdapter()
         binding.apply {
             writeList.adapter = adapter
