@@ -42,15 +42,15 @@ class PhotoListFragment : Fragment() {
     }
 
     private fun searchPhoto(theme: String) {
+        searchAdapter = SearchAdapter()
+        binding.photoList.adapter = searchAdapter
         when (theme) {
             "random" -> {
-                randomAdapter = RandomPhotoAdapter()
-                binding.photoList.adapter = randomAdapter
+//                randomAdapter = RandomPhotoAdapter()
+//                binding.photoList.adapter = randomAdapter
                 random()
             }
             else -> {
-                searchAdapter = SearchAdapter()
-                binding.photoList.adapter = searchAdapter
                 search(theme)
             }
         }
@@ -59,8 +59,11 @@ class PhotoListFragment : Fragment() {
     private fun random() {
         searchJob?.cancel()
         searchJob = lifecycleScope.launch {
-            viewModel.randomPictures().collectLatest {
-                randomAdapter.submitList(it)
+//            viewModel.randomPictures().collectLatest {
+//                randomAdapter.submitList(it)
+//            }
+            viewModel.randomPicturesWithPaging().collectLatest {
+                searchAdapter.submitData(it)
             }
         }
     }
@@ -69,7 +72,10 @@ class PhotoListFragment : Fragment() {
         // Make sure we cancel the previous job before creating a new one
         searchJob?.cancel()
         searchJob = lifecycleScope.launch {
-            viewModel.searchPictures(query).collectLatest {
+//            viewModel.searchPictures(query).collectLatest {
+//                searchAdapter.submitData(it)
+//            }
+            viewModel.searchPicturesWithPaging(query = query).collectLatest {
                 searchAdapter.submitData(it)
             }
         }

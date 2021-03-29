@@ -23,6 +23,7 @@ class PhotoListViewModel @Inject constructor(
     private var currentQueryValue: String? = null
     private var currentSearchResult: Flow<PagingData<UnsplashPhoto>>? = null
 
+    @Deprecated("replace to randomPicturesWithPaging")
     fun randomPictures(): Flow<List<UnsplashPhoto>> {
         val newResult: Flow<List<UnsplashPhoto>> =
             repository.getRandomResultStream()
@@ -30,6 +31,15 @@ class PhotoListViewModel @Inject constructor(
         return newResult
     }
 
+    fun randomPicturesWithPaging(): Flow<PagingData<UnsplashPhoto>> {
+        return repository.getResult(UnsplashRepository.QueryType.Random).cachedIn(viewModelScope)
+    }
+
+    fun searchPicturesWithPaging(query: String): Flow<PagingData<UnsplashPhoto>> {
+        return repository.getResult(UnsplashRepository.QueryType.Search(query = query)).cachedIn(viewModelScope)
+    }
+
+    @Deprecated("replace to searchPicturesWithPaging")
     fun searchPictures(queryString: String): Flow<PagingData<UnsplashPhoto>> {
         currentQueryValue = queryString
         val newResult: Flow<PagingData<UnsplashPhoto>> =
