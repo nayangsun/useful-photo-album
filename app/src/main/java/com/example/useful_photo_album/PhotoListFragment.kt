@@ -1,6 +1,7 @@
 package com.example.useful_photo_album
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ import com.example.useful_photo_album.databinding.FragmentPhotoListBinding
 import com.example.useful_photo_album.viewmodels.PhotoListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -41,8 +43,13 @@ class PhotoListFragment : Fragment() {
         return binding.root
     }
 
-    private fun searchPhoto(theme: String) {
+    private fun initAdapter() {
         searchAdapter = SearchAdapter()
+    }
+
+    private fun searchPhoto(theme: String) {
+        initAdapter()
+
         binding.photoList.adapter = searchAdapter
         when (theme) {
             "random" -> {
@@ -62,9 +69,23 @@ class PhotoListFragment : Fragment() {
 //            viewModel.randomPictures().collectLatest {
 //                randomAdapter.submitList(it)
 //            }
-            viewModel.randomPicturesWithPaging().collectLatest {
-                searchAdapter.submitData(it)
+            viewModel.randomPictures()
+                .catch {
+                    /**
+                     * [Comment-2.1]
+                     * 이렇게 catch 를 해주면 api 호출시 예외발생해도 이벤트캐치가 가능합니다.
+                     * coroutine flow 예외처리 관련해서 찾아보시면 자세하게 보실 수 있을거에요.
+                     */
+                    it.printStackTrace()
+                }
+                .collectLatest {
+                Log.e("PhotoListFragment", "exception test log")
             }
+            //[Comment-2] 이부분은 주석처리 풀면 정상작동 할겁니다.
+//            viewModel.randomPicturesWithPaging()
+//                .collectLatest {
+//                searchAdapter.submitData(it)
+//            }
         }
     }
 
