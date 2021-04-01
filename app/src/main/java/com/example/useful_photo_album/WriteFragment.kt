@@ -27,7 +27,6 @@ class WriteFragment : Fragment() {
         WriteViewModel.provideFactory(writeViewModelFactory, args.photoId)
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,7 +36,12 @@ class WriteFragment : Fragment() {
                 R.layout.fragment_write,
                 container,
                 false
-        ).apply {
+        )
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.apply {
             url = args.imageUrl
             toolbar.setOnMenuItemClickListener { item ->
                 when(item.itemId) {
@@ -49,7 +53,6 @@ class WriteFragment : Fragment() {
                 }
             }
         }
-        return binding.root
     }
 
 

@@ -7,40 +7,40 @@
   {
     "theme": "World",
     "favoriteThemeNumber": 2,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/August_2010_CME_SDO_Multi-Wavelength.jpg"
   },
   {
-    "theme": "World",
+    "theme": "sports",
+    "favoriteThemeNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+  },
+  {
+    "theme": "nature",
+    "favoriteThemeNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/%D0%9C%D1%8B%D1%81_%D0%A1%D1%82%D0%BE%D0%BB%D0%B1%D1%87%D0%B0%D1%82%D1%8B%D0%B9._%D0%9F%D0%BE%D1%81%D0%BB%D0%B5_%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B0.jpg"
+  },
+  {
+    "theme": "animal",
+    "favoriteThemeNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Animal_Kingdom_265659.jpg"
+  },
+  {
+    "theme": "universe",
     "favoriteThemeNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
   },
   {
-    "theme": "World",
+    "theme": "galaxy",
     "favoriteThemeNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
   },
   {
-    "theme": "World",
+    "theme": "city",
     "favoriteThemeNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
   },
   {
-    "theme": "World",
-    "favoriteThemeNumber": 1,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
-  },
-  {
-    "theme": "World",
-    "favoriteThemeNumber": 1,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
-  },
-  {
-    "theme": "World",
-    "favoriteThemeNumber": 1,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
-  },
-  {
-    "theme": "World",
+    "theme": "art",
     "favoriteThemeNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
   }

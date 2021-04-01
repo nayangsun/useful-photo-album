@@ -15,20 +15,22 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class SelectPhotoFragment : Fragment() {
 
+    lateinit var binding: FragmentSelectPhotoBinding
     private val viewModel: ThemeListViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-            val binding = FragmentSelectPhotoBinding.inflate(inflater, container, false)
+            binding = FragmentSelectPhotoBinding.inflate(inflater, container, false)
             context ?: return binding.root
-
-            val adapter = ThemeAdapter()
-            binding.themeList.adapter = adapter
-            subscribeUi(adapter)
-
             return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val adapter = ThemeAdapter()
+        binding.themeList.adapter = adapter
+        subscribeUi(adapter)
     }
 
     private fun subscribeUi(adapter: ThemeAdapter) {

@@ -13,23 +13,38 @@ import javax.inject.Inject
 
 class UnsplashRepository @Inject constructor(private val service: UnsplashService) {
 
+    sealed class QueryType {
+        open var page: Int = 0
+        open var size: Int = 0
+
+        object Random : QueryType()
+        data class Search(val query: String) : QueryType()
+    }
+
+    fun getResult(type: QueryType): Flow<PagingData<UnsplashPhoto>> {
+        return Pager(
+            config = PagingConfig(
+                enablePlaceholders = false,
+                pageSize = when (type) {
+                    is QueryType.Random -> NETWORK_COUNT
+                    is QueryType.Search -> NETWORK_PAGE_SIZE
+                }
+            ),
+            pagingSourceFactory = { UnsplashPagingSource(service, type) }
+        ).flow
+    }
+
+    @Deprecated("replace to getResult()")
     fun getRandomResultStream(): Flow<List<UnsplashPhoto>> = flow {
         val response = service.searchRandomPhotos(NETWORK_COUNT)
         emit(response)
         delay(refreshIntervalMs)
     }
 
-    fun getSearchResultStream(query: String): Flow<PagingData<UnsplashPhoto>> {
-        return Pager(
-            config = PagingConfig(enablePlaceholders = false, pageSize = NETWORK_PAGE_SIZE),
-            pagingSourceFactory = { UnsplashPagingSource(service, query) }
-        ).flow
-    }
 
     companion object {
-        private const val NETWORK_COUNT = 30
+        const val NETWORK_COUNT = 30
         private const val refreshIntervalMs: Long = 5000
-
         private const val NETWORK_PAGE_SIZE = 25
     }
 }

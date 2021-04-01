@@ -27,7 +27,10 @@ class HomePhotoFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomePhotoBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val adapter = HomePhotoAdapter()
         binding.apply {
             writeList.adapter = adapter
@@ -64,7 +67,6 @@ class HomePhotoFragment : Fragment() {
         }
 
         subscribeUi(adapter, binding)
-        return binding.root
     }
 
     private fun subscribeUi(adapter: HomePhotoAdapter, binding: FragmentHomePhotoBinding) {

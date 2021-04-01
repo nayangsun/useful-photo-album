@@ -25,6 +25,7 @@ import kotlin.math.abs
 class ViewTextFragment : Fragment() {
 
     private val args: ViewTextFragmentArgs by navArgs()
+    lateinit var binding: FragmentViewTextBinding
 
     @Inject
     lateinit var viewTextViewModelFactory: ViewTextViewModelFactory
@@ -38,12 +39,17 @@ class ViewTextFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentViewTextBinding>(
+        binding = DataBindingUtil.inflate<FragmentViewTextBinding>(
             inflater,
             R.layout.fragment_view_text,
             container,
             false
-        ).apply {
+        )
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.apply {
             viewModel = viewTextViewModel
             lifecycleOwner = viewLifecycleOwner
             callback = Callback { photo ->
@@ -61,8 +67,6 @@ class ViewTextFragment : Fragment() {
 
             })
         }
-
-        return binding.root
     }
 
     private fun statusText(view: View) {

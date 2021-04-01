@@ -18,23 +18,22 @@ import javax.inject.Inject
 class PhotoListViewModel @Inject constructor(
     private val repository: UnsplashRepository
 ) : ViewModel() {
+    // 나중에 current값이 다룰때가 있을것 같아서 만들어 놨는데, with paging에선 일단 빼두자.
     private var currentRandomResult: Flow<List<UnsplashPhoto>>? = null
 
-    private var currentQueryValue: String? = null
-    private var currentSearchResult: Flow<PagingData<UnsplashPhoto>>? = null
+    fun randomPicturesWithPaging(): Flow<PagingData<UnsplashPhoto>> {
+        return repository.getResult(UnsplashRepository.QueryType.Random).cachedIn(viewModelScope)
+    }
 
+    fun searchPicturesWithPaging(query: String): Flow<PagingData<UnsplashPhoto>> {
+        return repository.getResult(UnsplashRepository.QueryType.Search(query = query)).cachedIn(viewModelScope)
+    }
+
+    @Deprecated("replace to randomPicturesWithPaging")
     fun randomPictures(): Flow<List<UnsplashPhoto>> {
         val newResult: Flow<List<UnsplashPhoto>> =
             repository.getRandomResultStream()
         currentRandomResult = newResult
-        return newResult
-    }
-
-    fun searchPictures(queryString: String): Flow<PagingData<UnsplashPhoto>> {
-        currentQueryValue = queryString
-        val newResult: Flow<PagingData<UnsplashPhoto>> =
-            repository.getSearchResultStream(queryString).cachedIn(viewModelScope)
-        currentSearchResult = newResult
         return newResult
     }
 }
