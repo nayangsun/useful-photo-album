@@ -57,14 +57,6 @@
                     app:imageFromUrl="@{viewModel.photo.imageUrl}"
                     app:layout_collapseMode="parallax" />
 
-                <!--
-                Image가 status bar까지 오게 하기 위해 flag를 설정하였다.
-                그런데 MaterialToolbar와 겹처서 부득이 하게 padding을 주니
-                기존에 height를 actionBarSize로 해놓아서 높이가 고정이 되었다.
-                일단은 이미지의 높이를 줄여놓았는데, wrap으로 바꿔야할지 고민이든다.
-                그리고 padding 값을 주는것 말고 다른 방법이 있지 않을까?
-                -->
-
                 <com.google.android.material.appbar.MaterialToolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"

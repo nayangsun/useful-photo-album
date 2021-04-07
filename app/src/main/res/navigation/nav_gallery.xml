@@ -87,10 +87,23 @@
         <action
             android:id="@+id/action_selectPhotoFragment_to_photo_list_fragment"
             app:destination="@id/photo_list_fragment" />
+        <action
+            android:id="@+id/action_select_photo_fragment_to_loadingTestFragment"
+            app:destination="@id/loading_test_fragment" />
     </fragment>
     <fragment
         android:id="@+id/fullscreenFragment"
         android:name="com.example.useful_photo_album.FullscreenFragment"
         android:label="fragment_fullscreen"
         tools:layout="@layout/fragment_fullscreen" />
+
+    <fragment
+        android:id="@+id/loading_test_fragment"
+        android:name="com.example.useful_photo_album.LoadingTestFragment"
+        tools:layout="@layout/fragment_loading_test"
+        android:label="fragment_loading_test" >
+        <argument
+            android:name="theme"
+            app:argType="string" />
+    </fragment>
 </navigation>

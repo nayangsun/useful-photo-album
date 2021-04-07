@@ -36,4 +36,5 @@ class PhotoListViewModel @Inject constructor(
         currentRandomResult = newResult
         return newResult
     }
+
 }

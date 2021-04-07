@@ -47,7 +47,9 @@ class ThemeAdapter : ListAdapter<PhotoTheme, RecyclerView.ViewHolder>(ThemeDiffC
             view: View
         ) {
             val direction =
-                SelectPhotoFragmentDirections.actionSelectPhotoFragmentToPhotoListFragment(theme.theme)
+                SelectPhotoFragmentDirections.actionSelectPhotoFragmentToLoadingTestFragment(theme.theme)
+//            val direction =
+//                SelectPhotoFragmentDirections.actionSelectPhotoFragmentToPhotoListFragment(theme.theme)
             view.findNavController().navigate(direction)
         }
 
