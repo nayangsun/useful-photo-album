@@ -4,6 +4,7 @@ import android.content.Context
 import com.example.useful_photo_album.data.model.AppDatabase
 import com.example.useful_photo_album.data.model.PhotoThemeDao
 import com.example.useful_photo_album.data.model.PhotoWriteDao
+import com.example.useful_photo_album.tester.model.UnsplashTesterDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,5 +30,10 @@ class DatabaseModule {
     @Provides
     fun providePhotoThemeDao(appDatabase: AppDatabase): PhotoThemeDao {
         return appDatabase.photoThemeDao()
+    }
+
+    @Provides
+    fun provideUnsplashTesterDao(appDatabase: AppDatabase): UnsplashTesterDao {
+        return appDatabase.posts()
     }
 }
