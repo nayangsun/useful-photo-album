@@ -3,6 +3,7 @@ package com.example.useful_photo_album.api
 import com.example.useful_photo_album.BuildConfig
 import com.example.useful_photo_album.data.remote.UnsplashPhoto
 import com.example.useful_photo_album.data.remote.UnsplashSearchResponse
+import com.example.useful_photo_album.tester.model.UnsplashRandomPhoto
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import okhttp3.logging.HttpLoggingInterceptor.Level
@@ -18,6 +19,12 @@ interface UnsplashService {
             @Query("count") count: Int,
             @Query("client_id") clientId: String = BuildConfig.UNSPLASH_ACCESS_KEY
     ): List<UnsplashPhoto>
+
+    @GET("photos/random")
+    suspend fun searchRandomPhotosForPaging(
+        @Query("count") count: Int,
+        @Query("client_id") clientId: String = BuildConfig.UNSPLASH_ACCESS_KEY
+    ): List<UnsplashRandomPhoto>
 
     @GET("search/photos")
     suspend fun searchPhotos(
