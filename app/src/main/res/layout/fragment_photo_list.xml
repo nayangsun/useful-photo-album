@@ -26,6 +26,5 @@
             tools:context="com.google.samples.apps.sunflower.GardenActivity"
             tools:listitem="@layout/list_item_photo" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
