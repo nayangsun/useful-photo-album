@@ -1,7 +1,6 @@
 package com.example.useful_photo_album.data
 
 import androidx.paging.PagingSource
-import androidx.paging.PagingState
 import com.example.useful_photo_album.api.UnsplashService
 import com.example.useful_photo_album.data.remote.UnsplashPhoto
 
@@ -54,9 +53,6 @@ class UnsplashPagingSource(
         }
     }
 
-    override fun getRefreshKey(state: PagingState<Int, UnsplashPhoto>): Int? {
-        TODO("Not yet implemented")
-    }
 
     /*
     @Deprecated("replace to queryResponse()")

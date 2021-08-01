@@ -2,8 +2,6 @@ package com.example.useful_photo_album.viewmodels
 
 import androidx.lifecycle.*
 import androidx.paging.PagingData
-import com.example.useful_photo_album.LoadingTestFragment
-import com.example.useful_photo_album.data.UnsplashTestRepository
 import com.example.useful_photo_album.data.remote.Resource
 import com.example.useful_photo_album.data.remote.UnsplashPhoto
 import dagger.hilt.android.lifecycle.HiltViewModel

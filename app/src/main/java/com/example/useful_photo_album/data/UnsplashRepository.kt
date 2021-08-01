@@ -12,7 +12,6 @@ import com.example.useful_photo_album.data.remote.Resource
 import com.example.useful_photo_album.data.remote.UnsplashPhoto
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
