@@ -8,21 +8,14 @@ import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.example.useful_photo_album.data.remote.UnsplashPhoto
-import com.example.useful_photo_album.tester.model.SubunsplashRemoteKey
-import com.example.useful_photo_album.tester.model.SubunsplashRemoteKeyDao
-import com.example.useful_photo_album.tester.model.UnsplashPhotoDao
-import com.example.useful_photo_album.tester.model.UnsplashRandomPhoto
 import com.example.useful_photo_album.utilities.DATABASE_NAME
 import com.example.useful_photo_album.workers.SeedDatabaseWorker
 
-@Database(entities = [PhotoWrite::class, PhotoTheme::class, UnsplashRandomPhoto::class, SubunsplashRemoteKey::class], version = 1, exportSchema = false)
+@Database(entities = [PhotoWrite::class, PhotoTheme::class], version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun photoWriteDao(): PhotoWriteDao
     abstract fun photoThemeDao(): PhotoThemeDao
-    abstract fun posts(): UnsplashPhotoDao
-    abstract fun remoteKeys(): SubunsplashRemoteKeyDao
 
 
     companion object {
