@@ -5,7 +5,7 @@ import com.example.useful_photo_album.data.model.AppDatabase
 import com.example.useful_photo_album.data.model.PhotoThemeDao
 import com.example.useful_photo_album.data.model.PhotoWriteDao
 import com.example.useful_photo_album.tester.model.SubunsplashRemoteKeyDao
-import com.example.useful_photo_album.tester.model.UnsplashPhotoDao
+import com.example.useful_photo_album.tester.model.UnsplashRandomPhotoDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -34,7 +34,7 @@ class DatabaseModule {
     }
 
     @Provides
-    fun provideUnsplashPhotoDao(appDatabase: AppDatabase): UnsplashPhotoDao {
+    fun provideUnsplashPhotoDao(appDatabase: AppDatabase): UnsplashRandomPhotoDao {
         return appDatabase.posts()
     }
 

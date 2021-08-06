@@ -10,7 +10,7 @@ import com.example.useful_photo_album.api.UnsplashService
 import com.example.useful_photo_album.data.model.AppDatabase
 import com.example.useful_photo_album.tester.model.SubunsplashRemoteKey
 import com.example.useful_photo_album.tester.model.SubunsplashRemoteKeyDao
-import com.example.useful_photo_album.tester.model.UnsplashPhotoDao
+import com.example.useful_photo_album.tester.model.UnsplashRandomPhotoDao
 import com.example.useful_photo_album.tester.model.UnsplashRandomPhoto
 
 private const val UNSPLASH_STARTING_PAGE_INDEX = 1
@@ -20,7 +20,7 @@ class RandomRemoteMediator (
     private val db : AppDatabase,
     private val api : UnsplashService
 ) : RemoteMediator<Int, UnsplashRandomPhoto>() {
-    private val postDao: UnsplashPhotoDao = db.posts()
+    private val postDao: UnsplashRandomPhotoDao = db.posts()
     private val keyDao: SubunsplashRemoteKeyDao = db.remoteKeys()
 
     // 간단하게 random 쿼리 30개 response 만 load 하려고 한다.

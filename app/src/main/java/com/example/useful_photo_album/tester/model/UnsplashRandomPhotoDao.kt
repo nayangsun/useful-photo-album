@@ -8,7 +8,7 @@ import androidx.room.Query
 import com.example.useful_photo_album.data.remote.UnsplashPhoto
 
 @Dao
-interface UnsplashPhotoDao {
+interface UnsplashRandomPhotoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertUnsplash(unsplash: List<UnsplashRandomPhoto>)
 
