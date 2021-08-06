@@ -1,6 +1,5 @@
 package com.example.useful_photo_album.tester.model
 
-import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -14,6 +13,6 @@ data class UnsplashRandomPhoto (
     @field:SerializedName("id") val id: String,
     @field:SerializedName("urls")
     @field:Embedded(prefix = "urls_") val urls: UnsplashPhotoUrls,
-    @field:SerializedName("user_")
-    @field:Embedded(prefix = "user") val user: UnsplashUser
+    @field:SerializedName("user")
+    @field:Embedded(prefix = "user_") val user: UnsplashUser
 )

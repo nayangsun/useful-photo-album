@@ -11,8 +11,11 @@ interface SubunsplashRemoteKeyDao {
     suspend fun insert(keys: SubunsplashRemoteKey)
 
     @Query("SELECT * FROM remote_keys WHERE subunsplash = :subunsplash")
-    suspend fun remoteKeyByPost(subunsplash: String): SubunsplashRemoteKey
+    suspend fun remoteKeyByPost(subunsplash: String): SubunsplashRemoteKey?
 
     @Query("DELETE FROM remote_keys WHERE subunsplash = :subunsplash")
     suspend fun deleteBysubunsplash(subunsplash: String)
+
+    @Query("DELETE FROM remote_keys")
+    suspend fun deleteAll()
 }

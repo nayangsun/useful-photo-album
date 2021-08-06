@@ -15,10 +15,8 @@ interface UnsplashPhotoDao {
     /**
      *  이곳에서 Execution failed for task ':app:kaptDebugKotlin' 이 등장합니다.
      */
-//    @Query("SELECT * FROM unsplash")
-//    fun postsUnsplash(subunsplash: String): PagingSource<Int, UnsplashRandomPhoto>
-
-
+    @Query("SELECT * FROM unsplash")
+    fun postsUnsplash(subunsplash: String): PagingSource<Int, UnsplashRandomPhoto>
 
     @Query("DELETE FROM unsplash")
     suspend fun deleteAll()

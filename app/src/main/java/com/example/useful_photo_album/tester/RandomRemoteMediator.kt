@@ -1,5 +1,6 @@
 package com.example.useful_photo_album.tester
 
+import android.net.Uri
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
@@ -7,12 +8,10 @@ import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
 import com.example.useful_photo_album.api.UnsplashService
 import com.example.useful_photo_album.data.model.AppDatabase
-import com.example.useful_photo_album.data.remote.UnsplashPhoto
+import com.example.useful_photo_album.tester.model.SubunsplashRemoteKey
+import com.example.useful_photo_album.tester.model.SubunsplashRemoteKeyDao
 import com.example.useful_photo_album.tester.model.UnsplashPhotoDao
 import com.example.useful_photo_album.tester.model.UnsplashRandomPhoto
-import retrofit2.HttpException
-import java.io.IOException
-
 
 private const val UNSPLASH_STARTING_PAGE_INDEX = 1
 
@@ -22,6 +21,7 @@ class RandomRemoteMediator (
     private val api : UnsplashService
 ) : RemoteMediator<Int, UnsplashRandomPhoto>() {
     private val postDao: UnsplashPhotoDao = db.posts()
+    private val keyDao: SubunsplashRemoteKeyDao = db.remoteKeys()
 
     // 간단하게 random 쿼리 30개 response 만 load 하려고 한다.
     override suspend fun load(
@@ -30,26 +30,45 @@ class RandomRemoteMediator (
     ): MediatorResult {
         try {
             val loadKey = when (loadType) {
-                LoadType.REFRESH -> null
+                LoadType.REFRESH -> 1
                 LoadType.PREPEND -> return MediatorResult.Success(endOfPaginationReached = true)
                 LoadType.APPEND -> {
-                    return MediatorResult.Success(endOfPaginationReached = true)
+
+                    val lastItem = state.lastItemOrNull()
+                    val remoteKey: SubunsplashRemoteKey? = db.withTransaction {
+                        if (lastItem?.id != null) {
+                            keyDao.remoteKeyByPost(lastItem.id)
+                        } else null
+                    }
+
+                    if (remoteKey?.nextPageKey == null) {
+                        return MediatorResult.Success(
+                            endOfPaginationReached = true
+                        )
+                    }
+
+                    val uri = Uri.parse(remoteKey.nextPageKey)
+                    val nextPageQuery = uri.getQueryParameter("page")
+                    nextPageQuery?.toInt()
                 }
             }
 
-            val data = api.searchRandomPhotosForPaging(30)
+            val response = api.searchRandomPhotosForPaging(loadKey ?: UNSPLASH_STARTING_PAGE_INDEX)
 
             db.withTransaction {
                 if (loadType == LoadType.REFRESH) {
                     postDao.deleteAll()
+                    keyDao.deleteAll()
+                }
+                response?.forEach {
+                    keyDao.insert(SubunsplashRemoteKey(it.id,null))
                 }
 
-                postDao.insertUnsplash(data)
+                response?.let { postDao.insertUnsplash(it) }
             }
+
             return MediatorResult.Success(endOfPaginationReached = true)
-        } catch (e: IOException) {
-            return MediatorResult.Error(e)
-        } catch (e: HttpException) {
+        } catch (e: Exception) {
             return MediatorResult.Error(e)
         }
     }
