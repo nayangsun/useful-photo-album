@@ -2,7 +2,7 @@
 .gradle
 /local.properties
 .DS_Store
-/build
+build/
 /captures
 .externalNativeBuild
 .cxx
@@ -32,3 +32,5 @@
 /.idea/gradle.xml
 /.idea/jarRepositories.xml
 /.idea/navEditor.xml
+
+

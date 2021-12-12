@@ -5,12 +5,12 @@ object Versions {
     const val minSdk = 21
     const val targetSdk = 30
     const val versionCode = 1
-    const val versionName = "0.0.0"
+    const val versionName = "1.0.0"
 }
 
 
 object Libs {
-    const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.1"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.3"
 
     object AndroidX {
         const val core = "androidx.core:core-ktx:1.6.0"
@@ -25,6 +25,7 @@ object Libs {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.4"
         const val recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
         const val browser = "androidx.browser:browser:1.3.0"
+        const val viewpager2 =" androidx.viewpager2:viewpager2:1.0.0"
 
         object Lifecycle {
             private const val lifecycleVersion = "2.3.1"
@@ -37,6 +38,13 @@ object Libs {
             private const val version = "2.3.5"
             const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
             const val ui = "androidx.navigation:navigation-ui-ktx:$version"
+        }
+
+        object Room {
+            private const val version = "2.2.5"
+            const val runtime = "androidx.room:room-runtime:$version"
+            const val ktx = "androidx.room:room-ktx:$version"
+            const val compiler = "androidx.room:room-compiler:$version"
         }
     }
 
@@ -57,6 +65,12 @@ object Libs {
         }
     }
 
+    object Glide {
+        private const val version = "4.10.0"
+        const val glide = "com.github.bumptech.glide:glide:$version"
+        const val compiler = "com.github.bumptech.glide:compiler:$version"
+    }
+
     object Dagger {
         private const val daggerVersion = "2.38.1"
         const val hiltAndroid = "com.google.dagger:hilt-android:$daggerVersion"
@@ -65,10 +79,15 @@ object Libs {
     }
 
     object Square {
+        private const val retrofitVersion = "2.9.0"
         const val okhttp3_logging = "com.squareup.okhttp3:logging-interceptor:4.9.1"
-        const val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
-        const val serialization =
-            "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
+        const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+        const val converter_gson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+        const val serialization = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
+    }
+
+    object Gson {
+        const val gson = "com.google.code.gson:gson:2.8.2"
     }
 
     object Test {
