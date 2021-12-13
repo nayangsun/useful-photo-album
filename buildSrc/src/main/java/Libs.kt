@@ -1,5 +1,5 @@
 object Versions {
-    const val compileSdk = 30
+    const val compileSdk = 31
     const val buildTools = "30.0.1"
 
     const val minSdk = 21
@@ -25,7 +25,9 @@ object Libs {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.4"
         const val recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
         const val browser = "androidx.browser:browser:1.3.0"
-        const val viewpager2 =" androidx.viewpager2:viewpager2:1.0.0"
+        const val viewpager2 ="androidx.viewpager2:viewpager2:1.0.0"
+        const val paging3 = "androidx.paging:paging-runtime:3.1.0"
+        const val work = "androidx.work:work-runtime-ktx:2.7.1"
 
         object Lifecycle {
             private const val lifecycleVersion = "2.3.1"
@@ -38,6 +40,7 @@ object Libs {
             private const val version = "2.3.5"
             const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
             const val ui = "androidx.navigation:navigation-ui-ktx:$version"
+            const val args = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
         }
 
         object Room {

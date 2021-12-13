@@ -28,6 +28,7 @@ buildscript {
         classpath(Libs.androidGradlePlugin)
         classpath(Libs.Kotlin.gradlePlugin)
         classpath(Libs.Dagger.hiltGradlePlugin)
+        classpath(Libs.AndroidX.Navigation.args)
     }
 }
 

@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -70,6 +71,8 @@ dependencies {
     implementation(Libs.AndroidX.Navigation.ui)
 
     implementation(Libs.AndroidX.viewpager2)
+    implementation(Libs.AndroidX.paging3)
+    implementation(Libs.AndroidX.work)
 
     implementation(Libs.Kotlin.coroutine)
 
