@@ -7,12 +7,9 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.compileSdk)
 
     defaultConfig {
         applicationId = "com.example.useful_photo_album"
-        minSdkVersion(Versions.minSdk)
-        targetSdkVersion(Versions.targetSdk)
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         versionCode = Versions.versionCode
         versionName = Versions.versionName
