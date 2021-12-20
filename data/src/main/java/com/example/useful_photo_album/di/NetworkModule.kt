@@ -6,6 +6,11 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Converter
+import retrofit2.Retrofit
+import timber.log.Timber
 import javax.inject.Singleton
 
 
@@ -18,4 +23,34 @@ class NetworkModule {
     fun provideUnsplashService(): UnsplashApi {
         return ApiFactory.upaApi.create(UnsplashApi::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideLoggingInterceptor(): HttpLoggingInterceptor {
+        val interceptor = HttpLoggingInterceptor { message -> Timber.i(message) }
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
+        return interceptor
+    }
+
+    @Provides
+    @Singleton
+    fun provideOkHttpClient(
+        loggingInterceptor: HttpLoggingInterceptor
+    ): OkHttpClient =
+        OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+
+//    @Provides
+//    @Singleton
+//    fun provideRetrofit(
+//        okHttpClient: OkHttpClient,
+//        converterFactory: Converter.Factory
+//    ): Retrofit = Retrofit.Builder()
+//        .baseUrl("https://api.unsplash.com/")
+//        .addConverterFactory(converterFactory)
+//        .client(okHttpClient)
+//        .build()
+
+
 }
