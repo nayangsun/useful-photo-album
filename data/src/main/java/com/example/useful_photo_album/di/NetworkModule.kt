@@ -1,6 +1,7 @@
 package com.example.useful_photo_album.di
 
 import com.example.useful_photo_album.api.UnsplashApi
+import com.example.useful_photo_album.common.UpaJson
 import com.example.useful_photo_album.network.ApiFactory
 import dagger.Module
 import dagger.Provides
@@ -10,18 +11,19 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import timber.log.Timber
 import javax.inject.Singleton
 
 
 @InstallIn(SingletonComponent::class)
 @Module
-class NetworkModule {
+internal object NetworkModule {
 
-    @Singleton
     @Provides
-    fun provideUnsplashService(): UnsplashApi {
-        return ApiFactory.upaApi.create(UnsplashApi::class.java)
+    @Singleton
+    fun provideConverter(): Converter.Factory {
+        return GsonConverterFactory.create(UpaJson.base)
     }
 
     @Provides
@@ -41,16 +43,15 @@ class NetworkModule {
             .addInterceptor(loggingInterceptor)
             .build()
 
-//    @Provides
-//    @Singleton
-//    fun provideRetrofit(
-//        okHttpClient: OkHttpClient,
-//        converterFactory: Converter.Factory
-//    ): Retrofit = Retrofit.Builder()
-//        .baseUrl("https://api.unsplash.com/")
-//        .addConverterFactory(converterFactory)
-//        .client(okHttpClient)
-//        .build()
-
+    @Provides
+    @Singleton
+    fun provideRetrofit(
+        okHttpClient: OkHttpClient,
+        converterFactory: Converter.Factory
+    ): Retrofit = Retrofit.Builder()
+        .baseUrl("https://api.unsplash.com/")
+        .addConverterFactory(converterFactory)
+        .client(okHttpClient)
+        .build()
 
 }
