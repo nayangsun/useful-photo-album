@@ -9,6 +9,9 @@ android {
 }
 
 dependencies {
+
+    implementation(Libs.AndroidX.dataStorePreferences)
+
     api(Libs.Gson.gson)
     implementation(Libs.Square.okhttp3_logging)
     api(Libs.Square.retrofit)

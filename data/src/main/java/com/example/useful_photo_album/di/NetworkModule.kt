@@ -1,8 +1,7 @@
 package com.example.useful_photo_album.di
 
-import com.example.useful_photo_album.api.UnsplashApi
 import com.example.useful_photo_album.common.UpaJson
-import com.example.useful_photo_album.network.ApiFactory
+import com.example.useful_photo_album.network.AuthInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,10 +36,12 @@ internal object NetworkModule {
     @Provides
     @Singleton
     fun provideOkHttpClient(
-        loggingInterceptor: HttpLoggingInterceptor
+        loggingInterceptor: HttpLoggingInterceptor,
+        authInterceptor: AuthInterceptor
     ): OkHttpClient =
         OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
+            .addInterceptor(authInterceptor)
             .build()
 
     @Provides

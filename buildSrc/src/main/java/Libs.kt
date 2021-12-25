@@ -28,6 +28,7 @@ object Libs {
         const val viewpager2 ="androidx.viewpager2:viewpager2:1.0.0"
         const val paging3 = "androidx.paging:paging-runtime:3.1.0"
         const val work = "androidx.work:work-runtime-ktx:2.7.1"
+        const val dataStorePreferences = "androidx.datastore:datastore-preferences:1.0.0-beta01"
 
         object Lifecycle {
             private const val lifecycleVersion = "2.3.1"

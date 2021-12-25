@@ -4,10 +4,8 @@ import com.example.useful_photo_album.json.UnknownValue
 import com.google.gson.annotations.SerializedName
 
 
-
 @Suppress("Unused")
-sealed class UpaError(open val msg: String) : RuntimeException(msg) {
-}
+sealed class UpaError(open val msg: String) : RuntimeException(msg)
 
 /**
  * API 에러
@@ -17,10 +15,10 @@ data class ApiError(
     val reason: ApiErrorCause,
     val response: ApiErrorResponse
 ) : UpaError(response.message)
+
 /**
  * 로그인 에러
  */
-
 data class AuthError(
     val statusCode: Int,
     val reason: AuthErrorCause,
@@ -28,9 +26,8 @@ data class AuthError(
 ) : UpaError(response.errorDescription ?: response.error)
 
 /**
- * SDK 내에서 발생하는 클라이언트 에러
+ * 앱 내에서 발생하는 클라이언트 에러
  */
-
 data class ClientError(
     val reason: ClientErrorCause,
     override val msg: String = reason.javaClass.getField(reason.name).getAnnotation(Description::class.java)?.value
@@ -82,7 +79,6 @@ enum class AuthErrorCause {
  * [ApiError]의 발생 원인
  */
 enum class ApiErrorCause(val errorCode: Int) {
-
 
     /** The request was unacceptable, often due to missing a required parameter */
     @SerializedName("-400")

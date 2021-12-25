@@ -6,9 +6,11 @@ import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
 import timber.log.Timber
+import javax.inject.Inject
+import javax.inject.Singleton
 
-
-class AuthInterceptor() : Interceptor {
+@Singleton
+class AuthInterceptor @Inject constructor() : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val usedAccessToken = null
         val request =
@@ -31,5 +33,5 @@ class AuthInterceptor() : Interceptor {
 inline fun Request.withAccessToken(accessToken: String) =
     newBuilder()
         .removeHeader(Constants.AUTHORIZATION)
-        .addHeader(Constants.AUTHORIZATION, "${Constants.BEARER} $accessToken")
+        .addHeader(Constants.AUTHORIZATION, "${Constants.CLIENT_ID} $accessToken")
         .build()

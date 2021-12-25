@@ -1,6 +1,5 @@
 package com.example.useful_photo_album.api
 
-import com.example.useful_photo_album.BuildConfig
 import com.example.useful_photo_album.model.UnsplashPhoto
 import com.example.useful_photo_album.model.UnsplashSearchResponse
 import retrofit2.http.GET
@@ -11,7 +10,6 @@ interface UnsplashApi {
     @GET("photos/random")
     suspend fun searchRandomPhotos(
             @Query("count") count: Int,
-            @Query("client_id") clientId: String = BuildConfig.UNSPLASH_ACCESS_KEY
     ): List<UnsplashPhoto>
 
     @GET("search/photos")
@@ -19,6 +17,5 @@ interface UnsplashApi {
         @Query("query") query: String,
         @Query("page") page: Int,
         @Query("per_page") perPage: Int,
-        @Query("client_id") clientId: String = BuildConfig.UNSPLASH_ACCESS_KEY
     ): UnsplashSearchResponse
 }
