@@ -35,36 +35,16 @@ inline fun Interceptor.Chain.proceedApiError(
 ): Response =
     proceedBodyString(request) { response, bodyString ->
         if (!response.isSuccessful) {
-
-            /**
-             *  HTTP 상태 코드까지 파싱해서 가져올수 있도록 만들어 두었다.
-             */
             val apiErrorResponse = bodyString?.let {
                 UpaJson.fromJson<ApiErrorResponse>(it, ApiErrorResponse::class.java)
             }
+            val errorCode = response.code
             val apiErrorCause = apiErrorResponse?.let {
-                UpaJson.fromJson<ApiErrorCause>(it.code.toString(), ApiErrorCause::class.java)
+                UpaJson.fromJson<ApiErrorCause>("-$errorCode", ApiErrorCause::class.java)
             }
 
             if (apiErrorCause != null && apiErrorResponse != null) {
                 return errorHandler(response, ApiError(response.code, apiErrorCause, apiErrorResponse))
-            }
-
-            if (response.code == 401 && apiErrorResponse != null) {
-                val apiError = apiErrorResponse.let {
-                    UpaJson.fromJson<ApiErrorCause>("-401", ApiErrorCause::class.java)
-                }
-                return errorHandler(response, ApiError(response.code, apiError, apiErrorResponse))
-            }
-
-            /**
-             *  403은 사용안하도록 계획
-             */
-            if (response.code == 403 && apiErrorResponse != null ) {
-                val apiError = apiErrorResponse.let {
-                    UpaJson.fromJson<ApiErrorCause>("-401", ApiErrorCause::class.java)
-                }
-                return errorHandler(response, ApiError(response.code, apiError, apiErrorResponse))
             }
         }
         return response

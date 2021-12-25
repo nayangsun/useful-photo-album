@@ -6,13 +6,9 @@ plugins {
 
 android {
 
-    defaultConfig {
-        buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess + "\"")
-    }
 }
 
 dependencies {
-    implementation(project(mapOf("path" to ":app")))
     api(Libs.Gson.gson)
     implementation(Libs.Square.okhttp3_logging)
     api(Libs.Square.retrofit)
