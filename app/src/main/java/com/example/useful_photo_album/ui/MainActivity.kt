@@ -1,9 +1,9 @@
-package com.example.useful_photo_album
+package com.example.useful_photo_album.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.databinding.DataBindingUtil.setContentView
+import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 

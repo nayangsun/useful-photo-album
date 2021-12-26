@@ -70,6 +70,7 @@ dependencies {
     implementation(Libs.AndroidX.viewpager2)
     implementation(Libs.AndroidX.paging3)
     implementation(Libs.AndroidX.work)
+    implementation(Libs.AndroidX.startup)
 
     implementation(Libs.Kotlin.coroutine)
 
