@@ -1,0 +1,21 @@
+package com.example.useful_photo_album.data.api
+
+import com.example.useful_photo_album.data.model.UnsplashPhoto
+import com.example.useful_photo_album.data.model.UnsplashSearchResponse
+import retrofit2.http.GET
+import retrofit2.http.Query
+
+interface UnsplashApi {
+
+    @GET("photos/random")
+    suspend fun searchRandomPhotos(
+            @Query("count") count: Int,
+    ): List<UnsplashPhoto>
+
+    @GET("search/photos")
+    suspend fun searchPhotos(
+        @Query("query") query: String,
+        @Query("page") page: Int,
+        @Query("per_page") perPage: Int,
+    ): UnsplashSearchResponse
+}
