@@ -15,11 +15,8 @@ class UnsplashRepository @Inject constructor(
 ) {
 
     sealed class QueryType {
-        /**
-         * 사용 안해도 될것 같다. 그런데 open을 붙이는 이유가 궁금하다.
-         */
-        //open var page: Int = 0
-        //open var size: Int = 0
+        var page: Int = 0
+        var size: Int = 0
         object Random : QueryType()
         data class Search(val query: String) : QueryType()
     }

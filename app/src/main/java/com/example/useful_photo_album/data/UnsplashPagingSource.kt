@@ -16,8 +16,8 @@ class UnsplashPagingSource(
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, UnsplashPhoto> {
         val page = params.key ?: UNSPLASH_STARTING_PAGE_INDEX
         return try {
-            //type.page = page
-            //type.size = params.loadSize
+            type.page = page
+            type.size = params.loadSize
 
             //val result = queryFactory()
             val result = queryResponse(page, params.loadSize)
@@ -31,12 +31,6 @@ class UnsplashPagingSource(
             LoadResult.Error(exception)
         }
     }
-
-    /**
-    * sealed class를 어떻게 이용할지 고민하다, 결국 만들어진 sealed를 이용해 data class 할당을 해서
-     * 이렇게 바꿔봤는데요, load 부분에서 조금더 직관적으로 보이지 않나라는 생각을 해봅니다.
-     * 그래도 sealed class로 바꿔보고 싶은데요. 혹시 간단한 힌트라도 알려주신다면 감사하겠습니다.
-     */
 
     data class QueryResult(val data: List<UnsplashPhoto>, val prevKey: Int?, val nextKey: Int?)
 
