@@ -1,9 +1,8 @@
 package com.example.useful_photo_album.data.network
 
-import com.example.useful_photo_album.data.common.UpaJson
-import com.example.useful_photo_album.data.model.network.ApiError
-import com.example.useful_photo_album.data.model.network.ApiErrorCause
-import com.example.useful_photo_album.data.model.network.ApiErrorResponse
+import com.example.useful_photo_album.shared.model.network.ApiError
+import com.example.useful_photo_album.shared.model.network.ApiErrorCause
+import com.example.useful_photo_album.shared.model.network.ApiErrorResponse
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response

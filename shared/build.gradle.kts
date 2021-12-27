@@ -8,8 +8,9 @@ android {
 
 dependencies {
     implementation(Libs.Kotlin.coroutine)
-
     implementation(Libs.inject)
+
+    api(Libs.Gson.gson)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

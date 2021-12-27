@@ -1,6 +1,6 @@
-package com.example.useful_photo_album.data.model.network
+package com.example.useful_photo_album.shared.model.network
 
-import com.example.useful_photo_album.data.json.UnknownValue
+import com.example.useful_photo_album.shared.json.UnknownValue
 import com.google.gson.annotations.SerializedName
 
 

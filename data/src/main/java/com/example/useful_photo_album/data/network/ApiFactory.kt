@@ -1,6 +1,6 @@
 package com.example.useful_photo_album.data.network
 
-import com.example.useful_photo_album.data.common.UpaJson
+import com.example.useful_photo_album.shared.UpaJson
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.CallAdapter

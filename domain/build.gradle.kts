@@ -12,6 +12,7 @@ dependencies {
 
     implementation(Libs.inject)
 
+    implementation(Libs.AndroidX.paging3)
     implementation(Libs.AndroidX.Lifecycle.livedata)
 
     implementation(Libs.Kotlin.coroutine)

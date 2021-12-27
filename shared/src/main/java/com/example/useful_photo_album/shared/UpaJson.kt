@@ -1,6 +1,6 @@
-package com.example.useful_photo_album.data.common
+package com.example.useful_photo_album.shared
 
-import com.example.useful_photo_album.data.json.Exclude
+import com.example.useful_photo_album.shared.json.Exclude
 import com.google.gson.*
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type

@@ -1,4 +1,4 @@
-package com.example.useful_photo_album.data.model.network
+package com.example.useful_photo_album.shared.model.network
 
 /**
  * API 호출 시 에러 응답

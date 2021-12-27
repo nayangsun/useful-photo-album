@@ -1,7 +1,7 @@
 package com.example.useful_photo_album.data.di
 
-import com.example.useful_photo_album.data.common.UpaJson
 import com.example.useful_photo_album.data.network.AuthInterceptor
+import com.example.useful_photo_album.shared.UpaJson
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
