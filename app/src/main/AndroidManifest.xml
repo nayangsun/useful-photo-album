@@ -28,7 +28,7 @@
             android:exported="false"
             tools:node="merge">
             <meta-data
-                android:name="com.google.samples.apps.iosched.util.initializers.TimberInitializer"
+                android:name="com.example.useful_photo_album.util.initializers.TimberInitializer"
                 android:value="androidx.startup" />
 
         </provider>

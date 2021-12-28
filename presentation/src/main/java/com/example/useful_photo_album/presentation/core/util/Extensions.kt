@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.util
+package com.example.useful_photo_album.presentation.core.util
 
 import android.annotation.SuppressLint
 import android.content.Context
