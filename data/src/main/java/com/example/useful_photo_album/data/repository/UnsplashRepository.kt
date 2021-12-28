@@ -9,7 +9,7 @@ internal class UnsplashRepositoryImpl @Inject constructor(
     private val service: UnsplashApi,
 ) : UnsplashRepository {
 
-    override suspend fun getSearch(query: String, page: Int, perPage: Int): UnsplashSearchResponse {
+    override suspend fun getSearchPhotos(query: String, page: Int, perPage: Int): UnsplashSearchResponse {
         return service.searchPhotos(query, page, perPage)
     }
 
