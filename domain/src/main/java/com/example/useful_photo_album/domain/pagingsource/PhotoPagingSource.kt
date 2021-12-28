@@ -32,17 +32,20 @@ class PhotoPagingSource(
         }
     }
 
-    data class QueryResult(val results: List<UnsplashPhoto>, val totalPages: Int)
+    /**
+     * 우선 캐싱 하기 전에 QueryResponse 동일하게 하여 임시로 분기
+     */
+    data class QueryResponse(val results: List<UnsplashPhoto>, val totalPages: Int)
 
-    private suspend fun queryResponse(page: Int, params: LoadParams<Int>): QueryResult {
+    private suspend fun queryResponse(page: Int, params: LoadParams<Int>): QueryResponse {
         return when (type) {
             is QueryType.Random -> {
                 val response = repository.getRandomPhotos(RANDOM_PHOTO_COUNTS)
-                QueryResult(response, 1)
+                QueryResponse(response, 1)
             }
             is QueryType.Search -> {
                 val response = repository.getSearchPhotos(type.query, page, params.loadSize)
-                QueryResult(response.results, response.totalPages)
+                QueryResponse(response.results, response.totalPages)
             }
         }
     }

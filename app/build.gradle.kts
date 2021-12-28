@@ -7,10 +7,12 @@ plugins {
 }
 
 android {
-
+    compileSdkVersion(Versions.compileSdk)
     defaultConfig {
         applicationId = "com.example.useful_photo_album"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        minSdkVersion(Versions.minSdk)
+        targetSdkVersion(Versions.targetSdk)
         versionCode = Versions.versionCode
         versionName = Versions.versionName
 
@@ -54,6 +56,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":shared"))
+    implementation(project(":presentation"))
+
     implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.fragment)
