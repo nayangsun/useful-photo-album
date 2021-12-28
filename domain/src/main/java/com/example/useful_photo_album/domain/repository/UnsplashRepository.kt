@@ -1,5 +1,6 @@
 package com.example.useful_photo_album.domain.repository
 
+import com.example.useful_photo_album.shared.model.UnsplashPhoto
 import com.example.useful_photo_album.shared.model.UnsplashSearchResponse
 
 
@@ -9,4 +10,8 @@ interface UnsplashRepository {
         page: Int,
         perPage: Int,
     ): UnsplashSearchResponse
+
+    suspend fun getRandomPhotos(
+        count: Int,
+    ): List<UnsplashPhoto>
 }

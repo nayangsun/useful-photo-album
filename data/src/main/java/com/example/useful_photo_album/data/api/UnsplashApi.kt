@@ -8,7 +8,7 @@ import retrofit2.http.Query
 interface UnsplashApi {
 
     @GET("photos/random")
-    suspend fun searchRandomPhotos(
+    suspend fun randomPhotos(
             @Query("count") count: Int,
     ): List<UnsplashPhoto>
 

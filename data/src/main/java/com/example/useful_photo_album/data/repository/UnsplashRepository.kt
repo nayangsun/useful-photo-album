@@ -2,6 +2,7 @@ package com.example.useful_photo_album.data.repository
 
 import com.example.useful_photo_album.data.api.UnsplashApi
 import com.example.useful_photo_album.domain.repository.UnsplashRepository
+import com.example.useful_photo_album.shared.model.UnsplashPhoto
 import com.example.useful_photo_album.shared.model.UnsplashSearchResponse
 import javax.inject.Inject
 
@@ -11,6 +12,10 @@ internal class UnsplashRepositoryImpl @Inject constructor(
 
     override suspend fun getSearchPhotos(query: String, page: Int, perPage: Int): UnsplashSearchResponse {
         return service.searchPhotos(query, page, perPage)
+    }
+
+    override suspend fun getRandomPhotos(count: Int): List<UnsplashPhoto> {
+        return service.randomPhotos(count)
     }
 
     companion object {

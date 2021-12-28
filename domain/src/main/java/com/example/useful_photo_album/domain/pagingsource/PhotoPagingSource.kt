@@ -17,15 +17,10 @@ class PhotoPagingSource(
         data class Search(val query: String) : QueryType()
     }
 
-
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, UnsplashPhoto> {
         val page = params.key ?: UNSPLASH_STARTING_PAGE_INDEX
         return try {
-            val response = when(type) {
-                is QueryType.Random -> repository.getSearchPhotos(query, page, params.loadSize)
-                is QueryType.Search -> repository.getSearchPhotos(type.query, page, params.loadSize)
-            }
-
+            val response = queryResponse(page, params)
             val photos = response.results
             LoadResult.Page(
                 data = photos,
@@ -37,6 +32,21 @@ class PhotoPagingSource(
         }
     }
 
+    data class QueryResult(val results: List<UnsplashPhoto>, val totalPages: Int)
+
+    private suspend fun queryResponse(page: Int, params: LoadParams<Int>): QueryResult {
+        return when (type) {
+            is QueryType.Random -> {
+                val response = repository.getRandomPhotos(RANDOM_PHOTO_COUNTS)
+                QueryResult(response, 1)
+            }
+            is QueryType.Search -> {
+                val response = repository.getSearchPhotos(type.query, page, params.loadSize)
+                QueryResult(response.results, response.totalPages)
+            }
+        }
+    }
+
     override fun getRefreshKey(state: PagingState<Int, UnsplashPhoto>): Int? {
         return state.anchorPosition?.let { anchorPosition ->
             // This loads starting from previous page, but since PagingConfig.initialLoadSize spans
@@ -45,5 +55,9 @@ class PhotoPagingSource(
             // prefetchDistance.
             state.closestPageToPosition(anchorPosition)?.prevKey
         }
+    }
+
+    companion object {
+        const val RANDOM_PHOTO_COUNTS = 30
     }
 }
