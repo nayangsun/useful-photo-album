@@ -6,8 +6,6 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
 
     <color name="photo_black">#de000000</color>
     <color name="photo_gray_50">#fafafa</color>
@@ -24,4 +22,65 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+
+    <color name="color_status_bar">@color/shrine_scrim</color>
+    <color name="color_on_primary">@color/shrine_900</color>
+    <color name="color_primary_variant">@color/shrine_200</color>
+    <color name="color_primary">@color/shrine_100</color>
+    <color name="color_on_secondary">@color/shrine_900</color>
+    <color name="color_secondary">@color/shrine_100</color>
+    <color name="color_tertiary">@color/shrine_300</color>
+    <color name="color_on_surface">@color/shrine_900</color>
+    <color name="color_surface">@color/white</color>
+    <color name="color_on_background">@color/shrine_900</color>
+    <color name="color_background">@color/gray_200</color>
+    <color name="color_on_error">@color/white</color>
+    <color name="color_error">@color/red_700</color>
+
+    <color name="shrine_scrim">#1A7D3636</color>
+    <color name="shrine_900">#442C2E</color>
+    <color name="shrine_300">#EAA4A4</color>
+    <color name="shrine_200">#F0CAC0</color>
+    <color name="shrine_100">#FEDBD0</color>
+    <color name="shrine_50">#FEEAE6</color>
+    <color name="shrine_25">#FFFBFA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_700">#B00020</color>
+    <color name="gray_200">#F5F5F5</color>
+
+    <!-- Scrim colors -->
+    <color name="system_ui_scrim_light">#B3FFFFFF</color> <!-- 70% white -->
+    <color name="system_ui_scrim_black">#40000000</color> <!-- 25% black -->
+
+    <!-- We use a dark scrim by default since light status is API 23+ -->
+    <color name="status_bar_scrim">@color/system_ui_scrim_black</color>
+    <!-- We use a dark scrim by default since light nav bar is API 27+ -->
+    <color name="nav_bar_scrim">@color/system_ui_scrim_black</color>
+
+    <!-- Other colors with dark mode alternatives -->
+    <color name="highlighted_card_background">#e8f0fe</color>
+    <color name="event_card_header_background">@color/event_card_header_background_light</color>
+    <color name="list_divider">#1f000000</color>>
+
+
+    <!-- Other colors -->
+    <color name="default_tag_color">#999</color>
+    <color name="light_grey">#e6e6e6</color>
+    <color name="scrim">#33000000</color> <!-- 20% black -->
+
+    <color name="event_card_header_background_light">#f8f9fa</color>
+    <color name="event_card_header_background_dark">#252729</color>
+
+    <item name="chip_bg_alpha_checked" format="float" type="dimen">0.18</item>
+
+    <integer-array name="swipe_refresh">
+        <item>@color/deep_sky_blue</item>
+        <item>@color/teal</item>
+        <item>@color/bright_light_blue</item>
+        <item>@color/sun_yellow</item>
+        <item>@color/bright_orange</item>
+    </integer-array>
+
+
+
 </resources>

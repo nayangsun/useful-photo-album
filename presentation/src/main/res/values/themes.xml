@@ -18,4 +18,45 @@
         <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
         <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Upa.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <item name="colorError">@color/color_error</item>
+
+        <item name="android:colorBackground">@color/color_background</item>
+
+        <!-- Window decor -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/use_light_status</item>
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">@bool/use_light_navigation</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+
+        <!-- Widget styles -->
+        <item name="toolbarStyle">@style/Widget.Farmsplan.Toolbar</item>
+        <item name="tabStyle">@style/Widget.Farmsplan.Tabs</item>
+        <item name="navigationViewStyle">@style/Widget.Farmsplan.NavigationView</item>
+
+        <!-- Text appearances -->
+        <item name="textAppearanceBody2">@style/TextAppearance.Farmsplan.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Farmsplan.Button</item>
+        <item name="textAppearanceListItem">@style/TextAppearance.Farmsplan.ListPrimary</item>
+
+        <!-- Dialogs -->
+        <item name="materialAlertDialogTheme">@style/AlertDialog.Theme</item>
+
+        <!-- Custom theme attrs -->
+        <item name="farmsplanNavigationBarDividerColor">?attr/colorControlLight</item>
+        <item name="sessionListKeyline">@dimen/session_keyline</item>
+        <item name="eventCardHeaderBackground">@color/event_card_header_background</item>
+    </style>
 </resources>
