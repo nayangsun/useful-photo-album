@@ -46,6 +46,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
+import com.example.useful_photo_album.shared.model.Theme
 
 fun ObservableBoolean.hasSameValue(other: ObservableBoolean) = get() == other.get()
 

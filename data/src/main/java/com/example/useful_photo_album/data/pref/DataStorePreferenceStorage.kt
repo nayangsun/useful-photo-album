@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.pref
+package com.example.useful_photo_album.data.pref
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.example.useful_photo_album.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_ACCESS_TOKEN
-import kotlinx.coroutines.flow.Flow
+import com.example.useful_photo_album.domain.datastore.PreferenceStorage
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_ACCESS_TOKEN
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -29,10 +29,6 @@ import javax.inject.Singleton
 /**
  * Storage for app and user preferences.
  */
-interface PreferenceStorage {
-    suspend fun getAccessToken(sId: String)
-    val accessToken: Flow<String>
-}
 
 @Singleton
 class DataStorePreferenceStorage @Inject constructor(
@@ -40,6 +36,7 @@ class DataStorePreferenceStorage @Inject constructor(
 ) : PreferenceStorage {
     companion object {
         const val PREFS_NAME = "useful_photo_album"
+        const val EMPTY_UNSPLASH_TOKEN = "have_no_token"
     }
 
     object PreferencesKeys {
@@ -53,6 +50,6 @@ class DataStorePreferenceStorage @Inject constructor(
     }
 
     override val accessToken = dataStore.data.map {
-        it[PREF_ACCESS_TOKEN] ?: "no_have_token"
+        it[PREF_ACCESS_TOKEN] ?: EMPTY_UNSPLASH_TOKEN
     }
 }

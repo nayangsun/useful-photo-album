@@ -1,7 +1,7 @@
 package com.example.useful_photo_album.data.network
 
 import com.example.useful_photo_album.data.common.Constants
-import com.example.useful_photo_album.pref.PreferenceStorage
+import com.example.useful_photo_album.domain.datastore.PreferenceStorage
 import com.example.useful_photo_album.shared.model.network.ApiErrorCause
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.first

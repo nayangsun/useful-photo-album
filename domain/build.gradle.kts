@@ -4,11 +4,15 @@ plugins {
 }
 
 android {
+    compileSdk = Versions.compileSdk
+    defaultConfig {
+        minSdk = Versions.minSdk
+        targetSdk = Versions.targetSdk
+    }
 }
 
 dependencies {
     implementation(project(":shared"))
-    implementation(project(":data"))
 
     implementation(Libs.inject)
 

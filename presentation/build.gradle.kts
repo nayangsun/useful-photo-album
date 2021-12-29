@@ -7,10 +7,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.compileSdk)
+    compileSdk = Versions.compileSdk
     defaultConfig {
-        minSdkVersion(Versions.minSdk)
-        targetSdkVersion(Versions.targetSdk)
+        minSdk = Versions.minSdk
+        targetSdk = Versions.targetSdk
     }
     buildFeatures {
         dataBinding = true
@@ -27,6 +27,9 @@ dependencies {
     implementation(Libs.AndroidX.material)
     implementation(Libs.AndroidX.Lifecycle.viewModel)
     implementation(Libs.AndroidX.recyclerview)
+
+    kapt(Libs.Glide.compiler)
+    implementation(Libs.Glide.glide)
 
     implementation(Libs.Dagger.hiltAndroid)
     implementation("androidx.legacy:legacy-support-v4:1.0.0")

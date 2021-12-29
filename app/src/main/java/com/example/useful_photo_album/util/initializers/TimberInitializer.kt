@@ -18,6 +18,9 @@ package com.example.useful_photo_album.util.initializers
 
 import android.content.Context
 import androidx.startup.Initializer
+import com.example.useful_photo_album.BuildConfig
+import com.example.useful_photo_album.util.CrashlyticsTree
+import timber.log.Timber
 
 
 class TimberInitializer : Initializer<Unit> {

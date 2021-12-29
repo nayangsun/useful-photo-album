@@ -7,16 +7,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.compileSdk)
+    compileSdk = Versions.compileSdk
     defaultConfig {
         applicationId = "com.example.useful_photo_album"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        minSdkVersion(Versions.minSdk)
-        targetSdkVersion(Versions.targetSdk)
+        minSdk = Versions.minSdk
+        targetSdk = Versions.targetSdk
         versionCode = Versions.versionCode
         versionName = Versions.versionName
-
-        buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess + "\"")
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -56,47 +54,26 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared"))
     implementation(project(":presentation"))
-
+    implementation(project(":shared"))
+    implementation(project(":domain"))
+    implementation(project(":data"))
     implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.AndroidX.fragment)
     implementation(Libs.AndroidX.material)
     implementation(Libs.AndroidX.constraintLayout)
-    implementation(Libs.AndroidX.recyclerview)
-
-    implementation(Libs.AndroidX.Lifecycle.livedata)
-    implementation(Libs.AndroidX.Lifecycle.viewModel)
-
     implementation(Libs.AndroidX.Navigation.fragment)
     implementation(Libs.AndroidX.Navigation.ui)
-
-    implementation(Libs.AndroidX.viewpager2)
-    implementation(Libs.AndroidX.paging3)
-    implementation(Libs.AndroidX.work)
     implementation(Libs.AndroidX.startup)
-
-    implementation(Libs.Kotlin.coroutine)
 
     implementation(Libs.Dagger.hiltAndroid)
     kapt(Libs.Dagger.hiltCompiler)
 
-    kapt(Libs.AndroidX.Room.compiler)
-    implementation(Libs.AndroidX.Room.ktx)
-    implementation(Libs.AndroidX.Room.runtime)
+    implementation(Libs.Kotlin.coroutine)
 
-    api(Libs.Gson.gson)
-    implementation(Libs.Square.okhttp3_logging)
-    api(Libs.Square.retrofit)
-    api(Libs.Square.converter_gson)
-
-    implementation(Libs.Glide.glide)
-    kapt(Libs.Glide.compiler)
+    implementation(Libs.timber)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)
     androidTestImplementation(Libs.Test.espresso)
 }
-
-val getUnsplashAccess = project.findProperty("unsplash_access_key")

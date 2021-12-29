@@ -3,6 +3,8 @@ package com.example.useful_photo_album.presentation.core.ui.databinding.adapters
 import android.view.View
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 @BindingAdapter("isGone")
 fun bindIsGone(view: View, isGone: Boolean) {

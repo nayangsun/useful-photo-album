@@ -24,7 +24,6 @@ class LoadPhotoUseCase @Inject constructor(
     }
 
     companion object {
-
         private const val NETWORK_PAGE_SIZE = 10
     }
 }
