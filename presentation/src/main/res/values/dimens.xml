@@ -30,4 +30,36 @@
     <!-- radius -->
     <dimen name="bottom_sheet_corner_radius">16dp</dimen>
 
+    <dimen name="session_keyline">64dp</dimen>
+
+    <!-- Dialogs -->
+    <dimen name="dialog_corner_radius">8dp</dimen>
+    <dimen name="dialogPreferredPadding">24dp</dimen>
+    <dimen name="dialogPreferredPaddingLarge">36dp</dimen> <!-- dialogPreferredPadding + 12dp -->
+
+
+    <!-- Navigation -->
+    <dimen name="nav_drawer_width">@dimen/match_parent</dimen>
+    <dimen name="nav_account_image_size">32dp</dimen>
+    <dimen name="nav_header_logo_size">36dp</dimen>
+    <dimen name="nav_item_horizontal_padding">24dp</dimen>
+    <!-- Intrinsic height may vary. Use a large radius to ensure a semicircle. -->
+    <dimen name="nav_item_background_corner_radius_left">0dp</dimen>
+    <dimen name="nav_item_background_corner_radius_right">100dp</dimen>
+    <dimen name="nav_item_background_inset_left">0dp</dimen>
+    <dimen name="nav_item_background_inset_right">8dp</dimen>>
+
+    <!-- card -->
+    <dimen name="card_side_margin_smaller">8dp</dimen>
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_side_margin_larger">20dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+
+
+
+    <!-- per android.view.ViewGroup.LayoutParams -->
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
 </resources>
