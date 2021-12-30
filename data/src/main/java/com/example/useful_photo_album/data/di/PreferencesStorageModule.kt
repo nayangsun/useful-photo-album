@@ -3,7 +3,7 @@ package com.example.useful_photo_album.data.di
 import android.content.Context
 import androidx.datastore.preferences.preferencesDataStore
 import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage
-import com.example.useful_photo_album.domain.datastore.PreferenceStorage
+import com.example.useful_photo_album.domain.data.spec.datastore.PreferenceStorage
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

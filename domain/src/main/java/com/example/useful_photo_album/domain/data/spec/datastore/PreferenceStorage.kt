@@ -1,4 +1,4 @@
-package com.example.useful_photo_album.domain.datastore
+package com.example.useful_photo_album.domain.data.spec.datastore
 
 import kotlinx.coroutines.flow.Flow
 

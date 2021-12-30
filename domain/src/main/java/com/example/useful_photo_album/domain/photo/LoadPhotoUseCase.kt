@@ -1,11 +1,11 @@
-package com.example.useful_photo_album.domain.unsplashphoto
+package com.example.useful_photo_album.domain.photo
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.example.useful_photo_album.domain.PagingUseCase
 import com.example.useful_photo_album.domain.pagingsource.PhotoPagingSource
-import com.example.useful_photo_album.domain.repository.UnsplashRepository
+import com.example.useful_photo_album.domain.data.spec.repository.UnsplashRepository
 import com.example.useful_photo_album.shared.model.UnsplashPhoto
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -18,7 +18,8 @@ class LoadPhotoUseCase @Inject constructor(
         return Pager(
             config = PagingConfig(
                 enablePlaceholders = false,
-                pageSize = NETWORK_PAGE_SIZE),
+                pageSize = NETWORK_PAGE_SIZE
+            ),
             pagingSourceFactory = { PhotoPagingSource(unsplashRepository, parameters.type) }
         ).flow
     }

@@ -2,7 +2,7 @@ package com.example.useful_photo_album.domain.prefs
 
 import com.example.useful_photo_album.di.IoDispatcher
 import com.example.useful_photo_album.domain.UseCase
-import com.example.useful_photo_album.domain.datastore.PreferenceStorage
+import com.example.useful_photo_album.domain.data.spec.datastore.PreferenceStorage
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 

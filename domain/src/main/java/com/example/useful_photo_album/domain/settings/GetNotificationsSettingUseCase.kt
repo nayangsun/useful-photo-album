@@ -2,9 +2,8 @@ package com.example.useful_photo_album.domain.settings
 
 import com.example.useful_photo_album.di.IoDispatcher
 import com.example.useful_photo_album.domain.UseCase
-import com.example.useful_photo_album.domain.datastore.PreferenceStorage
+import com.example.useful_photo_album.domain.data.spec.datastore.PreferenceStorage
 import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 
 class GetNotificationsSettingUseCase @Inject constructor(

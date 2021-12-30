@@ -20,7 +20,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.example.useful_photo_album.domain.datastore.PreferenceStorage
+import com.example.useful_photo_album.domain.data.spec.datastore.PreferenceStorage
 import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_ACCESS_TOKEN
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
