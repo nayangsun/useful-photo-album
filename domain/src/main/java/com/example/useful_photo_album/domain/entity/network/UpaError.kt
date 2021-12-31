@@ -17,7 +17,7 @@ data class ApiError(
 ) : UpaError(response.message)
 
 /**
- * 로그인 에러
+ * 로그인 에러1k
  */
 data class AuthError(
     val statusCode: Int,
