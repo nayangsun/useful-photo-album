@@ -52,6 +52,8 @@
 
     <style name="AppTheme.PopupTheme" parent="ThemeOverlay.Upa.Light" />
 
+    <style name="AppTheme" parent="Base.Upa.AppTheme" />
+
     <style name="AlertDialog.Theme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="alertDialogStyle">@style/AlertDialog.Style</item>
         <item name="buttonBarStyle">@style/AlertDialog.ButtonBar</item>

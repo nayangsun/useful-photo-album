@@ -2,8 +2,8 @@ package com.example.useful_photo_album.data.repository
 
 import com.example.useful_photo_album.data.api.UnsplashApi
 import com.example.useful_photo_album.domain.data.spec.repository.UnsplashRepository
-import com.example.useful_photo_album.shared.model.UnsplashPhoto
-import com.example.useful_photo_album.shared.model.UnsplashSearchResponse
+import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
+import com.example.useful_photo_album.domain.entity.unsplash.UnsplashSearchResponse
 import javax.inject.Inject
 
 internal class UnsplashRepositoryImpl @Inject constructor(

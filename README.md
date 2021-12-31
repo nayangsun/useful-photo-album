@@ -12,7 +12,7 @@
 
 #### Spec-Working
 - CI/CD
-- Convention
+- Convention :
     Code Style
     Android Lint
     Ktlint

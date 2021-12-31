@@ -16,6 +16,7 @@
 
 package com.example.useful_photo_album.presentation.core.util
 
+import com.example.useful_photo_album.shared.model.Theme
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Resources
@@ -46,7 +47,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.example.useful_photo_album.shared.model.Theme
+
 
 fun ObservableBoolean.hasSameValue(other: ObservableBoolean) = get() == other.get()
 
