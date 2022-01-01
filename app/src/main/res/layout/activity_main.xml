@@ -3,11 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_upa" />
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/nav_host"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_upa" />
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bar_navigation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

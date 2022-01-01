@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs")
     id("kotlin-android")
 }
 
@@ -27,6 +28,9 @@ dependencies {
     implementation(Libs.AndroidX.material)
     implementation(Libs.AndroidX.Lifecycle.viewModel)
     implementation(Libs.AndroidX.recyclerview)
+
+    implementation(Libs.AndroidX.Navigation.fragment)
+    implementation(Libs.AndroidX.Navigation.ui)
 
     kapt(Libs.Glide.compiler)
     implementation(Libs.Glide.glide)
