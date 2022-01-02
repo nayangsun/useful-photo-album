@@ -62,6 +62,7 @@ dependencies {
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.material)
     implementation(Libs.AndroidX.constraintLayout)
+    implementation(Libs.AndroidX.fragment)
     implementation(Libs.AndroidX.Navigation.fragment)
     implementation(Libs.AndroidX.Navigation.ui)
     implementation(Libs.AndroidX.startup)
