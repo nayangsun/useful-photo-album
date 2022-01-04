@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.Menu
 import androidx.activity.viewModels
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -67,6 +70,28 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             setupWithNavController(navController)
             setOnItemReselectedListener { } // prevent navigating to the same item
         }
+
+        binding.navigationRail?.apply {
+            configureNavMenu(menu)
+            setupWithNavController(navController)
+            setOnItemReselectedListener { } // prevent navigating to the same item
+        }
+
+        if (savedInstanceState == null) {
+            currentNavId = navController.graph.startDestination
+            val requestedNavId = intent.getIntExtra(EXTRA_NAVIGATION_ID, currentNavId)
+            navigateTo(requestedNavId)
+        }
+
+        binding.navigationRail?.let {
+            ViewCompat.setOnApplyWindowInsetsListener(it) { view, insets ->
+                // Pad the Navigation Rail so its content is not behind system bars.
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                view.updatePadding(top = systemBars.top, bottom = systemBars.bottom)
+                insets
+            }
+        }
+
 
     }
 
