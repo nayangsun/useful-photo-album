@@ -5,14 +5,20 @@ import android.os.Bundle
 import android.view.Menu
 import androidx.activity.viewModels
 import androidx.appcompat.widget.Toolbar
-import androidx.databinding.DataBindingUtil.setContentView
+import androidx.core.graphics.Insets
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isVisible
+import androidx.core.view.updatePadding
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
+import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.core.ui.NavigationHost
+import com.example.useful_photo_album.presentation.core.util.updateForTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -49,6 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -68,36 +75,89 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             setOnItemReselectedListener { } // prevent navigating to the same item
         }
 
+        binding.navigationRail?.apply {
+            configureNavMenu(menu)
+            setupWithNavController(navController)
+            setOnItemReselectedListener { } // prevent navigating to the same item
+        }
+
+        if (savedInstanceState == null) {
+            currentNavId = navController.graph.startDestination
+            val requestedNavId = intent.getIntExtra(EXTRA_NAVIGATION_ID, currentNavId)
+            navigateTo(requestedNavId)
+        }
+
+
+        binding.navigationRail?.let {
+            ViewCompat.setOnApplyWindowInsetsListener(it) { view, insets ->
+                // Pad the Navigation Rail so its content is not behind system bars.
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                view.updatePadding(top = systemBars.top, bottom = systemBars.bottom)
+                insets
+            }
+        }
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.rootContainer) { view, insets ->
+            // Hide the bottom navigation view whenever the keyboard is visible.
+            val imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
+            binding.bottomNavigation?.isVisible = !imeVisible
+
+            // If we're showing the bottom navigation, add bottom padding. Also, add left and right
+            // padding since there's no better we can do with horizontal insets.
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val bottomPadding = if (binding.bottomNavigation?.isVisible == true) {
+                systemBars.bottom
+            } else 0
+            view.updatePadding(
+                left = systemBars.left,
+                right = systemBars.right,
+                bottom = bottomPadding
+            )
+            // Consume the insets we've used.
+            WindowInsetsCompat.Builder(insets).setInsets(
+                WindowInsetsCompat.Type.systemBars(),
+                Insets.of(0, systemBars.top, 0, systemBars.bottom - bottomPadding)
+            ).build()
+        }
+
+
     }
 
     private fun configureNavMenu(menu: Menu) {
-        menu.findItem(R.id.navigation_map)?.isVisible = mapFeatureEnabled
-        menu.findItem(R.id.navigation_codelabs)?.isVisible = codelabsFeatureEnabled
+        menu.findItem(R.id.navigation_map)?.isVisible = false
+        menu.findItem(R.id.navigation_codelabs)?.isVisible = false
         menu.findItem(R.id.navigation_explore_ar)?.apply {
             // Handle launching new activities, otherwise assume the destination is handled
             // by the nav graph. We want to launch a new Activity for only the AR menu item.
-            isVisible = exploreArFeatureEnabled
-            setOnMenuItemClickListener {
-                if (connectivityManager.activeNetworkInfo?.isConnected == true) {
-                    if (viewModel.arCoreAvailability.value?.isSupported == true) {
-                        analyticsHelper.logUiEvent(
-                            "Navigate to Explore I/O ARCore supported",
-                            AnalyticsActions.CLICK
-                        )
-                        openExploreAr()
-                    } else {
-                        analyticsHelper.logUiEvent(
-                            "Navigate to Explore I/O ARCore NOT supported",
-                            AnalyticsActions.CLICK
-                        )
-                        openArCoreNotSupported()
-                    }
-                } else {
-                    openNoConnection()
-                }
-                true
-            }
+            isVisible = false
+//            setOnMenuItemClickListener {
+//                if (connectivityManager.activeNetworkInfo?.isConnected == true) {
+//                    if (viewModel.arCoreAvailability.value?.isSupported == true) {
+//                        analyticsHelper.logUiEvent(
+//                            "Navigate to Explore I/O ARCore supported",
+//                            AnalyticsActions.CLICK
+//                        )
+//                        openExploreAr()
+//                    } else {
+//                        analyticsHelper.logUiEvent(
+//                            "Navigate to Explore I/O ARCore NOT supported",
+//                            AnalyticsActions.CLICK
+//                        )
+//                        openArCoreNotSupported()
+//                    }
+//                } else {
+//                    openNoConnection()
+//                }
+//                true
+//            }
         }
+    }
+
+    private fun navigateTo(navId: Int) {
+        if (navId == currentNavId) {
+            return // user tapped the current item
+        }
+        navController.navigate(navId)
     }
 
 
@@ -105,4 +165,11 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         val appBarConfiguration = AppBarConfiguration(TOP_LEVEL_DESTINATIONS)
         toolbar.setupWithNavController(navController, appBarConfiguration)
     }
+
+    private fun getCurrentFragment(): MainNavigationFragment? {
+        return navHostFragment
+            .childFragmentManager
+            .primaryNavigationFragment as? MainNavigationFragment
+    }
+
 }
