@@ -104,4 +104,10 @@ object Libs {
 
     const val timber = "com.jakewharton.timber:timber:4.7.1"
     const val inject = "javax.inject:javax.inject:1"
+
+    const val threetenabp = "com.jakewharton.threetenabp:threetenabp:1.0.5"
+    // TODO: Remove this once the version for
+    //  "org.threeten:threetenbp:${Versions.threetenbp}:no-tzdb" using java-platform in the
+    //  depconstraints/build.gradle.kts is defined
+    const val threetenbp = "org.threeten:threetenbp:1.3.6"
 }

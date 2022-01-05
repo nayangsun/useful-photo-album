@@ -40,6 +40,8 @@ dependencies {
 
     kapt(Libs.Dagger.hiltCompiler)
     implementation(Libs.timber)
+    implementation(Libs.threetenabp)
+    implementation(Libs.threetenbp)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

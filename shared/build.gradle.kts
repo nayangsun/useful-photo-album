@@ -17,6 +17,9 @@ dependencies {
 
     api(Libs.Gson.gson)
 
+    implementation(Libs.threetenabp)
+    implementation(Libs.threetenbp)
+    
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)
     androidTestImplementation(Libs.Test.espresso)

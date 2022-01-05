@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.settings
+package com.example.useful_photo_album.presentation.settings.ui
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -24,16 +24,8 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.widget.TextView
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updatePadding
 import androidx.databinding.BindingAdapter
-import androidx.fragment.app.viewModels
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentSettingsBinding
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 
