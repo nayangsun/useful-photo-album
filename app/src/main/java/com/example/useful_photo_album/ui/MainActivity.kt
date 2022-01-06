@@ -119,8 +119,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
                 Insets.of(0, systemBars.top, 0, systemBars.bottom - bottomPadding)
             ).build()
         }
-
-
     }
 
     private fun configureNavMenu(menu: Menu) {
@@ -160,7 +158,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         navController.navigate(navId)
     }
 
-
     override fun registerToolbarWithNavigation(toolbar: Toolbar) {
         val appBarConfiguration = AppBarConfiguration(TOP_LEVEL_DESTINATIONS)
         toolbar.setupWithNavController(navController, appBarConfiguration)
@@ -171,5 +168,4 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             .childFragmentManager
             .primaryNavigationFragment as? MainNavigationFragment
     }
-
 }
