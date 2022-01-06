@@ -33,7 +33,7 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
-            style="@style/Widget.IOSched.AppBar"
+            style="@style/Widget.Upa.AppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true">
@@ -59,7 +59,7 @@
                 android:clipToPadding="false"
                 android:orientation="vertical"
                 android:paddingHorizontal="@dimen/codelabs_list_item_spacing"
-                android:paddingVertical="@dimen/spacing_normal"
+                android:paddingVertical="@dimen/spacing_medium"
                 android:scrollbars="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

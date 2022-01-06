@@ -1,3 +1,19 @@
+/*
+ * Copyright 2022 Malgeon
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.example.useful_photo_album.ui
 
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +34,6 @@ import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
 import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.core.ui.NavigationHost
-import com.example.useful_photo_album.presentation.core.util.updateForTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -55,7 +70,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -86,7 +100,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             val requestedNavId = intent.getIntExtra(EXTRA_NAVIGATION_ID, currentNavId)
             navigateTo(requestedNavId)
         }
-
 
         binding.navigationRail?.let {
             ViewCompat.setOnApplyWindowInsetsListener(it) { view, insets ->

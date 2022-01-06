@@ -46,12 +46,9 @@ allprojects {
     }
 }
 
-tasks.register("clean", Delete::class) {
-    delete(rootProject.buildDir)
-}
-
-
 subprojects {
+
+    // spotless를 적용하여놓았으나, 해당 프로젝트는 develop용이기 때문에 lint 검사에 적합하진 않다고 생각한다. 나중에 적용해 볼수 있기를..
     apply(plugin = "com.diffplug.gradle.spotless")
     val ktlintVer = "0.40.0"
     spotless {
@@ -77,11 +74,11 @@ subprojects {
     // Using `mustRunAfter` avoids creating a task dependency. The order is enforced only if
     // `spotlessCheck` is already scheduled to run, so we can still build and launch from the IDE
     // while the code is "dirty".
-    tasks.whenTaskAdded {
-        if (name == "preBuild") {
-            mustRunAfter("spotlessCheck")
-        }
-    }
+//    tasks.whenTaskAdded {
+//        if (name == "preBuild") {
+//            mustRunAfter("spotlessCheck")
+//        }
+//    }
 
     // TODO: Remove when the Coroutine and Flow APIs leave experimental/internal/preview.
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {

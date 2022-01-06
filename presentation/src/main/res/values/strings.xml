@@ -23,4 +23,12 @@
     <string name="menu_submit" translation_description="The label for the menu item to submit">Submit</string>
 
 
+    <!-- for debug -->
+    <string name="a11y_show_navigation" translation_description="Description of the menu button shown on top-level screens.">Show navigation menu</string>
+    <string name="agenda" translation_description="The title for the agenda screen where user can see all the sessions they plan to attend.">Agenda</string>
+    <string name="codelabs_building" translation_description="Text of a button that shows where the Codelabs building is on the map.">Codelabs building</string>
+    <string name="codelabs_website" translation_description="Text of a button that launches the Codelabs website.">Codelabs website</string>
+    <string name="event_codelabs_title" translation_description="Header label for general information on &quot;codelabs&quot;.">Codelabs</string>
+
+
 </resources>
