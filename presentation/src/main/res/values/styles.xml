@@ -248,5 +248,13 @@
         <item name="android:textAppearance">@style/TextAppearance.Upa.AboutButtons</item>
     </style>
 
+    <!-- Misc -->
+    <style name="Widget.Upa.EmptyResults">
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+        <item name="android:drawableTop">@drawable/no_items_found_204</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
 
 </resources>

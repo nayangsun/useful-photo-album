@@ -69,7 +69,7 @@
             android:layout_height="0dp"
             android:background="?attr/colorSurface"
             android:fitsSystemWindows="true"
-            app:layout_behavior="com.google.samples.apps.iosched.util.StatusBarScrimBehavior" />
+            app:layout_behavior="com.example.useful_photo_album.presentation.common.util.StatusBarScrimBehavior" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -95,7 +95,7 @@
                     android:clipToPadding="false"
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/schedule_page_padding_bottom"
-                    android:paddingTop="@dimen/spacing_normal"
+                    android:paddingTop="@dimen/spacing_tiny"
                     android:scrollbars="vertical"
                     app:layoutManager="LinearLayoutManager"
                     tools:listitem="@layout/item_session" />
@@ -104,7 +104,7 @@
 
             <TextView
                 android:id="@+id/empty"
-                style="@style/Widget.IOSched.EmptyResults"
+                style="@style/Widget.Upa.EmptyResults"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
