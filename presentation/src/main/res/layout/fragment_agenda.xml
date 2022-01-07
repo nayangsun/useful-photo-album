@@ -22,7 +22,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.agenda.AgendaViewModel" />
+            type="com.example.useful_photo_album.presentation.agenda.ui.AgendaViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

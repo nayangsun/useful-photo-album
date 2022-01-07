@@ -45,9 +45,7 @@ import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.Navi
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
 import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
-import com.google.samples.apps.iosched.ui.schedule.ScheduleUiData
 import com.google.samples.apps.iosched.ui.schedule.ScheduleUiHintsDialogFragment
-import com.google.samples.apps.iosched.ui.schedule.ScheduleViewModel
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE

@@ -71,4 +71,31 @@
 
     <string name="travel_shuttle_service_title" translation_description="Header label for Shuttle service for travel">Shuttle service</string>
     <string name="travel_shuttle_service_description" translation_description="Information on getting to Shoreline Amphitheater travel"><![CDATA[Free event shuttles from all Google recommended hotels will be provided for Google I/O attendees. There will also be select service from San Francisco, Millbrae BART, Mountain View Caltrain, San Jose, and Oakland. We are increasing the shuttle frequency and capacity at the Mountain View Caltrain and Millbrae Bart stations. Check back closer to the event for pick-up schedules and additional shuttle pickup locations. The Shuttle Schedule  will be posted closer to the event.]]></string>
+
+    <string name="codelabs_information" translation_description="Information about codelabs.">Learn about the latest and greatest Google technologies via self-paced tutorials in our ready-to-code kiosks, or bring your own machine and take your work home with you. Kiosks are open daily except during the first Keynote.</string>
+    <string name="codelab_duration" translation_description="Text showing the approximate time in minutes that a user would spend during a codelab tutorial. Abbreviated.">Duration: %1$d min</string>
+    <string name="start_codelab" translation_description="Text of a button that allows a user to start a codelab tutorial.">Start codelab</string>
+
+    <string name="settings_title" translation_description="Title for the tab that shows all the settings of this app.">Settings</string>
+    <string name="version_name" translation_description="Label for the app version name in Settings.">Version %s</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="about_title" translation_description="Title for the 'About' tab that shows miscellaneous info.">About</string>
+
+    <!--Info pages - Strings ready to translate-->
+    <string name="settings_time_zone_label" translate_description="Set time zone in app to PST.">Events in Pacific Time Zone (UTC-8)</string>
+    <string name="settings_enable_notifications" translate_description="Turn on notifications.">Enable notifications</string>
+    <string name="settings_send_anonymous_usage_statistics" translation_description="Enable sending usage statistics.">Send anonymous usage statistics</string>
+    <string name="settings_tos" translation_description="Open link to terms of service.">Terms of service</string>
+    <string name="settings_privacy_policy" translation_description="Open link to privacy policy.">Privacy policy</string>
+    <string name="settings_oss_licenses" translation_description="Open link to open source licenses.">Open sources licenses</string>
+    <string name="settings_theme_title" translation_description="Choose the app theme">Choose theme</string>
+    <string name="settings_theme_system" translation_description="Theme option to use the system default">System default</string>
+    <string name="settings_theme_light" translation_description="Theme option to use the light theme">Light</string>
+    <string name="settings_theme_dark" translation_description="Theme option to use the dark theme">Dark</string>
+    <string name="settings_theme_battery" translation_description="Theme option to use which is set by the device Battery Saver feature being enabled">Set by Battery Saver</string>
+
+    <string name="built_with_material_components" translation_description="The app was built with Material Components.">Built with Material Components.</string>
+
 </resources>

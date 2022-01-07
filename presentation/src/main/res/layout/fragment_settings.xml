@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,14 +13,13 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
-        <import type="com.google.samples.apps.iosched.BuildConfig" />
+        <!-- <import type="com.example.useful_photo_album.BuildConfig" /> -->
 
         <variable
             name="viewModel"
@@ -35,7 +33,7 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
-            style="@style/Widget.IOSched.AppBar"
+            style="@style/Widget.Upa.AppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true">
@@ -74,13 +72,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingBottom="@dimen/margin_normal"
-                    android:paddingTop="@dimen/margin_normal"
+                    android:paddingTop="@dimen/spacing_small"
+                    android:paddingBottom="@dimen/spacing_small"
                     tools:targetApi="o">
 
                     <TextView
                         android:id="@+id/settings_choose_theme"
-                        style="@style/Widget.IOSched.Settings.Button"
+                        style="@style/Widget.Upa.Settings.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="true"
@@ -91,7 +89,7 @@
                          Switch widgets. See https://material.io/develop/android/components/switch/ -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/settings_time_zone"
-                        style="@style/Widget.IOSched.Settings.Switch"
+                        style="@style/Widget.Upa.Settings.Switch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="@{viewModel.preferConferenceTimeZone}"
@@ -100,7 +98,7 @@
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/settings_enable_notifications"
-                        style="@style/Widget.IOSched.Settings.Switch"
+                        style="@style/Widget.Upa.Settings.Switch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="@{viewModel.enableNotifications}"
@@ -109,7 +107,7 @@
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/settings_send_anonymous_usage_statistics"
-                        style="@style/Widget.IOSched.Settings.Switch"
+                        style="@style/Widget.Upa.Settings.Switch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="@{viewModel.sendUsageStatistics}"
@@ -124,16 +122,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_normal"
-                        android:layout_marginLeft="@dimen/margin_normal"
-                        android:layout_marginRight="@dimen/margin_normal"
-                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:layout_marginRight="@dimen/spacing_small"
+                        android:layout_marginBottom="@dimen/spacing_small"
                         android:text="@string/about_title"
-                        android:textAppearance="@style/TextAppearance.IOSched.Overline" />
+                        android:textAppearance="@style/TextAppearance.Upa.Overline" />
 
                     <TextView
                         android:id="@+id/terms_of_service"
-                        style="@style/Widget.IOSched.Settings.Button.About"
+                        style="@style/Widget.Upa.Settings.Button.About"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/settings_tos"
@@ -141,7 +139,7 @@
 
                     <TextView
                         android:id="@+id/privacy_policy"
-                        style="@style/Widget.IOSched.Settings.Button.About"
+                        style="@style/Widget.Upa.Settings.Button.About"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/settings_privacy_policy"
@@ -149,7 +147,7 @@
 
                     <TextView
                         android:id="@+id/open_source_license"
-                        style="@style/Widget.IOSched.Settings.Button.About"
+                        style="@style/Widget.Upa.Settings.Button.About"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/settings_oss_licenses"
@@ -162,17 +160,17 @@
                         android:layout_height="wrap_content"
                         android:gravity="start|center_vertical"
                         android:minHeight="?listPreferredItemHeightSmall"
-                        android:paddingEnd="?listPreferredItemPaddingEnd"
                         android:paddingStart="?listPreferredItemPaddingStart"
-                        android:textAppearance="?textAppearanceBody2"
-                        app:versionName="@{BuildConfig.VERSION_NAME}" />
+                        android:paddingEnd="?listPreferredItemPaddingEnd"
+                        android:textAppearance="?textAppearanceBody2" />
+                    <!-- app:versionName="@{BuildConfig.VERSION_NAME}" -->
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/margin_normal"
-                        android:drawablePadding="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:drawablePadding="@dimen/spacing_tiny"
                         android:gravity="center"
                         android:text="@string/built_with_material_components"
                         android:textAppearance="?attr/textAppearanceBody1"

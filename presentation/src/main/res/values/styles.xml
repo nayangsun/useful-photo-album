@@ -210,6 +210,43 @@
         <item name="android:drawableStart">@drawable/tag_dot</item>
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
+    <!-- Settings -->
+    <style name="Widget.Upa.Settings" />
+
+    <style name="Widget.Upa.Settings.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:background">@null</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:paddingBottom">@dimen/spacing_tiny</item>
+        <item name="android:paddingEnd">?listPreferredItemPaddingEnd</item>
+        <item name="android:paddingStart">?listPreferredItemPaddingStart</item>
+        <item name="android:paddingTop">@dimen/spacing_medium</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="switchPadding">@dimen/spacing_tiny</item>
+        <item name="switchTextAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <style name="Widget.Upa.Settings.Button">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:minHeight">?listPreferredItemHeightSmall</item>
+        <item name="android:paddingBottom">@dimen/spacing_tiny</item>
+        <item name="android:paddingEnd">?listPreferredItemPaddingEnd</item>
+        <item name="android:paddingStart">?listPreferredItemPaddingStart</item>
+        <item name="android:paddingTop">@dimen/spacing_tiny</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+    </style>
+
+
+    <!-- Settings -->
+    <style name="TextAppearance.Upa.AboutButtons" parent="@style/TextAppearance.Upa.ListPrimary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.Upa.Settings.Button.About">
+        <item name="android:textAppearance">@style/TextAppearance.Upa.AboutButtons</item>
+    </style>
 
 
 </resources>

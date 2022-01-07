@@ -7,7 +7,7 @@
 
         <variable
             name="codelab"
-            type="com.google.samples.apps.iosched.model.Codelab" />
+            type="com.example.useful_photo_album.shared.model.temp.Codelab" />
 
         <variable
             name="isExpanded"
@@ -15,7 +15,7 @@
 
         <variable
             name="actionHandler"
-            type="com.google.samples.apps.iosched.ui.codelabs.CodelabsActionsHandler" />
+            type="com.example.useful_photo_album.presentation.codelabs.ui.CodelabsActionsHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

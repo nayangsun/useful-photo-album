@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

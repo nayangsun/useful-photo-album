@@ -21,11 +21,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updatePadding
 import androidx.databinding.BindingAdapter
-import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
+import com.example.useful_photo_album.presentation.agenda.ui.AgendaViewModel
 import com.google.samples.apps.iosched.databinding.FragmentAgendaBinding
 import com.google.samples.apps.iosched.model.Block
 import com.google.samples.apps.iosched.shared.util.TimeUtils
