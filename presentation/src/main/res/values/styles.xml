@@ -256,5 +256,10 @@
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 
+    <!-- Schedule -->
+    <style name="TextAppearance.Upa.ReservationStatus" parent="@style/TextAppearance.Upa.Body2">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
 
 </resources>

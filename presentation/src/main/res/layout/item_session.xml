@@ -25,15 +25,15 @@
 
         <variable
             name="userSession"
-            type="com.google.samples.apps.iosched.model.userdata.UserSession" />
+            type="com.example.useful_photo_album.shared.model.temp.userdata.UserSession" />
 
         <variable
             name="sessionClickListener"
-            type="com.google.samples.apps.iosched.ui.sessioncommon.OnSessionClickListener" />
+            type="com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionClickListener" />
 
         <variable
             name="sessionStarClickListener"
-            type="com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickListener" />
+            type="com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionStarClickListener" />
 
         <variable
             name="showReservations"
@@ -95,14 +95,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.com.google.samples.apps.iosched.ui.reservation.ReservationTextView
+        <com.google.samples.apps.iosched.ui.reservation.ReservationTextView
             android:id="@+id/reservation_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_micro"
-            android:drawablePadding="@dimen/spacing_normal"
+            android:drawablePadding="@dimen/spacing_tiny"
             android:gravity="center_vertical"
-            android:textAppearance="@style/TextAppearance.IOSched.ReservationStatus"
+            android:textAppearance="@style/TextAppearance.Upa.ReservationStatus"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/title"
             app:isReservable="@{userSession.session.isReservable}"

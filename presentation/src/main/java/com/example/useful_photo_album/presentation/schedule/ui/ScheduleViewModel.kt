@@ -19,7 +19,7 @@ package com.example.useful_photo_album.presentation.schedule.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.samples.apps.iosched.model.ConferenceDay
-import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.google.samples.apps.iosched.shared.domain.RefreshConferenceDataUseCase
 import com.google.samples.apps.iosched.shared.domain.prefs.ScheduleUiHintsShownUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndexer

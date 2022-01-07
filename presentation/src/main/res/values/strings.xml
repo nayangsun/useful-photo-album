@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">useful-photo-album</string>
+
+    <string name="title_schedule" translation_description="The title for the schedule screen where user can see their schedule for Google I/O.">Schedule</string>
+    <string name="title_home" translation_description="The title for the Home screen where user can all the updates from Google I/O team.">Home</string>
+    <string name="title_map" translation_description="The title for the map screen where user can see the map of the venue.">Map</string>
+    <string name="title_explore_io" translation_description="The title for the Augmented reality exploration screen where the user can explore the I/O venue in AR.">Explore I/O</string>
+    <string name="title_info" translation_description="The title for the info screen where user can see various information, such as FAQ and travel info.">Info</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -97,5 +105,7 @@
     <string name="settings_theme_battery" translation_description="Theme option to use which is set by the device Battery Saver feature being enabled">Set by Battery Saver</string>
 
     <string name="built_with_material_components" translation_description="The app was built with Material Components.">Built with Material Components.</string>
+    <string name="a11y_star" translation_description="Alternate text for a button used for starring or unstarring events">Star</string>
+    <string name="schedule_filters_empty" translation_description="The message shown when a schedule page is empty because no events match the current filters.">No events found.</string>
 
 </resources>

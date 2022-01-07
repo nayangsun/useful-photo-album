@@ -18,7 +18,7 @@ package com.google.samples.apps.iosched.ui.reservation
 
 import androidx.annotation.StringRes
 import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.userdata.UserEvent
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 
 /**
  * Models the different states of a reservation and a corresponding content description.

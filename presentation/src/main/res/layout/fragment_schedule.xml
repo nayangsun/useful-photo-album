@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright 2018 Google LLC
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~     https://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -94,8 +77,8 @@
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
                     android:orientation="vertical"
-                    android:paddingBottom="@dimen/schedule_page_padding_bottom"
                     android:paddingTop="@dimen/spacing_tiny"
+                    android:paddingBottom="@dimen/schedule_page_padding_bottom"
                     android:scrollbars="vertical"
                     app:layoutManager="LinearLayoutManager"
                     tools:listitem="@layout/item_session" />
@@ -108,14 +91,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
                 android:layout_marginBottom="@dimen/schedule_page_padding_bottom"
-                android:layout_marginHorizontal="@dimen/margin_large"
                 android:text="@string/schedule_filters_empty"
+                app:goneUnless="@{isEmpty &amp;&amp; !viewModel.isLoading}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:goneUnless="@{isEmpty &amp;&amp; !viewModel.isLoading}"
                 tools:targetApi="o"
                 tools:visibility="visible" />
 
@@ -138,8 +121,8 @@
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
-            android:layout_marginBottom="@dimen/snackbar_margin_bottom_fab"
             android:layout_marginEnd="@dimen/snackbar_margin_end_fab"
+            android:layout_marginBottom="@dimen/snackbar_margin_bottom_fab"
             android:visibility="gone" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
