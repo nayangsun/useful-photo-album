@@ -194,5 +194,10 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="Widget.Upa.DayIndicatorDecoration">
+        <item name="android:color">?colorPrimary</item>
+        <item name="insetVertical">8dp</item>
+    </style>
+
 
 </resources>

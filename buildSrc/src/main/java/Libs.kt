@@ -30,6 +30,7 @@ object Libs {
         const val work = "androidx.work:work-runtime-ktx:2.7.1"
         const val dataStorePreferences = "androidx.datastore:datastore-preferences:1.0.0-beta01"
         const val startup = "androidx.startup:startup-runtime:1.1.0-beta01"
+        const val annotation = "androidx.annotation:annotation:1.3.0"
 
         object Lifecycle {
             private const val lifecycleVersion = "2.3.1"

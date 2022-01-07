@@ -17,8 +17,14 @@ dependencies {
 
     api(Libs.Gson.gson)
 
+    implementation(Libs.AndroidX.core)
+    implementation(Libs.AndroidX.fragment)
+    implementation(Libs.AndroidX.annotation)
+
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
+
+    implementation(Libs.timber)
     
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

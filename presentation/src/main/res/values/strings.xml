@@ -66,6 +66,9 @@
         <item quantity="other" translation_description="Unit for duration of time by seconds. Plural.">%s seconds</item>
     </plurals>
 
+    <string name="expanded" translation_description="The label used on a button when a view is in an expanded state.">Expanded</string>
+    <string name="collapsed" translation_description="The label used on a button when a view is in an collapsed state.">Collapsed</string>
+
     <string name="travel_shuttle_service_title" translation_description="Header label for Shuttle service for travel">Shuttle service</string>
     <string name="travel_shuttle_service_description" translation_description="Information on getting to Shoreline Amphitheater travel"><![CDATA[Free event shuttles from all Google recommended hotels will be provided for Google I/O attendees. There will also be select service from San Francisco, Millbrae BART, Mountain View Caltrain, San Jose, and Oakland. We are increasing the shuttle frequency and capacity at the Mountain View Caltrain and Millbrae Bart stations. Check back closer to the event for pick-up schedules and additional shuttle pickup locations. The Shuttle Schedule  will be posted closer to the event.]]></string>
 

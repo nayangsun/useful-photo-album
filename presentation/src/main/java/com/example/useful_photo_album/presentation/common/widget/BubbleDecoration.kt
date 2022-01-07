@@ -28,8 +28,8 @@ import androidx.core.view.forEach
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.util.lerp
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.core.util.lerp
 import kotlin.math.max
 import kotlin.math.min
 
@@ -63,7 +63,7 @@ class BubbleDecoration(context: Context) : ItemDecoration() {
 
     init {
         val attrs = context.obtainStyledAttributes(
-            R.style.Widget_IOSched_DayIndicatorDecoration,
+            R.style.Widget_Upa_DayIndicatorDecoration,
             R.styleable.DayIndicatorDecoration
         )
         paint.color = attrs.getColor(R.styleable.DayIndicatorDecoration_android_color, 0)
