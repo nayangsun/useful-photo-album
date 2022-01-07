@@ -91,10 +91,10 @@
 
         <TextView
             android:id="@+id/codelab_description"
-            style="@style/Widget.IOSched.MultilineBody"
+            style="@style/Widget.Upa.MultilineBody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@{codelab.description}"
             android:textAlignment="viewStart"
             app:goneUnless="@{isExpanded}"

@@ -199,5 +199,17 @@
         <item name="insetVertical">8dp</item>
     </style>
 
+    <!-- Schedule -->
+    <style name="Widget.Upa.Tag">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Widget.Upa.Tag.Inline">
+        <item name="android:drawablePadding">@dimen/spacing_micro</item>
+        <item name="android:drawableStart">@drawable/tag_dot</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
 
 </resources>
