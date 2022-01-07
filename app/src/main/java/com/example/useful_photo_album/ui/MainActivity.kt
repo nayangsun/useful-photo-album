@@ -16,6 +16,8 @@
 
 package com.example.useful_photo_album.ui
 
+import android.content.Intent
+import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -34,7 +36,10 @@ import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
 import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.core.ui.NavigationHost
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(), NavigationHost {
@@ -58,6 +63,15 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             R.id.navigation_settings
         )
     }
+
+    @Inject
+    lateinit var snackbarMessageManager: SnackbarMessageManager
+
+    @Inject
+    lateinit var analyticsHelper: AnalyticsHelper
+
+    @Inject
+    lateinit var connectivityManager: ConnectivityManager
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -141,26 +155,26 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             // Handle launching new activities, otherwise assume the destination is handled
             // by the nav graph. We want to launch a new Activity for only the AR menu item.
             isVisible = false
-//            setOnMenuItemClickListener {
-//                if (connectivityManager.activeNetworkInfo?.isConnected == true) {
-//                    if (viewModel.arCoreAvailability.value?.isSupported == true) {
-//                        analyticsHelper.logUiEvent(
-//                            "Navigate to Explore I/O ARCore supported",
-//                            AnalyticsActions.CLICK
-//                        )
+            setOnMenuItemClickListener {
+                if (connectivityManager.activeNetworkInfo?.isConnected == true) {
+                    if (false) {
+                        analyticsHelper.logUiEvent(
+                            "Navigate to Explore I/O ARCore supported",
+                            AnalyticsActions.CLICK
+                        )
 //                        openExploreAr()
-//                    } else {
-//                        analyticsHelper.logUiEvent(
-//                            "Navigate to Explore I/O ARCore NOT supported",
-//                            AnalyticsActions.CLICK
-//                        )
-//                        openArCoreNotSupported()
-//                    }
-//                } else {
-//                    openNoConnection()
-//                }
-//                true
-//            }
+                    } else {
+                        analyticsHelper.logUiEvent(
+                            "Navigate to Explore I/O ARCore NOT supported",
+                            AnalyticsActions.CLICK
+                        )
+                        openArCoreNotSupported()
+                    }
+                } else {
+                    openNoConnection()
+                }
+                true
+            }
         }
     }
 
@@ -180,5 +194,26 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         return navHostFragment
             .childFragmentManager
             .primaryNavigationFragment as? MainNavigationFragment
+    }
+
+//    private fun openExploreAr() {
+//        val intent = Intent(
+//            this,
+//            ArActivity::class.java
+//        ).apply {
+//            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+//            putExtra(ArConstants.CAN_SIGNED_IN_USER_DEMO_AR, viewModel.canSignedInUserDemoAr.value)
+//            putExtra(ArConstants.PINNED_SESSIONS_JSON_KEY, viewModel.pinnedSessionsJson.value)
+//        }
+//        startActivity(intent)
+//    }
+
+
+    private fun openNoConnection() {
+        navigateTo(R.id.navigation_no_network_ar)
+    }
+
+    private fun openArCoreNotSupported() {
+        navigateTo(R.id.navigation_phone_does_not_support_arcore)
     }
 }

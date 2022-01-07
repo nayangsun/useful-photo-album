@@ -112,4 +112,6 @@ object Libs {
     //  depconstraints/build.gradle.kts is defined
     const val threetenbp = "org.threeten:threetenbp:1.3.6"
     const val lottie = "com.airbnb.android:lottie:3.0.0"
+
+    const val googleService = "com.google.gms:google-services:4.3.3"
 }
