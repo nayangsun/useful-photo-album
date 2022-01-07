@@ -42,6 +42,7 @@ dependencies {
     implementation(Libs.timber)
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
+    implementation(Libs.lottie)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

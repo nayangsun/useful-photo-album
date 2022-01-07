@@ -110,4 +110,5 @@ object Libs {
     //  "org.threeten:threetenbp:${Versions.threetenbp}:no-tzdb" using java-platform in the
     //  depconstraints/build.gradle.kts is defined
     const val threetenbp = "org.threeten:threetenbp:1.3.6"
+    const val lottie = "com.airbnb.android:lottie:3.0.0"
 }

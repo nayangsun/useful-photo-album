@@ -24,7 +24,7 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.core.view.postDelayed
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
 
 /**
  * A custom snackbar implementation allowing more control over placement and entry/exit animations.

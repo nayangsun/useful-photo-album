@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <!-- Note: putting everything in a RelativeLayout confuses Talkback, which does not always
+    focus on the HtmlTextView. -->
+    <LinearLayout
+        android:id="@+id/collapsible_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="?android:listPreferredItemHeightSmall"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/spacing_small"
+            android:paddingStart="@dimen/spacing_small">
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/spacing_micro"
+                android:paddingTop="@dimen/spacing_micro"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.Upa.CollapsibleCard"
+                tools:text="@string/travel_shuttle_service_title" />
+
+            <ImageView
+                android:id="@+id/expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_expand_more" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/card_description"
+            style="@style/Widget.Upa.MultilineBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_small"
+            android:paddingEnd="@dimen/spacing_small"
+            android:paddingStart="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_tiny"
+            android:textAlignment="viewStart"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="gone"
+            tools:text="@string/travel_shuttle_service_description"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</merge>

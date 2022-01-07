@@ -31,7 +31,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
 
 /**
  * Collapsible card, description of which can be HTML.

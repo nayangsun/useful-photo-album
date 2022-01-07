@@ -29,6 +29,44 @@
     <string name="codelabs_building" translation_description="Text of a button that shows where the Codelabs building is on the map.">Codelabs building</string>
     <string name="codelabs_website" translation_description="Text of a button that launches the Codelabs website.">Codelabs website</string>
     <string name="event_codelabs_title" translation_description="Header label for general information on &quot;codelabs&quot;.">Codelabs</string>
+    <string name="event_sessions_title" translation_description="Header label for general information on &quot;sessions&quot;.">Sessions</string>
+    <string name="event_sessions_description" translation_description="General information on sessions">Starting in April, in-person attendees can reserve seats for Sessions in advance of the event on the I/O website and also via the I/O mobile app (note: a portion of Session seats will be exempt from reservations and available first-come, first-served onsite). Attendance at Codelabs, App Reviews, and Office Hours is on a first-come, first-served basis onsite.</string>
+    <string name="view_sessions_text" translation_description="Link label for viewing all sessions in schedule.">View Sessions</string>
 
+    <!-- Onboarding -->
+    <string name="onboarding_get_started" translation_description="The label for the button to start using the app.">Get started</string>
+    <string name="onboarding_welcome_to_google_i_o" translation_description="The welcome message shown at the onboarding screen of the app.">Welcome to Google I/O</string>
+    <string name="onboarding_date_location" translation_description="The date and the place of Google I/O 2019. [CHAR_LIMIT=80]">May 7–9, 2019\nMountain View, CA</string>
+    <string name="onboarding_label_days" translation_description="The label for the display of the number of days until the conference starts">D</string>
+    <string name="onboarding_label_hours" translation_description="The label for the display of the number of hours until the conference starts">H</string>
+    <string name="onboarding_label_mins" translation_description="The label for the display of the number of minutes until the conference starts">M</string>
+    <string name="onboarding_label_seconds" translation_description="The label for the display of the number of seconds until the conference starts">S</string>
+    <string name="onboarding_welcome_google_io_pre" translation_description="The welcome message shown before the conference to tell that Google I/O is coming">Google I/O is coming</string>
+    <string name="onboarding_welcome_google_io_during" translation_description="The welcome message shown during the conference">Google I/O</string>
+    <string name="onboarding_welcome_google_io_post" translation_description="The welcome message shown post the conference">Watch the I/O \'19 recap and check out #io19 on social</string>
+    <string name="onboarding_signin" translation_description="The welcome message to encourage the user to sign-in to have better experience">Sign-in to receive I/O notifications and attendees can reserve seats for sessions.</string>
+
+    <plurals name="duration_days">
+        <item quantity="one" translation_description="Unit for duration of time by days. Singular.">%s day</item>
+        <item quantity="other" translation_description="Unit for duration of time by days. Plural.">%s days</item>
+    </plurals>
+
+    <plurals name="duration_hours">
+        <item quantity="one" translation_description="Unit for duration of time by hours. Singular.">%s hour</item>
+        <item quantity="other" translation_description="Unit for duration of time by hours. Plural.">%s hours</item>
+    </plurals>
+
+    <plurals name="duration_minutes">
+        <item quantity="one" translation_description="Unit for duration of time by minutes. Singular.">%s minute</item>
+        <item quantity="other" translation_description="Unit for duration of time by minutes. Plural.">%s minutes</item>
+    </plurals>
+
+    <plurals name="duration_seconds">
+        <item quantity="one" translation_description="Unit for duration of time by seconds. Singular.">%s second</item>
+        <item quantity="other" translation_description="Unit for duration of time by seconds. Plural.">%s seconds</item>
+    </plurals>
+
+    <string name="travel_shuttle_service_title" translation_description="Header label for Shuttle service for travel">Shuttle service</string>
+    <string name="travel_shuttle_service_description" translation_description="Information on getting to Shoreline Amphitheater travel"><![CDATA[Free event shuttles from all Google recommended hotels will be provided for Google I/O attendees. There will also be select service from San Francisco, Millbrae BART, Mountain View Caltrain, San Jose, and Oakland. We are increasing the shuttle frequency and capacity at the Mountain View Caltrain and Millbrae Bart stations. Check back closer to the event for pick-up schedules and additional shuttle pickup locations. The Shuttle Schedule  will be posted closer to the event.]]></string>
 
 </resources>

@@ -26,8 +26,8 @@ import androidx.core.view.forEach
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.util.isRtl
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.core.util.isRtl
 import kotlin.math.max
 import kotlin.math.roundToInt
 
@@ -40,7 +40,7 @@ class HashtagIoDecoration(context: Context) : ItemDecoration() {
 
     init {
         val attrs = context.obtainStyledAttributes(
-            R.style.Widget_IOSched_HashtagIoDecoration,
+            R.style.Widget_Upa_HashtagIoDecoration,
             R.styleable.HashtagIoDecoration
         )
         drawable = attrs.getDrawable(R.styleable.HashtagIoDecoration_android_drawable)?.apply {

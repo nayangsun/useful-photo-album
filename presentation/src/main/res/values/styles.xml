@@ -155,6 +155,44 @@
         <item name="itemHorizontalPadding">@dimen/nav_item_horizontal_padding</item>
     </style>
 
+    <!-- Navigation -->
+    <style name="Widget.Upa.NavigationBarContentFrameLayout" parent="android:Widget.Material">
+        <item name="navigationBarBorderColor">?attr/upaNavigationBarDividerColor</item>
+        <item name="navigationBarBorderSize">1dp</item>
+    </style>
+
+    <style name="Widget.Upa.HashtagIoDecoration">
+        <item name="android:drawable">@drawable/hashtag_io19</item>
+        <item name="margin">@dimen/nav_item_horizontal_padding</item>
+    </style>
+
+    <!-- textAppearance alone doesn't support line spacing attrs. Multiline body text will use
+      style="Widget.IOSched.MultilineBody" instead of the equivalent textAppearance.
+ -->
+    <style name="Widget.Upa.MultilineBody">
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <!-- Info -->
+    <style name="Widget.Upa.EventCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">?colorControlLight</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="eventTypeLogoBackground">?eventCardHeaderBackground</item>
+    </style>
+
+    <!-- Info -->
+    <style name="TextAppearance.Upa.CollapsibleCard" parent="@style/TextAppearance.Upa.ListPrimary">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <!-- Home -->
+    <style name="TextAppearance.Upa.CountdownLabel" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 
 
 </resources>

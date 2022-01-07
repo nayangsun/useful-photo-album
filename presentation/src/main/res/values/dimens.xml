@@ -68,5 +68,10 @@
     <!-- Codelabs -->
     <dimen name="codelabs_max_width_percent">@dimen/content_max_width_percent</dimen>
     <dimen name="codelabs_list_item_spacing">0dp</dimen>
+    <!-- Onboarding -->
+    <dimen name="onboarding_actions_height">112dp</dimen>
+    <dimen name="onboarding_margins">48dp</dimen>
+    <dimen name="onboarding_animation_padding">40dp</dimen>
+    <dimen name="padding_onboarding_button">12dp</dimen>
 
 </resources>

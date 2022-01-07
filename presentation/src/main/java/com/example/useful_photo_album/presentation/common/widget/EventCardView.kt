@@ -32,7 +32,7 @@ class EventCardView @JvmOverloads constructor(
 
     init {
         val arr = context.obtainStyledAttributes(
-            attrs, R.styleable.EventCardView, defStyleAttr, R.style.Widget_IOSched_EventCardView
+            attrs, R.styleable.EventCardView, defStyleAttr, R.style.Widget_Upa_EventCardView
         )
         val eventTitle = arr.getString(R.styleable.EventCardView_eventTitle)
         val eventDescription = arr.getString(R.styleable.EventCardView_eventDescription)

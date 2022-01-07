@@ -24,11 +24,12 @@ import android.view.accessibility.AccessibilityEvent
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
+import androidx.core.view.postDelayed
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieComposition
 import com.airbnb.lottie.LottieCompositionFactory
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.TimeUtils
 import kotlin.properties.ObservableProperty
 import kotlin.reflect.KProperty
 import org.threeten.bp.Duration
