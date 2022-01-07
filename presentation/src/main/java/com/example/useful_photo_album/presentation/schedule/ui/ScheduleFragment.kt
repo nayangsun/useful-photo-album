@@ -61,9 +61,9 @@ import com.google.samples.apps.iosched.util.executeAfter
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.requestApplyInsetsWhenAttached
 import com.google.samples.apps.iosched.util.setContentMaxWidth
-import com.google.samples.apps.iosched.widget.BubbleDecoration
-import com.google.samples.apps.iosched.widget.FadingSnackbar
-import com.google.samples.apps.iosched.widget.JumpSmoothScroller
+import com.example.useful_photo_album.presentation.common.widget.BubbleDecoration
+import com.example.useful_photo_album.presentation.common.widget.FadingSnackbar
+import com.example.useful_photo_album.presentation.common.widget.JumpSmoothScroller
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

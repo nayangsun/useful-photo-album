@@ -76,7 +76,7 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout
+            <com.example.useful_photo_album.presentation.common.widget.CustomSwipeRefreshLayout
                 android:id="@+id/swipe_refresh_layout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -100,7 +100,7 @@
                     app:layoutManager="LinearLayoutManager"
                     tools:listitem="@layout/item_session" />
 
-            </com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout>
+            </com.example.useful_photo_album.presentation.common.widget.CustomSwipeRefreshLayout>
 
             <TextView
                 android:id="@+id/empty"
@@ -133,7 +133,7 @@
 
         <!-- A custom snackbar implementation for more control over positioning i.e. above the
              FAB, to control its entry/exit animation. -->
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <com.example.useful_photo_album.presentation.common.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

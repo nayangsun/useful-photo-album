@@ -21,7 +21,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.samples.apps.iosched.widget.IoSlidingPaneLayout
+    <com.example.useful_photo_album.presentation.common.widget.IoSlidingPaneLayout
         android:id="@+id/sliding_pane_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -42,9 +42,9 @@
             android:layout_weight="3"
             app:navGraph="@navigation/schedule_detail" />
 
-    </com.google.samples.apps.iosched.widget.IoSlidingPaneLayout>
+    </com.example.useful_photo_album.presentation.common.widget.IoSlidingPaneLayout>
 
-    <com.google.samples.apps.iosched.widget.FadingSnackbar
+    <com.example.useful_photo_album.presentation.common.widget.FadingSnackbar
         android:id="@+id/snackbar"
         android:layout_width="@dimen/snackbar_width"
         android:layout_height="wrap_content"
