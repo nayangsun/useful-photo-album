@@ -19,17 +19,47 @@ package com.example.useful_photo_album.ui
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.transformLatest
 import javax.inject.Inject
 
 @HiltViewModel
 class MainActivityViewModel @Inject constructor(
+    signInViewModelDelegate: SignInViewModelDelegate,
     @ApplicationContext context: Context
-) : ViewModel() {
+) : ViewModel(),
+    SignInViewModelDelegate by signInViewModelDelegate {
 
 
+    val pinnedSessionsJson: StateFlow<String> = userInfo.transformLatest { user ->
+        val uid = user?.getUid()
+        if (uid != null) {
+            loadPinnedSessionsUseCase(uid).collect { result ->
+                if (result is Result.Success) {
+                    emit(result.data)
+                }
+            }
+        } else {
+            emit("")
+        }
+    }.stateIn(viewModelScope, WhileViewSubscribed, "")
+
+    fun onProfileClicked() {
+        if (isUserSignedInValue) {
+            _navigationActions.tryOffer(MainNavigationAction.OpenSignOut)
+        } else {
+            _navigationActions.tryOffer(MainNavigationAction.OpenSignIn)
+        }
+    }
+}
+
+sealed class MainNavigationAction {
+    object OpenSignIn : MainNavigationAction()
+    object OpenSignOut : MainNavigationAction()
 }
