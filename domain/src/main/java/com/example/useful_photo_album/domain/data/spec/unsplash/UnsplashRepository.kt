@@ -1,4 +1,4 @@
-package com.example.useful_photo_album.domain.data.spec.repository
+package com.example.useful_photo_album.domain.data.spec.unsplash
 
 import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
 import com.example.useful_photo_album.domain.entity.unsplash.UnsplashSearchResponse

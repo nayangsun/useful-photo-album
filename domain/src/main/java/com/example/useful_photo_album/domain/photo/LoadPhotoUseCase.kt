@@ -5,7 +5,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.example.useful_photo_album.domain.PagingUseCase
 import com.example.useful_photo_album.domain.pagingsource.PhotoPagingSource
-import com.example.useful_photo_album.domain.data.spec.repository.UnsplashRepository
+import com.example.useful_photo_album.domain.data.spec.unsplash.UnsplashRepository
 import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
