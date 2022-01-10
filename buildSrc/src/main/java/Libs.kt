@@ -13,7 +13,7 @@ object Libs {
     const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.3"
 
     object AndroidX {
-        const val core = "androidx.core:core-ktx:1.6.0"
+        const val core = "androidx.core:core-ktx:1.7.0"
         const val appcompat = "androidx.appcompat:appcompat:1.3.0"
         object Activity {
             private const val version = "1.3.1"
@@ -31,12 +31,15 @@ object Libs {
         const val dataStorePreferences = "androidx.datastore:datastore-preferences:1.0.0-beta01"
         const val startup = "androidx.startup:startup-runtime:1.1.0-beta01"
         const val annotation = "androidx.annotation:annotation:1.3.0"
+        const val slidingPaneLayout = "androidx.slidingpanelayout:slidingpanelayout:1.2.0-alpha01"
 
         object Lifecycle {
-            private const val lifecycleVersion = "2.3.1"
+            private const val lifecycleVersion = "2.4.0"
             const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
             const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07"
+            const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+            const val compiler = "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion"
         }
 
         object Navigation {

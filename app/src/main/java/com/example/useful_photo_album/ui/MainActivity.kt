@@ -16,7 +16,6 @@
 
 package com.example.useful_photo_album.ui
 
-import android.content.Intent
 import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,6 +37,7 @@ import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragmen
 import com.example.useful_photo_album.presentation.core.ui.NavigationHost
 import com.example.useful_photo_album.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

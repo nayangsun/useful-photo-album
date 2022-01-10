@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,14 +27,14 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.ScheduleDetailNavGraphDirections
-import com.google.samples.apps.iosched.databinding.FragmentScheduleTwoPaneBinding
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.databinding.FragmentScheduleTwoPaneBinding
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

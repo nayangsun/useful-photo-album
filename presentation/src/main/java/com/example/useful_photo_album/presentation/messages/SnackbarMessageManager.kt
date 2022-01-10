@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.messages
+package com.example.useful_photo_album.presentation.messages
 
 import androidx.annotation.VisibleForTesting
 import com.example.useful_photo_album.di.ApplicationScope
 import com.example.useful_photo_album.domain.data.spec.pref.PreferenceStorage
+import com.example.useful_photo_album.domain.prefs.StopSnackbarActionUseCase
 import com.example.useful_photo_album.presentation.R
-import com.example.useful_photo_album.presentation.messages.SnackbarMessage
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager.Companion.MAX_ITEMS
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager.Companion.MAX_ITEMS
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

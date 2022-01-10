@@ -107,5 +107,6 @@
     <string name="built_with_material_components" translation_description="The app was built with Material Components.">Built with Material Components.</string>
     <string name="a11y_star" translation_description="Alternate text for a button used for starring or unstarring events">Star</string>
     <string name="schedule_filters_empty" translation_description="The message shown when a schedule page is empty because no events match the current filters.">No events found.</string>
+    <string name="dont_show" translation_description="The label for opting out of in-app notification messages.">Don\'t show</string>
 
 </resources>

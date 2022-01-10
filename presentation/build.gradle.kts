@@ -14,6 +14,7 @@ android {
         targetSdk = Versions.targetSdk
     }
     buildFeatures {
+        viewBinding = true
         dataBinding = true
     }
 }
@@ -26,8 +27,12 @@ dependencies {
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.fragment)
     implementation(Libs.AndroidX.material)
+
     implementation(Libs.AndroidX.Lifecycle.viewModel)
+    implementation(Libs.AndroidX.Lifecycle.runtime)
+    kapt(Libs.AndroidX.Lifecycle.compiler)
     implementation(Libs.AndroidX.recyclerview)
+    implementation(Libs.AndroidX.slidingPaneLayout)
 
     implementation(Libs.AndroidX.Navigation.fragment)
     implementation(Libs.AndroidX.Navigation.ui)
