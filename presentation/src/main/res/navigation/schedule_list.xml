@@ -31,8 +31,8 @@
             app:destination="@id/navigation_schedule_search" />
     </fragment>
 
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_schedule_search"-->
-<!--        android:name="com.google.samples.apps.iosched.ui.search.SearchFragment"-->
-<!--        tools:layout="@layout/fragment_search" />-->
+    <fragment
+        android:id="@+id/navigation_schedule_search"
+        android:name="com.google.samples.apps.iosched.ui.search.SearchFragment"
+        tools:layout="@layout/fragment_search" />
 </navigation>

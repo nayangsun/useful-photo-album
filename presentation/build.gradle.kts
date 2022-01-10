@@ -14,6 +14,7 @@ android {
         targetSdk = Versions.targetSdk
     }
     buildFeatures {
+
         viewBinding = true
         dataBinding = true
     }

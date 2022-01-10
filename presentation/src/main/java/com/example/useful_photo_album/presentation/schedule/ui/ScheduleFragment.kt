@@ -44,7 +44,7 @@ import com.example.useful_photo_album.presentation.messages.SnackbarMessageManag
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
-import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
+import com.example.useful_photo_album.presentation.schedule.ui.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.schedule.ScheduleUiHintsDialogFragment
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment

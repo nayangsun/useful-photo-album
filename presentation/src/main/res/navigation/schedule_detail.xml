@@ -26,37 +26,37 @@
          (e.g. by the user tapping on related sessions, or tapping a speaker and then tapping one of
          their other sessions).
     -->
-<!--    <action-->
-<!--        android:id="@+id/to_session_detail"-->
-<!--        app:destination="@id/navigation_session_detail"-->
-<!--        app:popUpTo="@id/navigation_session_detail"-->
-<!--        app:popUpToInclusive="true" />-->
+    <action
+        android:id="@+id/to_session_detail"
+        app:destination="@id/navigation_session_detail"
+        app:popUpTo="@id/navigation_session_detail"
+        app:popUpToInclusive="true" />
 
-<!--    <fragment-->
-<!--        android:id="@id/navigation_session_detail"-->
-<!--        android:name="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailFragment"-->
-<!--        tools:layout="@layout/fragment_session_detail">-->
-<!--        <argument-->
-<!--            android:name="session_id"-->
-<!--            app:argType="string" />-->
-<!--        <action-->
-<!--            android:id="@+id/to_speaker_detail"-->
-<!--            app:destination="@id/navigation_speaker_detail" />-->
-<!--        &lt;!&ndash; TODO support navigating to the Map &ndash;&gt;-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@id/navigation_session_detail"
+        android:name="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailFragment"
+        tools:layout="@layout/fragment_session_detail">
+        <argument
+            android:name="session_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/to_speaker_detail"
+            app:destination="@id/navigation_speaker_detail" />
+        <!-- TODO support navigating to the Map -->
+    </fragment>
 
-<!--    <fragment-->
-<!--        android:id="@id/navigation_speaker_detail"-->
-<!--        android:name="com.google.samples.apps.iosched.ui.speaker.SpeakerFragment"-->
-<!--        tools:layout="@layout/fragment_speaker">-->
-<!--        <argument-->
-<!--            android:name="speaker_id"-->
-<!--            app:argType="string" />-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@id/navigation_speaker_detail"
+        android:name="com.google.samples.apps.iosched.ui.speaker.SpeakerFragment"
+        tools:layout="@layout/fragment_speaker">
+        <argument
+            android:name="speaker_id"
+            app:argType="string" />
+    </fragment>
 
-<!--    &lt;!&ndash; Use an empty start destination until we can load and show the first session detail. &ndash;&gt;-->
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_placeholder"-->
-<!--        android:name="androidx.fragment.app.Fragment" />-->
+    <!-- Use an empty start destination until we can load and show the first session detail. -->
+    <fragment
+        android:id="@+id/navigation_placeholder"
+        android:name="androidx.fragment.app.Fragment" />
 
 </navigation>

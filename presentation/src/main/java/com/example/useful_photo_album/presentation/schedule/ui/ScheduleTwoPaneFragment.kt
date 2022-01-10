@@ -28,12 +28,13 @@ import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.ScheduleDetailNavGraphDirections
 import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.databinding.FragmentScheduleTwoPaneBinding
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
+import com.example.useful_photo_album.presentation.schedule.ui.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
