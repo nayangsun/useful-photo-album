@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -23,6 +25,9 @@ dependencies {
 
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
+
+    implementation(Libs.Dagger.hiltAndroid)
+    kapt(Libs.Dagger.hiltCompiler)
 
     implementation(Libs.timber)
     

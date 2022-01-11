@@ -22,6 +22,7 @@ import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionStarClickListener
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.example.useful_photo_album.shared.util.tryOffer
