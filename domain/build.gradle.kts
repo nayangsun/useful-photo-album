@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -18,6 +20,9 @@ dependencies {
 
     implementation(Libs.AndroidX.paging3)
     implementation(Libs.AndroidX.Lifecycle.livedata)
+
+    implementation(Libs.Dagger.hiltAndroid)
+    kapt(Libs.Dagger.hiltCompiler)
 
     implementation(Libs.Kotlin.coroutine)
     implementation(Libs.timber)
