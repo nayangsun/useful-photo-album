@@ -17,6 +17,7 @@
 package com.example.useful_photo_album.data.signin.datasources
 
 import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
+import com.example.useful_photo_album.shared.result.Result
 import kotlinx.coroutines.flow.Flow
 
 /**

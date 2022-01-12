@@ -26,6 +26,7 @@ import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataS
 import com.example.useful_photo_album.data.signin.datasources.RegisteredUserDataSource
 import com.example.useful_photo_album.data.temp.firebase.auth.UserInfo
 import com.example.useful_photo_album.domain.sessions.NotificationAlarmUpdater
+import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.result.Result.Success
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
