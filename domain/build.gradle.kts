@@ -18,6 +18,7 @@ dependencies {
 
     implementation(Libs.inject)
 
+    implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.paging3)
     implementation(Libs.AndroidX.Lifecycle.livedata)
 
@@ -26,6 +27,9 @@ dependencies {
 
     implementation(Libs.Kotlin.coroutine)
     implementation(Libs.timber)
+
+    implementation(Libs.threetenabp)
+    implementation(Libs.threetenbp)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

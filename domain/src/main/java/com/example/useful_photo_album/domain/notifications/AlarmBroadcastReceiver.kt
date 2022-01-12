@@ -43,8 +43,8 @@ import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthIdData
 import com.google.samples.apps.iosched.shared.di.ApplicationScope
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadSessionOneShotUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionOneShotUseCase
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Success
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
