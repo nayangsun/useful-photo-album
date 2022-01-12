@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.signin.datasources
+package com.google.samples.apps.iosched.util.signin
 
-/**
- * Interface to simply get the current authenticated user ID.
- */
-interface AuthIdDataSource {
-    fun getUserId(): String?
-}
+import com.firebase.ui.auth.FirebaseUiException
+
+sealed class SignInResult
+object SignInSuccess : SignInResult()
+data class SignInFailed(val error: FirebaseUiException?) : SignInResult()

@@ -14,18 +14,11 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.data.signin.datasources
-
-import com.google.samples.apps.iosched.shared.result.Result
-import kotlinx.coroutines.flow.Flow
+package com.example.useful_photo_album.domain.data.spec.auth
 
 /**
- * A data source that listens to changes in the user data related to event
- * registration.
+ * Interface to simply get the current authenticated user ID.
  */
-interface RegisteredUserDataSource {
-    /**
-     * Returns the holder of the result of listening to the data source.
-     */
-    fun observeUserChanges(userId: String): Flow<Result<Boolean?>>
+interface AuthIdDataSource {
+    fun getUserId(): String?
 }
