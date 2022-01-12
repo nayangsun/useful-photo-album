@@ -17,6 +17,8 @@
 package com.google.samples.apps.iosched.shared.data.signin
 
 import android.net.Uri
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserInfo
 

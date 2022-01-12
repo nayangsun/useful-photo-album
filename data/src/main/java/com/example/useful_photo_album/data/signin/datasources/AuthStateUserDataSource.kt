@@ -16,8 +16,7 @@
 
 package com.example.useful_photo_album.data.signin.datasources
 
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfoBasic
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
 import kotlinx.coroutines.flow.Flow
 
 /**

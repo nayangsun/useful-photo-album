@@ -33,6 +33,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.content.getSystemService
 import androidx.core.net.toUri
 import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.domain.data.spec.auth.AuthIdDataSource
 import com.example.useful_photo_album.domain.data.spec.pref.PreferenceStorage
 import com.google.samples.apps.iosched.model.Session
 import com.google.samples.apps.iosched.model.userdata.UserSession

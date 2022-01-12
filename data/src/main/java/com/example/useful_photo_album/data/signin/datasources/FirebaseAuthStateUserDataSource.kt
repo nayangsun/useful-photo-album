@@ -20,7 +20,7 @@ import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataS
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GetTokenResult
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfoBasic
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
 import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserRegistration
 import com.google.samples.apps.iosched.shared.data.signin.FirebaseUserInfo
 import com.google.samples.apps.iosched.shared.di.ApplicationScope

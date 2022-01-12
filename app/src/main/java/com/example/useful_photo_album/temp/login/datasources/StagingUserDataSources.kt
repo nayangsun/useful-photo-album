@@ -19,14 +19,14 @@ package com.example.useful_photo_album.temp.login.datasources
 import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
-import com.google.firebase.auth.UserInfo
-import com.google.samples.apps.iosched.shared.R
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfoBasic
+import com.example.useful_photo_album.R
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
 import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataSource
 import com.example.useful_photo_album.data.signin.datasources.RegisteredUserDataSource
-import com.google.samples.apps.iosched.shared.domain.sessions.NotificationAlarmUpdater
-import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.example.useful_photo_album.data.temp.firebase.auth.UserInfo
+import com.example.useful_photo_album.domain.sessions.NotificationAlarmUpdater
+import com.example.useful_photo_album.shared.result.Result.Success
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 
@@ -36,7 +36,11 @@ import kotlinx.coroutines.flow.MutableStateFlow
  * @see LoginModule
  */
 class StagingRegisteredUserDataSource(val isRegistered: Boolean) : RegisteredUserDataSource {
-    private val userChanges = MutableStateFlow(Success(isRegistered))
+    private val userChanges = MutableStateFlow(
+        Success(
+            isRegistered
+        )
+    )
 
     override fun observeUserChanges(userId: String): Flow<Result<Boolean?>> = userChanges
 }

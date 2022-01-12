@@ -19,7 +19,7 @@ package com.example.useful_photo_album.temp.login
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import com.google.samples.apps.iosched.shared.data.login.datasources.StagingAuthenticatedUserInfo
+import com.example.useful_photo_album.temp.login.datasources.StagingAuthenticatedUserInfo
 import com.google.samples.apps.iosched.util.signin.SignInHandler
 import com.google.samples.apps.iosched.util.signin.SignInResult
 import com.google.samples.apps.iosched.util.signin.SignInSuccess
