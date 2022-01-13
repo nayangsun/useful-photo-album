@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.notifications
+package com.example.useful_photo_album.domain.notifications
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -38,18 +38,15 @@ import com.example.useful_photo_album.domain.data.spec.pref.PreferenceStorage
 import com.google.samples.apps.iosched.model.Session
 import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.shared.R
-import com.google.samples.apps.iosched.shared.data.prefs.PreferenceStorage
-import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthIdDataSource
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadSessionOneShotUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionOneShotUseCase
 import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.result.Result.Success
+import com.google.samples.apps.iosched.shared.notifications.SessionAlarmManager
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import org.threeten.bp.Instant
 import timber.log.Timber

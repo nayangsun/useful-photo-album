@@ -35,8 +35,7 @@ import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.databinding.FragmentScheduleBinding
 import com.google.samples.apps.iosched.model.ConferenceDay
 import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.di.SearchScheduleEnabledFlag
+import com.example.useful_photo_album.shared.di.SearchScheduleEnabledFlag
 import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndexer
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
@@ -44,7 +43,6 @@ import com.example.useful_photo_album.presentation.messages.SnackbarMessageManag
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
-import com.example.useful_photo_album.presentation.schedule.ui.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.schedule.ScheduleUiHintsDialogFragment
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment
@@ -62,6 +60,7 @@ import com.google.samples.apps.iosched.util.setContentMaxWidth
 import com.example.useful_photo_album.presentation.common.widget.BubbleDecoration
 import com.example.useful_photo_album.presentation.common.widget.FadingSnackbar
 import com.example.useful_photo_album.presentation.common.widget.JumpSmoothScroller
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
