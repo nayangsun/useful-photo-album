@@ -28,6 +28,8 @@ dependencies {
     api(Libs.Square.converter_gson)
     implementation(Libs.Square.okhttp3_logging)
 
+    implementation(Libs.threetenabp)
+    implementation(Libs.threetenbp)
 
     implementation(Libs.timber)
 

@@ -16,6 +16,7 @@
 
 package com.google.samples.apps.iosched.shared.data.agenda
 
+import com.example.useful_photo_album.data.agenda.generateBlocks
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.google.samples.apps.iosched.shared.data.config.AppConfigDataSource
 
