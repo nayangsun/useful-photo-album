@@ -106,6 +106,23 @@ object Libs {
         const val mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:3.2.0"
     }
 
+    object Firebase {
+        // 애널리틱스
+        const val analytics = "com.google.firebase:firebase-analytics-ktx:17.4.0"
+        // 인증
+        const val auth = "com.google.firebase:firebase-auth-ktx:19.3.1"
+        // 원격 구성
+        const val config = "com.google.firebase:firebase-config-ktx:19.1.4"
+        // Cloud Firestore
+        const val firestore = "com.google.firebase:firebase-firestore-ktx:21.4.3"
+        // Firebase용 Cloud Functions 클라이언트 SDK
+        const val functions = "com.google.firebase:firebase-functions-ktx:19.0.2"
+        // 클라우드 메시징
+        const val messaging = "com.google.firebase:firebase-messaging:20.1.6"
+        const val uiAuth = "com.firebaseui:firebase-ui-auth:4.0.0"
+
+    }
+
     const val timber = "com.jakewharton.timber:timber:4.7.1"
     const val inject = "javax.inject:javax.inject:1"
 

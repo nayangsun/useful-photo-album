@@ -33,9 +33,12 @@ dependencies {
 
     implementation(Libs.timber)
 
+    implementation(Libs.Firebase.functions)
+
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)
     androidTestImplementation(Libs.Test.espresso)
 
 }
+
 

@@ -14,14 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.config
+package com.example.useful_photo_album.data.config
 
 import android.content.res.Resources.NotFoundException
+import com.example.useful_photo_album.di.IoDispatcher
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.google.samples.apps.iosched.shared.BuildConfig
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
+import com.google.samples.apps.iosched.shared.data.config.AppConfigDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext

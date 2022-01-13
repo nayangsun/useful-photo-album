@@ -17,7 +17,7 @@
 package com.example.useful_photo_album.data.agenda
 
 import com.example.useful_photo_album.shared.model.temp.Block
-import com.google.samples.apps.iosched.shared.data.config.AgendaTimestampsKey
+import com.example.useful_photo_album.data.config.AgendaTimestampsKey
 import com.google.samples.apps.iosched.shared.data.config.AppConfigDataSource
 import org.threeten.bp.ZonedDateTime
 
