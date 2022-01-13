@@ -16,7 +16,7 @@
 
 package com.example.useful_photo_album.domain.logistics
 
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
+import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.google.samples.apps.iosched.shared.data.config.AppConfigDataSource
 import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import com.google.samples.apps.iosched.shared.domain.UseCase

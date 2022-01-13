@@ -25,7 +25,7 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.useful_photo_album.presentation.agenda.ui.AgendaViewModel
 import com.google.samples.apps.iosched.databinding.FragmentAgendaBinding
-import com.google.samples.apps.iosched.model.Block
+import com.example.useful_photo_album.shared.model.temp.Block
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment

@@ -21,7 +21,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonIOException
 import com.google.gson.JsonSyntaxException
 import com.google.samples.apps.iosched.model.Codelab
-import com.google.samples.apps.iosched.model.ConferenceData
+import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.google.samples.apps.iosched.model.Room
 import com.google.samples.apps.iosched.model.Session
 import com.google.samples.apps.iosched.model.SessionType

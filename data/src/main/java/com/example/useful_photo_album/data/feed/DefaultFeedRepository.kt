@@ -16,8 +16,8 @@
 
 package com.google.samples.apps.iosched.shared.data.feed
 
-import com.google.samples.apps.iosched.model.Announcement
-import com.google.samples.apps.iosched.model.Moment
+import com.example.useful_photo_album.shared.model.temp.Announcement
+import com.example.useful_photo_album.shared.model.temp.Moment
 import javax.inject.Inject
 import javax.inject.Singleton
 

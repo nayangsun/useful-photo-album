@@ -16,7 +16,7 @@
 
 package com.google.samples.apps.iosched.shared.data.config
 
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
+import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 
 interface AppConfigDataSource {
 

@@ -17,7 +17,7 @@
 package com.google.samples.apps.iosched.shared.data
 
 import android.content.Context
-import com.google.samples.apps.iosched.model.ConferenceData
+import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.google.samples.apps.iosched.shared.util.NetworkUtils
 import dagger.hilt.android.qualifiers.ApplicationContext
 import timber.log.Timber

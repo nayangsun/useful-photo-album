@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.model
+package com.example.useful_photo_album.shared.model.temp
 
 data class ConferenceWifiInfo(val ssid: String, val password: String)

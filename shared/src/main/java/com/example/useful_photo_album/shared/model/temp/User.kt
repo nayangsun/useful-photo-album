@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.model
+package com.example.useful_photo_album.shared.model.temp
 
-import com.google.samples.apps.iosched.model.userdata.UserEvent
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
+
 
 /**
  * Data for a user stored in a Firestore document. The events which have been personalized

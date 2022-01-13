@@ -19,7 +19,7 @@ package com.google.samples.apps.iosched.shared.data.config
 import android.content.res.Resources.NotFoundException
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
+import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.google.samples.apps.iosched.shared.BuildConfig
 import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import kotlinx.coroutines.CoroutineDispatcher

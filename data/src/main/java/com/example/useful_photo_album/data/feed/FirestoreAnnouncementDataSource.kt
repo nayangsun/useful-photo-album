@@ -20,8 +20,7 @@ import com.google.android.gms.tasks.Tasks
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.samples.apps.iosched.model.Announcement
-import com.google.samples.apps.iosched.shared.data.document2020
+import com.example.useful_photo_album.shared.model.temp.Announcement
 import com.google.samples.apps.iosched.shared.util.ColorUtils
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject

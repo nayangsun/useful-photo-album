@@ -16,7 +16,7 @@
 
 package com.google.samples.apps.iosched.shared.domain.feed
 
-import com.google.samples.apps.iosched.model.Announcement
+import com.example.useful_photo_album.shared.model.temp.Announcement
 import com.google.samples.apps.iosched.shared.data.feed.FeedRepository
 import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import com.google.samples.apps.iosched.shared.domain.UseCase

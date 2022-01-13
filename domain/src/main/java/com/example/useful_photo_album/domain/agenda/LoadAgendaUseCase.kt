@@ -16,7 +16,7 @@
 
 package com.example.useful_photo_album.domain.agenda
 
-import com.google.samples.apps.iosched.model.Block
+import com.example.useful_photo_album.shared.model.temp.Block
 import com.google.samples.apps.iosched.shared.data.agenda.AgendaRepository
 import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import com.google.samples.apps.iosched.shared.domain.UseCase

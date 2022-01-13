@@ -16,8 +16,8 @@
 
 package com.example.useful_photo_album.shared.model.temp.filters
 
-import com.google.samples.apps.iosched.model.ConferenceDay
-import com.google.samples.apps.iosched.model.Tag
+import com.example.useful_photo_album.shared.model.temp.ConferenceDay
+import com.example.useful_photo_album.shared.model.temp.Tag
 
 sealed class Filter {
 

@@ -16,7 +16,7 @@
 
 package com.google.samples.apps.iosched.shared.data
 
-import com.google.samples.apps.iosched.model.ConferenceData
+import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.google.samples.apps.iosched.shared.BuildConfig
 
 /**
