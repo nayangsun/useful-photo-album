@@ -16,9 +16,9 @@
 
 package com.example.useful_photo_album.data.feedback
 
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.firebase.functions.FirebaseFunctions
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result
 import javax.inject.Inject
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume

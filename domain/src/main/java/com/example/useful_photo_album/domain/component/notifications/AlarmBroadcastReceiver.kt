@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.domain.notifications
+package com.example.useful_photo_album.domain.component.notifications
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -42,7 +42,6 @@ import com.google.samples.apps.iosched.shared.domain.sessions.LoadSessionOneShot
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionOneShotUseCase
 import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.result.Result.Success
-import com.google.samples.apps.iosched.shared.notifications.SessionAlarmManager
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async

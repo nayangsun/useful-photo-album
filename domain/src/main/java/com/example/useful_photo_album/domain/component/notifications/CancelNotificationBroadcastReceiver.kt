@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.notifications
+package com.example.useful_photo_album.domain.component.notifications
 
 import android.app.NotificationManager
 import android.content.BroadcastReceiver

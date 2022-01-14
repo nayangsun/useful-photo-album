@@ -20,7 +20,7 @@ import com.example.useful_photo_album.data.signin.datasources.RegisteredUserData
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
-import com.google.samples.apps.iosched.shared.data.document2020
+import com.example.useful_photo_album.data.document2020
 import com.google.samples.apps.iosched.shared.util.tryOffer
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow

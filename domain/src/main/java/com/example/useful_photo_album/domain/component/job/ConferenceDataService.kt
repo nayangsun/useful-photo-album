@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.data.job
+package com.example.useful_photo_album.domain.component.job
 
 import android.app.job.JobParameters
 import android.app.job.JobService

@@ -17,7 +17,6 @@
 package com.example.useful_photo_album.shared.util
 
 import androidx.annotation.StringRes
-import com.example.useful_photo_album.shared.BuildConfig
 import com.example.useful_photo_album.shared.R
 import com.example.useful_photo_album.shared.model.temp.ConferenceDay
 import com.example.useful_photo_album.shared.model.temp.Session

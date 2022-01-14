@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.feed
+package com.example.useful_photo_album.data.feed
 
+import com.example.useful_photo_album.data.document2020
 import com.google.android.gms.tasks.Tasks
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.DocumentSnapshot

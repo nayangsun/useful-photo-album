@@ -20,10 +20,7 @@ import com.example.useful_photo_album.di.ApplicationScope
 import com.example.useful_photo_album.domain.data.spec.userevent.SessionAndUserEventRepository
 import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.shared.data.userevent.ObservableUserEvents
-import com.google.samples.apps.iosched.shared.data.userevent.SessionAndUserEventRepository
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.notifications.SessionAlarmManager
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.domain.component.notifications.SessionAlarmManager
 import com.google.samples.apps.iosched.shared.result.data
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first

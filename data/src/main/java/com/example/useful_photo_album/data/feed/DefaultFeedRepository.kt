@@ -18,7 +18,6 @@ package com.example.useful_photo_album.data.feed
 
 import com.example.useful_photo_album.shared.model.temp.Announcement
 import com.example.useful_photo_album.shared.model.temp.Moment
-import com.google.samples.apps.iosched.shared.data.feed.MomentDataSource
 import javax.inject.Inject
 import javax.inject.Singleton
 
