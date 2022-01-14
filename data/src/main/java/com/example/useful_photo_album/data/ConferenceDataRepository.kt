@@ -18,10 +18,10 @@ package com.google.samples.apps.iosched.shared.data
 
 import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.google.samples.apps.iosched.model.ConferenceDay
-import com.google.samples.apps.iosched.shared.data.db.AppDatabase
-import com.google.samples.apps.iosched.shared.data.db.CodelabFtsEntity
-import com.google.samples.apps.iosched.shared.data.db.SessionFtsEntity
-import com.google.samples.apps.iosched.shared.data.db.SpeakerFtsEntity
+import com.example.useful_photo_album.data.db.AppDatabase
+import com.example.useful_photo_album.data.db.CodelabFtsEntity
+import com.example.useful_photo_album.data.db.SessionFtsEntity
+import com.example.useful_photo_album.data.db.SpeakerFtsEntity
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow

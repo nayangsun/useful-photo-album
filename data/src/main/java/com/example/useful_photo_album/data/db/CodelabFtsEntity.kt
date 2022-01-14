@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.db
+package com.example.useful_photo_album.data.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

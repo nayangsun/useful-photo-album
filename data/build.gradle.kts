@@ -19,6 +19,10 @@ dependencies {
 
     implementation(Libs.AndroidX.dataStorePreferences)
 
+    implementation(Libs.AndroidX.Room.ktx)
+    implementation(Libs.AndroidX.Room.runtime)
+    kapt(Libs.AndroidX.Room.compiler)
+
     implementation(Libs.Dagger.hiltAndroid)
     kapt(Libs.Dagger.hiltCompiler)
 
@@ -34,11 +38,13 @@ dependencies {
     implementation(Libs.timber)
 
     implementation(Libs.Firebase.functions)
+    implementation(Libs.Firebase.config)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)
     androidTestImplementation(Libs.Test.espresso)
 
 }
+
 
 

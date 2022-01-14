@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.db
+package com.example.useful_photo_album.data.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Fts4
-import com.google.samples.apps.iosched.model.Session
 
 /**
  * This class represents [Session] data for searching with FTS.

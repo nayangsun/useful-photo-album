@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.config
+package com.example.useful_photo_album.data.config
 
 import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 
