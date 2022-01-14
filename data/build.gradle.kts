@@ -38,6 +38,7 @@ dependencies {
     implementation(Libs.timber)
 
     implementation(Libs.Firebase.functions)
+    implementation(Libs.Firebase.firestore )
     implementation(Libs.Firebase.config)
 
     testImplementation(Libs.Test.junit)

@@ -14,21 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.session.json
+package com.example.useful_photo_album.shared.util
 
-import android.graphics.Color
-import com.example.useful_photo_album.shared.util.ColorUtils
-import timber.log.Timber
+import com.example.useful_photo_album.shared.model.temp.Speaker
 
-fun parseColor(colorString: String?): Int {
-    return if (colorString != null) {
-        try {
-            ColorUtils.parseHexColor(colorString)
-        } catch (t: Throwable) {
-            Timber.d(t, "Failed to parse color")
-            Color.TRANSPARENT
-        }
-    } else {
-        Color.TRANSPARENT
-    }
+object SpeakerUtils {
+
+    fun alphabeticallyOrderedSpeakerList(speakerSet: Set<Speaker>) =
+        ArrayList<Speaker>(speakerSet).sortedBy { it.name }
 }
