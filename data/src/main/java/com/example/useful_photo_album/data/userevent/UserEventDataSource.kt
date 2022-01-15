@@ -16,13 +16,13 @@
 
 package com.example.useful_photo_album.data.userevent
 
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.userdata.UserEvent
+import com.example.useful_photo_album.domain.users.StarUpdatedStatus
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.StarUpdatedStatus
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result
 import kotlinx.coroutines.flow.Flow
 
 interface UserEventDataSource {
