@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.session.json
+package com.example.useful_photo_album.data.session.json
 
+import com.example.useful_photo_album.shared.model.temp.Speaker
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
-import com.google.samples.apps.iosched.model.Speaker
 import java.lang.reflect.Type
 
 /**

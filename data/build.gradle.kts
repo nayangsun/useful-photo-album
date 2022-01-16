@@ -10,6 +10,8 @@ android {
     defaultConfig {
         minSdk = Versions.minSdk
         targetSdk = Versions.targetSdk
+
+        buildConfigField("String", "REGISTRATION_ENDPOINT_URL", "\"https://events-dev-62d2e.appspot.com/_ah/api/registration/v1/register\"")
     }
 }
 
@@ -40,6 +42,7 @@ dependencies {
     implementation(Libs.Firebase.functions)
     implementation(Libs.Firebase.firestore )
     implementation(Libs.Firebase.config)
+    implementation(Libs.Firebase.auth)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

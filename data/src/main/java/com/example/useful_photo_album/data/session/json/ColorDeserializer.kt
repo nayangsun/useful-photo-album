@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.session.json
+package com.example.useful_photo_album.data.session.json
 
 import android.graphics.Color
 import com.example.useful_photo_album.shared.util.ColorUtils

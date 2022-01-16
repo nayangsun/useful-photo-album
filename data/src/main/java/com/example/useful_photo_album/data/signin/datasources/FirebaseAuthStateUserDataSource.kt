@@ -14,22 +14,21 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.signin.datasources
+package com.example.useful_photo_album.data.signin.datasources
 
-import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataSource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GetTokenResult
 import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserRegistration
-import com.google.samples.apps.iosched.shared.data.signin.FirebaseUserInfo
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.sessions.NotificationAlarmUpdater
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.sessions.NotificationAlarmUpdater
+import com.example.useful_photo_album.data.signin.AuthenticatedUserRegistration
+import com.example.useful_photo_album.data.signin.FirebaseUserInfo
 import com.google.samples.apps.iosched.shared.fcm.FcmTokenUpdater
-import com.google.samples.apps.iosched.shared.result.Result.Success
-import com.google.samples.apps.iosched.shared.util.suspendAndWait
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.shared.result.Result.Success
+import com.example.useful_photo_album.shared.util.suspendAndWait
+import com.example.useful_photo_album.shared.util.tryOffer
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.awaitClose
