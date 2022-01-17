@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.session.json
+package com.example.useful_photo_album.data.session.json
 
-import com.google.samples.apps.iosched.model.SessionId
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import org.threeten.bp.ZonedDateTime
 
 /**

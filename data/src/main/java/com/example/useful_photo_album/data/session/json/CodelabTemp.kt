@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.session.json
+package com.example.useful_photo_album.data.session.json
 
 /** Like `Codelab` but with a list of IDs instead of tags. */
 data class CodelabTemp(
