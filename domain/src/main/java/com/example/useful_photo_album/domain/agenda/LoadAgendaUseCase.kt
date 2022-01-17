@@ -16,10 +16,10 @@
 
 package com.example.useful_photo_album.domain.agenda
 
+import com.example.useful_photo_album.data.agenda.AgendaRepository
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import com.example.useful_photo_album.shared.model.temp.Block
-import com.google.samples.apps.iosched.shared.data.agenda.AgendaRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 

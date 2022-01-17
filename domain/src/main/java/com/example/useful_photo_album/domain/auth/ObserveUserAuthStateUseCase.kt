@@ -16,19 +16,19 @@
 
 package com.example.useful_photo_album.domain.auth
 
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfoBasic
-import com.google.samples.apps.iosched.shared.data.signin.FirebaseRegisteredUserInfo
-import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthStateUserDataSource
-import com.google.samples.apps.iosched.shared.data.signin.datasources.RegisteredUserDataSource
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfoBasic
+import com.example.useful_photo_album.data.signin.FirebaseRegisteredUserInfo
+import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataSource
+import com.example.useful_photo_album.data.signin.datasources.RegisteredUserDataSource
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.shared.util.cancelIfActive
 import com.google.samples.apps.iosched.shared.fcm.TopicSubscriber
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Success
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.util.cancelIfActive
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Success
+import com.example.useful_photo_album.shared.result.data
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.CoroutineDispatcher

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.ar
+package com.example.useful_photo_album.domain.ar
 
 object ArConstants {
     const val PINNED_SESSIONS_JSON_KEY = "pinned_sessions_json"

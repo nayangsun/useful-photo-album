@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.ar
+package com.example.useful_photo_album.domain.ar
 
-import com.google.samples.apps.iosched.shared.data.ar.ArDebugFlagEndpoint
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
+import com.example.useful_photo_album.data.ar.ArDebugFlagEndpoint
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 
