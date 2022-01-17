@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.data.userevent
+package com.example.useful_photo_album.domain.userevent
 
 import androidx.annotation.VisibleForTesting
 import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent

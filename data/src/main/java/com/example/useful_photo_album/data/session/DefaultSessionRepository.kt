@@ -16,7 +16,6 @@
 
 package com.example.useful_photo_album.data.session
 
-import com.example.useful_photo_album.domain.data.spec.session.SessionRepository
 import com.example.useful_photo_album.shared.model.temp.ConferenceDay
 import com.example.useful_photo_album.shared.model.temp.Session
 import com.example.useful_photo_album.shared.model.temp.SessionId

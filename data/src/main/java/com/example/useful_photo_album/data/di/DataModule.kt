@@ -17,8 +17,8 @@
 package com.example.useful_photo_album.data.di
 
 import com.example.useful_photo_album.data.api.UnsplashApi
+import com.example.useful_photo_album.data.unsplash.UnsplashRepository
 import com.example.useful_photo_album.data.unsplash.UnsplashRepositoryImpl
-import com.example.useful_photo_album.domain.data.spec.unsplash.UnsplashRepository
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

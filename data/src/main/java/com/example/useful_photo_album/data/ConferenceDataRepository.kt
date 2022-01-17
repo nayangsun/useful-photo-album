@@ -23,8 +23,6 @@ import com.example.useful_photo_album.data.db.SessionFtsEntity
 import com.example.useful_photo_album.data.db.SpeakerFtsEntity
 import com.example.useful_photo_album.shared.model.temp.ConferenceDay
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.shared.data.ConferenceDataSource
-import com.google.samples.apps.iosched.shared.data.UpdateSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import java.io.IOException

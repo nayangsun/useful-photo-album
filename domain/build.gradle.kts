@@ -15,7 +15,7 @@ android {
 
 dependencies {
     implementation(project(":shared"))
-
+    implementation(project(":data"))
     implementation(Libs.inject)
 
     implementation(Libs.AndroidX.core)

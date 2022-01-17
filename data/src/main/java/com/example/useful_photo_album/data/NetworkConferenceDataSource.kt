@@ -19,7 +19,6 @@ package com.example.useful_photo_album.data
 import android.content.Context
 import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.example.useful_photo_album.shared.util.NetworkUtils
-import com.google.samples.apps.iosched.shared.data.ConferenceDataSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import timber.log.Timber
 import java.io.IOException

@@ -1,4 +1,4 @@
-package com.example.useful_photo_album.domain.entity.network
+package com.example.useful_photo_album.shared.model.network
 
 import com.example.useful_photo_album.shared.json.UnknownValue
 import com.google.gson.annotations.SerializedName

@@ -14,11 +14,19 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.domain.data.spec.auth
+package com.example.useful_photo_album.data.session
+
+import com.example.useful_photo_album.shared.model.temp.ConferenceDay
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
 
 /**
- * Interface to simply get the current authenticated user ID.
+ * Single point of access to session data for the presentation layer.
+ *
+ * The session data is loaded from the bootstrap file.
  */
-interface AuthIdDataSource {
-    fun getUserId(): String?
+interface SessionRepository {
+    fun getSessions(): List<Session>
+    fun getSession(eventId: SessionId): Session
+    fun getConferenceDays(): List<ConferenceDay>
 }

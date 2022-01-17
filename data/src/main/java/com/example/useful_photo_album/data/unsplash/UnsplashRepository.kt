@@ -1,7 +1,7 @@
-package com.example.useful_photo_album.domain.data.spec.unsplash
+package com.example.useful_photo_album.data.unsplash
 
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashSearchResponse
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashPhoto
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashSearchResponse
 
 
 interface UnsplashRepository {

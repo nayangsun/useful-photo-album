@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.data.userevent
+package com.example.useful_photo_album.domain.userevent
 
 import androidx.annotation.WorkerThread
-import com.example.useful_photo_album.domain.data.spec.session.SessionRepository
+import com.example.useful_photo_album.data.session.SessionRepository
 import com.example.useful_photo_album.domain.users.StarUpdatedStatus
 import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.model.temp.ConferenceDay
@@ -27,8 +27,6 @@ import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionUseCaseResult
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.SwapAction
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -174,7 +172,7 @@ open class DefaultSessionAndUserEventRepository @Inject constructor(
                 |session id: $overlappingId, title: ${overlappingSession.title}""".trimMargin()
             )
             return Result.Success(
-                SwapAction(
+                ReservationRequestAction.SwapAction(
                     SwapRequestParameters(
                         userId,
                         fromId = overlappingId,

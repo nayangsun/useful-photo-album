@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.userevent
+package com.example.useful_photo_album.domain.userevent
 
 import com.example.useful_photo_album.data.document2020
 import com.example.useful_photo_album.data.userevent.*

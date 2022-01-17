@@ -16,8 +16,8 @@
 
 package com.example.useful_photo_album.data.api
 
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashSearchResponse
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashPhoto
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashSearchResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
