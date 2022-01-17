@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.tag
+package com.example.useful_photo_album.data.tag
 
-import com.google.samples.apps.iosched.model.Tag
+import com.example.useful_photo_album.shared.model.temp.Tag
 import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
 import javax.inject.Inject
 import javax.inject.Singleton

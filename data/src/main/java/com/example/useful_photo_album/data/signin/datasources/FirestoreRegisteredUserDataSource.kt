@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.signin.datasources
+package com.example.useful_photo_album.data.signin.datasources
 
-import com.example.useful_photo_album.data.signin.datasources.RegisteredUserDataSource
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
 import com.example.useful_photo_album.data.document2020
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.util.tryOffer
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow

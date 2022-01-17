@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.userevent
+package com.example.useful_photo_album.data.userevent
 
+import com.example.useful_photo_album.shared.model.temp.reservations.ReservationRequest
+import com.example.useful_photo_album.shared.model.temp.reservations.ReservationRequestResult
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.google.firebase.firestore.DocumentSnapshot
-import com.google.samples.apps.iosched.model.reservations.ReservationRequest
-import com.google.samples.apps.iosched.model.reservations.ReservationRequestResult
-import com.google.samples.apps.iosched.model.userdata.UserEvent
+import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource
 import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_ACTION_KEY
 import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_KEY
 import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_REQUEST_ID_KEY

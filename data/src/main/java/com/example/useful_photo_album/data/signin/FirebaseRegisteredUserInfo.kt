@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.signin
+package com.example.useful_photo_album.data.signin
 
 import android.net.Uri
 import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo

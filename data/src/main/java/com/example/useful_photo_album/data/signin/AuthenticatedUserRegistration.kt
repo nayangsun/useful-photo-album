@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.signin
+package com.example.useful_photo_album.data.signin
 
-import com.google.samples.apps.iosched.shared.BuildConfig
+import com.example.useful_photo_album.data.BuildConfig
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import java.io.IOException

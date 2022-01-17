@@ -16,6 +16,7 @@
 
 package com.example.useful_photo_album.data.session.json
 
+import com.example.useful_photo_album.data.session.json.parseColor
 import com.example.useful_photo_album.shared.model.temp.Tag
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer

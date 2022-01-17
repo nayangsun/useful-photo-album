@@ -17,7 +17,8 @@
 package com.example.useful_photo_album.data.signin
 
 import android.net.Uri
-import com.example.useful_photo_album.data.temp.firebase.auth.UserInfo
+import com.google.firebase.auth.UserInfo
+
 
 /**
  * Interface to decouple the user info from Firebase.

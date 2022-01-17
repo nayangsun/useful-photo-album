@@ -14,22 +14,23 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.userevent
+package com.example.useful_photo_album.data.userevent
 
 import androidx.annotation.VisibleForTesting
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.QuerySnapshot
-import com.google.samples.apps.iosched.model.userdata.UserEvent
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.CANCELLATION_DENIED_CUTOFF
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.CANCELLATION_DENIED_UNKNOWN
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.CHANGES_IN_RESERVATIONS
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.CHANGES_IN_WAITLIST
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.RESERVATIONS_REPLACED
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.RESERVATION_CANCELED
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_CLASH
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_CUTOFF
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_UNKNOWN
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessageChangeType.WAITLIST_CANCELED
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.CANCELLATION_DENIED_CUTOFF
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.CANCELLATION_DENIED_UNKNOWN
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.CHANGES_IN_RESERVATIONS
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.CHANGES_IN_WAITLIST
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.RESERVATIONS_REPLACED
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.RESERVATION_CANCELED
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_CLASH
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_CUTOFF
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.RESERVATION_DENIED_UNKNOWN
+import com.example.useful_photo_album.data.userevent.UserEventMessageChangeType.WAITLIST_CANCELED
+import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource
 import timber.log.Timber
 
 /**
