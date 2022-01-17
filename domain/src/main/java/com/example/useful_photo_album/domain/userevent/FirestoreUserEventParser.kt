@@ -16,19 +16,18 @@
 
 package com.example.useful_photo_album.domain.userevent
 
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_ACTION_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_REQUEST_ID_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_REQ_ID_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_RESULT_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_TIME_KEY
+import com.example.useful_photo_album.domain.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_STATUS_KEY
 import com.example.useful_photo_album.shared.model.temp.reservations.ReservationRequest
 import com.example.useful_photo_album.shared.model.temp.reservations.ReservationRequestResult
 import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.google.firebase.firestore.DocumentSnapshot
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_ACTION_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_REQUEST_REQUEST_ID_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_REQ_ID_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_RESULT_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_RESULT_TIME_KEY
-import com.google.samples.apps.iosched.shared.data.userevent.FirestoreUserEventDataSource.Companion.RESERVATION_STATUS_KEY
 import timber.log.Timber
 
 /**

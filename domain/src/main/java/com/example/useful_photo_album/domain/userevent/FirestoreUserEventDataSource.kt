@@ -17,7 +17,6 @@
 package com.example.useful_photo_album.domain.userevent
 
 import com.example.useful_photo_album.data.document2020
-import com.example.useful_photo_album.data.userevent.*
 import com.google.android.gms.tasks.Tasks
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore

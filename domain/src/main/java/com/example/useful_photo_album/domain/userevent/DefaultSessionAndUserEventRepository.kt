@@ -27,6 +27,7 @@ import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionUseCaseResult
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
+import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
 import kotlinx.coroutines.ExperimentalCoroutinesApi

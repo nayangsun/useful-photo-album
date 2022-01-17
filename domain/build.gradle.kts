@@ -28,6 +28,11 @@ dependencies {
     implementation(Libs.Kotlin.coroutine)
     implementation(Libs.timber)
 
+    implementation(Libs.Firebase.functions)
+    implementation(Libs.Firebase.firestore )
+    implementation(Libs.Firebase.config)
+    implementation(Libs.Firebase.auth)
+
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
 
