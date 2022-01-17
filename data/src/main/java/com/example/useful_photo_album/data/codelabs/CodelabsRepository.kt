@@ -17,7 +17,7 @@
 package com.example.useful_photo_album.data.codelabs
 
 import com.example.useful_photo_album.shared.model.temp.Codelab
-import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
+import com.example.useful_photo_album.data.ConferenceDataRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -16,12 +16,9 @@
 
 package com.example.useful_photo_album.domain.data.spec.session
 
-import com.google.samples.apps.iosched.model.ConferenceDay
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
-import com.google.samples.apps.iosched.shared.domain.sessions.SessionNotFoundException
-import javax.inject.Inject
+import com.example.useful_photo_album.shared.model.temp.ConferenceDay
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
 
 /**
  * Single point of access to session data for the presentation layer.

@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package com.example.useful_photo_album.data
 
 import android.content.Context
 import com.example.useful_photo_album.shared.model.temp.ConferenceData
 import com.example.useful_photo_album.shared.util.NetworkUtils
+import com.google.samples.apps.iosched.shared.data.ConferenceDataSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import timber.log.Timber
 import java.io.IOException
@@ -45,7 +46,7 @@ class NetworkConferenceDataSource @Inject constructor(
             Timber.e(e)
             throw e
         }
-        val body = responseSource.body()?.byteStream() ?: return null
+        val body = responseSource.body?.byteStream() ?: return null
 
         Timber.d("Parsing new data")
         val parsedData = try {
@@ -68,7 +69,7 @@ class NetworkConferenceDataSource @Inject constructor(
         } catch (e: IOException) {
             return null
         }
-        val body = responseSource?.body()?.byteStream()
+        val body = responseSource?.body?.byteStream()
         if (body == null) {
             Timber.i("No cache found")
             return null

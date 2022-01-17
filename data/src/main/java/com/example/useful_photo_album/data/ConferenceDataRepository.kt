@@ -14,15 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package com.example.useful_photo_album.data
 
 import com.example.useful_photo_album.shared.model.temp.ConferenceData
-import com.google.samples.apps.iosched.model.ConferenceDay
 import com.example.useful_photo_album.data.db.AppDatabase
 import com.example.useful_photo_album.data.db.CodelabFtsEntity
 import com.example.useful_photo_album.data.db.SessionFtsEntity
 import com.example.useful_photo_album.data.db.SpeakerFtsEntity
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.shared.model.temp.ConferenceDay
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.google.samples.apps.iosched.shared.data.ConferenceDataSource
+import com.google.samples.apps.iosched.shared.data.UpdateSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import java.io.IOException

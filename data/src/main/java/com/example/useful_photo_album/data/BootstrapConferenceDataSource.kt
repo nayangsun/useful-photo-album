@@ -14,10 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package com.example.useful_photo_album.data
 
 import com.example.useful_photo_album.shared.model.temp.ConferenceData
-import com.google.samples.apps.iosched.shared.BuildConfig
+import com.example.useful_photo_album.shared.BuildConfig
+import com.example.useful_photo_album.shared.BuildConfig.BOOTSTRAP_CONF_DATA_FILENAME
+import com.google.samples.apps.iosched.shared.data.ConferenceDataSource
 
 /**
  * Loads bootstrap data file from resources and parses it.

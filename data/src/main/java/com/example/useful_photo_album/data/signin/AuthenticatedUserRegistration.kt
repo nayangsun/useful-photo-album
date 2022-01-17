@@ -53,14 +53,14 @@ object AuthenticatedUserRegistration {
                 Timber.e(e)
                 return@withContext
             }
-            val body = response.body()?.string() ?: ""
+            val body = response.body?.string() ?: ""
 
             if (body.isEmpty() || !response.isSuccessful) {
-                Timber.e("Network error calling registration point (response ${response.code()} )")
+                Timber.e("Network error calling registration point (response ${response.code} )")
                 return@withContext
             }
             Timber.d("Registration point called, user is registered: $body")
-            response.body()?.close()
+            response.body?.close()
         }
     }
 }

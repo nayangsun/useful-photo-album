@@ -14,21 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package com.example.useful_photo_album.data
 
 import androidx.annotation.Keep
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonIOException
 import com.google.gson.JsonSyntaxException
-import com.google.samples.apps.iosched.model.Codelab
-import com.example.useful_photo_album.shared.model.temp.ConferenceData
-import com.google.samples.apps.iosched.model.Room
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionType
-import com.google.samples.apps.iosched.model.SessionType.KEYNOTE
-import com.google.samples.apps.iosched.model.SessionType.SESSION
-import com.google.samples.apps.iosched.model.Speaker
-import com.google.samples.apps.iosched.model.Tag
+import com.example.useful_photo_album.shared.model.temp.SessionType.KEYNOTE
+import com.example.useful_photo_album.shared.model.temp.SessionType.SESSION
 import com.example.useful_photo_album.data.session.json.CodelabDeserializer
 import com.example.useful_photo_album.data.session.json.CodelabTemp
 import com.example.useful_photo_album.data.session.json.RoomDeserializer
@@ -36,6 +29,7 @@ import com.example.useful_photo_album.data.session.json.SessionDeserializer
 import com.example.useful_photo_album.data.session.json.SessionTemp
 import com.example.useful_photo_album.data.session.json.SpeakerDeserializer
 import com.example.useful_photo_album.data.session.json.TagDeserializer
+import com.example.useful_photo_album.shared.model.temp.*
 import java.io.InputStream
 
 object ConferenceDataJsonParser {

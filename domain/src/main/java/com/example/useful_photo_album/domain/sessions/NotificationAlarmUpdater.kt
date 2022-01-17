@@ -17,13 +17,11 @@
 package com.example.useful_photo_album.domain.sessions
 
 import com.example.useful_photo_album.di.ApplicationScope
-import com.example.useful_photo_album.domain.data.spec.userevent.SessionAndUserEventRepository
 import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.shared.data.userevent.ObservableUserEvents
 import com.example.useful_photo_album.domain.component.notifications.SessionAlarmManager
 import com.google.samples.apps.iosched.shared.result.data
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import javax.inject.Inject

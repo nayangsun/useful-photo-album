@@ -18,7 +18,6 @@ package com.example.useful_photo_album.domain.users
 
 import com.example.useful_photo_album.di.IoDispatcher
 import com.example.useful_photo_album.domain.UseCase
-import com.example.useful_photo_album.domain.data.spec.userevent.SessionAndUserEventRepository
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.example.useful_photo_album.shared.result.Result
 import kotlinx.coroutines.CoroutineDispatcher
