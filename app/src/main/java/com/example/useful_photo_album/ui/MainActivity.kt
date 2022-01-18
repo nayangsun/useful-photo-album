@@ -33,6 +33,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
+import com.example.useful_photo_album.presentation.MainActivityViewModel
 import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.core.ui.NavigationHost
 import com.example.useful_photo_album.shared.analytics.AnalyticsActions

@@ -27,7 +27,7 @@ import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.example.useful_photo_album.shared.util.tryOffer
 import com.example.useful_photo_album.shared.result.Result
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.ui.SignInViewModelDelegate
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel

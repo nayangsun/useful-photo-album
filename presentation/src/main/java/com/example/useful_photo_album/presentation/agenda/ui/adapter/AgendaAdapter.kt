@@ -23,8 +23,8 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.samples.apps.iosched.BR
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.BR
 import com.example.useful_photo_album.shared.model.temp.Block
 import org.threeten.bp.ZoneId
 

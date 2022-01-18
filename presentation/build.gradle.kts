@@ -31,6 +31,7 @@ dependencies {
 
     implementation(Libs.AndroidX.Lifecycle.viewModel)
     implementation(Libs.AndroidX.Lifecycle.runtime)
+    implementation(project(mapOf("path" to ":data")))
     kapt(Libs.AndroidX.Lifecycle.compiler)
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.slidingPaneLayout)

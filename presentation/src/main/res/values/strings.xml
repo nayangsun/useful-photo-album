@@ -112,4 +112,7 @@
     <string name="event_starred" translation_description="The message shown when user adds an event to their schedule.">Event added to your starred items</string>
     <string name="event_unstarred" translation_description="The message shown when user removes an event from their schedule.">Event removed from starred items</string>
 
+    <!-- Iosched -->
+    <string name="agenda_duration" translatable="false">%1$s – %2$s</string>
+
 </resources>

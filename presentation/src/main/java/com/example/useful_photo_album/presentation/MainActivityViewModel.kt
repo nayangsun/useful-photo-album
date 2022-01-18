@@ -14,36 +14,44 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.ui
+package com.example.useful_photo_album.presentation
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.useful_photo_album.domain.ar.LoadArDebugFlagUseCase
 import com.example.useful_photo_album.domain.sessions.LoadPinnedSessionsJsonUseCase
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.result.Result.Success
+import com.example.useful_photo_album.presentation.signin.ui.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
+import com.example.useful_photo_album.shared.util.tryOffer
+import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.transformLatest
+import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
 @HiltViewModel
 class MainActivityViewModel @Inject constructor(
     signInViewModelDelegate: SignInViewModelDelegate,
+    themedActivityDelegate: ThemedActivityDelegate,
     loadPinnedSessionsUseCase: LoadPinnedSessionsJsonUseCase,
+    loadArDebugFlagUseCase: LoadArDebugFlagUseCase,
     @ApplicationContext context: Context
 ) : ViewModel(),
-    SignInViewModelDelegate by signInViewModelDelegate {
+    SignInViewModelDelegate by signInViewModelDelegate,
+    ThemedActivityDelegate by themedActivityDelegate {
 
+    private val _navigationActions = Channel<MainNavigationAction>(Channel.CONFLATED)
+    val navigationActions = _navigationActions.receiveAsFlow()
 
     val pinnedSessionsJson: StateFlow<String> = userInfo.transformLatest { user ->
         val uid = user?.getUid()
         if (uid != null) {
             loadPinnedSessionsUseCase(uid).collect { result ->
-                if (result is Result.Success) {
+                if (result is Success) {
                     emit(result.data)
                 }
             }
@@ -51,6 +59,28 @@ class MainActivityViewModel @Inject constructor(
             emit("")
         }
     }.stateIn(viewModelScope, WhileViewSubscribed, "")
+
+    val canSignedInUserDemoAr: StateFlow<Boolean> = userInfo.transformLatest {
+        val result = loadArDebugFlagUseCase(Unit)
+        if (result is Success) {
+            emit(result.data)
+        }
+    }.stateIn(viewModelScope, WhileViewSubscribed, false)
+
+    val arCoreAvailability: StateFlow<ArCoreApk.Availability?> = flow<ArCoreApk.Availability> {
+        var result: ArCoreApk.Availability? = null
+        while (result == null) {
+            val availability = ArCoreApk.getInstance().checkAvailability(context)
+            // If the availability is transient, we need to call availability check again
+            // as in https://developers.google.com/ar/develop/java/enable-arcore#check_supported
+            if (availability.isTransient) {
+                delay(1000)
+            } else {
+                result = availability
+                emit(result)
+            }
+        }
+    }.stateIn(viewModelScope, WhileViewSubscribed, null)
 
     fun onProfileClicked() {
         if (isUserSignedInValue) {

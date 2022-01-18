@@ -18,6 +18,7 @@ package com.google.samples.apps.iosched.ui.signin
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.useful_photo_album.presentation.signin.ui.SignInViewModelDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import timber.log.Timber
