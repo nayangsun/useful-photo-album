@@ -23,7 +23,7 @@ import androidx.appcompat.app.AppCompatDialogFragment
 import com.example.useful_photo_album.di.ApplicationScope
 import com.example.useful_photo_album.presentation.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.shared.domain.prefs.MarkScheduleUiHintsShownUseCase
+import com.example.useful_photo_album.domain.prefs.MarkScheduleUiHintsShownUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

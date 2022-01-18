@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.settings
+package com.example.useful_photo_album.domain.settings
 
 import android.os.Build
+import com.example.useful_photo_album.data.pref.PreferenceStorage
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import com.google.samples.apps.iosched.model.Theme
 import com.google.samples.apps.iosched.model.Theme.BATTERY_SAVER
 import com.google.samples.apps.iosched.model.themeFromStorageKey
-import com.google.samples.apps.iosched.shared.data.prefs.PreferenceStorage
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.first

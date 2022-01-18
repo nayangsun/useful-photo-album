@@ -25,7 +25,7 @@ import com.example.useful_photo_album.di.ApplicationScope
 import com.example.useful_photo_album.di.IoDispatcher
 import com.example.useful_photo_album.domain.FlowUseCase
 import com.example.useful_photo_album.shared.util.cancelIfActive
-import com.google.samples.apps.iosched.shared.fcm.TopicSubscriber
+import com.example.useful_photo_album.domain.fcm.TopicSubscriber
 import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.result.Result.Success
 import com.example.useful_photo_album.shared.result.data
@@ -70,11 +70,9 @@ open class ObserveUserAuthStateUseCase @Inject constructor(
             observeUserRegisteredChangesJob.cancelIfActive()
 
             if (userResult is Success) {
-                if (userResult.data != null) {
-                    processUserData(userResult.data)
-                } else {
-                    send(Success(FirebaseRegisteredUserInfo(null, false)))
-                }
+                userResult.data?.let {
+                    processUserData(it)
+                } ?: send(Success(FirebaseRegisteredUserInfo(null, false)))
             } else {
                 send(Result.Error(Exception("FirebaseAuth error")))
             }

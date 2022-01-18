@@ -36,7 +36,7 @@ import com.google.samples.apps.iosched.databinding.FragmentScheduleBinding
 import com.google.samples.apps.iosched.model.ConferenceDay
 import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.di.SearchScheduleEnabledFlag
-import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndexer
+import com.example.useful_photo_album.domain.sessions.ConferenceDayIndexer
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.sessions
+package com.example.useful_photo_album.domain.sessions
 
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.data.userevent.DefaultSessionAndUserEventRepository
-import com.google.samples.apps.iosched.shared.data.userevent.UserEventMessage
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.domain.userevent.DefaultSessionAndUserEventRepository
+import com.example.useful_photo_album.domain.userevent.UserEventMessage
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Success
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow

@@ -16,12 +16,12 @@
 
 package com.example.useful_photo_album.domain.speakers
 
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.Speaker
-import com.google.samples.apps.iosched.model.SpeakerId
-import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
+import com.example.useful_photo_album.data.ConferenceDataRepository
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.Speaker
+import com.example.useful_photo_album.shared.model.temp.SpeakerId
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 

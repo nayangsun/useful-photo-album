@@ -2,8 +2,8 @@ package com.example.useful_photo_album.domain.pagingsource
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.useful_photo_album.domain.data.spec.unsplash.UnsplashRepository
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
+import com.example.useful_photo_album.data.unsplash.UnsplashRepository
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashPhoto
 
 
 private const val UNSPLASH_STARTING_PAGE_INDEX = 1

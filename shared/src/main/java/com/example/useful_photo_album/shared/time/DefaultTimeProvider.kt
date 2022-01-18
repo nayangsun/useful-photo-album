@@ -14,16 +14,28 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.domain.sessions
+package com.example.useful_photo_album.shared.time
 
-import com.example.useful_photo_album.data.ConferenceDataRepository
-import com.example.useful_photo_album.shared.model.temp.ConferenceDay
-import javax.inject.Inject
+import org.threeten.bp.Instant
 
-class GetConferenceDaysUseCase @Inject constructor(
-    private val conferenceDataRepository: ConferenceDataRepository
-) {
-    operator fun invoke(): List<ConferenceDay> {
-        return conferenceDataRepository.getConferenceDays()
+interface TimeProvider {
+    fun now(): Instant
+}
+
+object DefaultTimeProvider : TimeProvider {
+    private var delegate: TimeProvider = WallclockTimeProvider
+
+    fun setDelegate(newDelegate: TimeProvider?) {
+        delegate = newDelegate ?: WallclockTimeProvider
+    }
+
+    override fun now(): Instant {
+        return delegate.now()
+    }
+}
+
+internal object WallclockTimeProvider : TimeProvider {
+    override fun now(): Instant {
+        return Instant.now()
     }
 }

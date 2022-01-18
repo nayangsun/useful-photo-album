@@ -25,10 +25,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.getSystemService
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.util.toEpochMilli
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.util.toEpochMilli
 import dagger.hilt.android.qualifiers.ApplicationContext
 import org.threeten.bp.Instant
 import org.threeten.bp.temporal.ChronoUnit

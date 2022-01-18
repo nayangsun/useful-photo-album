@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.settings
+package com.example.useful_photo_album.domain.settings
 
 import androidx.core.os.BuildCompat
+import com.example.useful_photo_album.di.MainImmediateDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import com.google.samples.apps.iosched.model.Theme
-import com.google.samples.apps.iosched.shared.di.MainImmediateDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 

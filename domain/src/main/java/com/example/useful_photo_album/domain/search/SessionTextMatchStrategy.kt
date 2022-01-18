@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.search
+package com.example.useful_photo_album.domain.search
 
 import androidx.core.os.trace
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.data.db.AppDatabase
+import com.example.useful_photo_album.data.db.AppDatabase
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import javax.inject.Inject
 
 interface SessionTextMatchStrategy {

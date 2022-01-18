@@ -18,8 +18,8 @@ package com.example.useful_photo_album.domain.component.job
 
 import android.app.job.JobParameters
 import android.app.job.JobService
-import com.google.samples.apps.iosched.shared.domain.RefreshConferenceDataUseCase
-import com.google.samples.apps.iosched.shared.result.succeeded
+import com.example.useful_photo_album.domain.RefreshConferenceDataUseCase
+import com.example.useful_photo_album.shared.result.succeeded
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

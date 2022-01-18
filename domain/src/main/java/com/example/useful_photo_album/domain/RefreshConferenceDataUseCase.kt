@@ -14,20 +14,29 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.domain.settings
+package com.example.useful_photo_album.domain
 
-import com.example.useful_photo_album.data.pref.PreferenceStorage
+import com.example.useful_photo_album.data.ConferenceDataRepository
 import com.example.useful_photo_album.di.IoDispatcher
-import com.example.useful_photo_album.domain.FlowUseCase
-import com.example.useful_photo_album.shared.result.Result
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.flow.map
 import javax.inject.Inject
+import kotlinx.coroutines.CoroutineDispatcher
+import timber.log.Timber
 
-class GetAnalyticsSettingUseCase @Inject constructor(
-    private val preferenceStorage: PreferenceStorage,
+/**
+ * Forces a refresh in the conference data repository.
+ */
+open class RefreshConferenceDataUseCase @Inject constructor(
+    private val repository: ConferenceDataRepository,
     @IoDispatcher dispatcher: CoroutineDispatcher
-) : FlowUseCase<Unit, Boolean>(dispatcher) {
-    override fun execute(parameters: Unit) =
-        preferenceStorage.sendUsageStatistics.map { Result.Success(it) }
+) : UseCase<Any, Boolean>(dispatcher) {
+
+    override suspend fun execute(parameters: Any): Boolean {
+        try {
+            repository.refreshCacheWithRemoteConferenceData()
+        } catch (e: Exception) {
+            Timber.e(e, "Conference data refresh failed")
+            throw e
+        }
+        return true
+    }
 }

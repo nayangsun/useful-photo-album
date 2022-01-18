@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.feed
+package com.example.useful_photo_album.domain.feed
 
+import com.example.useful_photo_album.data.feed.FeedRepository
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import com.example.useful_photo_album.shared.model.temp.Announcement
-import com.google.samples.apps.iosched.shared.data.feed.FeedRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 import org.threeten.bp.Instant

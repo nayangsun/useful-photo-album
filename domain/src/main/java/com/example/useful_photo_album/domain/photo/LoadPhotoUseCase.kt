@@ -3,10 +3,10 @@ package com.example.useful_photo_album.domain.photo
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
+import com.example.useful_photo_album.data.unsplash.UnsplashRepository
 import com.example.useful_photo_album.domain.PagingUseCase
 import com.example.useful_photo_album.domain.pagingsource.PhotoPagingSource
-import com.example.useful_photo_album.domain.data.spec.unsplash.UnsplashRepository
-import com.example.useful_photo_album.domain.entity.unsplash.UnsplashPhoto
+import com.example.useful_photo_album.shared.model.unsplash.UnsplashPhoto
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

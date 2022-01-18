@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.users
+package com.example.useful_photo_album.domain.users
 
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.data.userevent.SessionAndUserEventRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
-import com.google.samples.apps.iosched.shared.result.Result.Error
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
+import com.example.useful_photo_album.domain.userevent.SessionAndUserEventRepository
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.result.Result.Success
+import com.example.useful_photo_album.shared.result.Result.Error
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 

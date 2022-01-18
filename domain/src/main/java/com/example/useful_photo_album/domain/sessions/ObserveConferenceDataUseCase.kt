@@ -16,10 +16,10 @@
 
 package com.example.useful_photo_album.domain.sessions
 
-import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.data.ConferenceDataRepository
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.shared.result.Result
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

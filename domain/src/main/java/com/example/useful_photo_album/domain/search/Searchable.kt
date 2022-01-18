@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.search
+package com.example.useful_photo_album.domain.search
 
-import com.google.samples.apps.iosched.model.Codelab
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.Speaker
+import com.example.useful_photo_album.shared.model.temp.Codelab
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.Speaker
 
 /**
  * Sealed class that represents searchable contents.

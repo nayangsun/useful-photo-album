@@ -25,11 +25,11 @@ import com.example.useful_photo_album.shared.model.temp.Session
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionUseCaseResult
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
+import com.example.useful_photo_album.domain.sessions.LoadUserSessionUseCaseResult
+import com.example.useful_photo_album.domain.users.ReservationRequestAction
+import com.example.useful_photo_album.domain.users.ReservationRequestAction.RequestAction
+import com.example.useful_photo_album.domain.users.SwapRequestAction
+import com.example.useful_photo_album.domain.users.SwapRequestParameters
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import javax.inject.Inject
 import javax.inject.Singleton

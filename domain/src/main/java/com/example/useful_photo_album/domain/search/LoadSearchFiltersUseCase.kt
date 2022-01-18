@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.search
+package com.example.useful_photo_album.domain.search
 
-import com.google.samples.apps.iosched.model.Tag
-import com.google.samples.apps.iosched.model.filters.Filter
-import com.google.samples.apps.iosched.model.filters.Filter.DateFilter
-import com.google.samples.apps.iosched.model.filters.Filter.TagFilter
-import com.google.samples.apps.iosched.shared.data.ConferenceDataRepository
-import com.google.samples.apps.iosched.shared.data.tag.TagRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
+import com.example.useful_photo_album.data.ConferenceDataRepository
+import com.example.useful_photo_album.data.tag.TagRepository
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
+import com.example.useful_photo_album.shared.model.temp.Tag
+import com.example.useful_photo_album.shared.model.temp.filters.Filter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.DateFilter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.TagFilter
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 

@@ -21,7 +21,7 @@ import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import com.google.samples.apps.iosched.shared.di.MainDispatcher
 import com.example.useful_photo_album.shared.di.ReservationEnabledFlag
 import com.google.samples.apps.iosched.shared.domain.auth.ObserveUserAuthStateUseCase
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefIsShownUseCase
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefIsShownUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

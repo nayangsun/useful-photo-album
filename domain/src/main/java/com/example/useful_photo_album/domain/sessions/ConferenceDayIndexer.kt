@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.sessions
+package com.example.useful_photo_album.domain.sessions
 
-import com.google.samples.apps.iosched.model.ConferenceDay
+import com.example.useful_photo_album.shared.model.temp.ConferenceDay
 
 class ConferenceDayIndexer(
     /**

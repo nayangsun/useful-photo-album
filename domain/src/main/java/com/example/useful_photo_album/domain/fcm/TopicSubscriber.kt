@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.fcm
+package com.example.useful_photo_album.domain.fcm
 
 /**
  * Used to subscribe users to server topics.

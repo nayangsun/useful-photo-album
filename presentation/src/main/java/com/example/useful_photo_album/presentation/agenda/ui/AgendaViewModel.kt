@@ -20,7 +20,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.google.samples.apps.iosched.shared.domain.agenda.LoadAgendaUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
 import com.google.samples.apps.iosched.shared.result.data
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import com.google.samples.apps.iosched.util.WhileViewSubscribed

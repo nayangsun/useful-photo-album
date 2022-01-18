@@ -22,16 +22,21 @@ dependencies {
     implementation(Libs.AndroidX.paging3)
     implementation(Libs.AndroidX.Lifecycle.livedata)
 
+    implementation(Libs.AndroidX.Room.ktx)
+    implementation(Libs.AndroidX.Room.runtime)
+    kapt(Libs.AndroidX.Room.compiler)
+
     implementation(Libs.Dagger.hiltAndroid)
     kapt(Libs.Dagger.hiltCompiler)
 
     implementation(Libs.Kotlin.coroutine)
     implementation(Libs.timber)
 
-    implementation(Libs.Firebase.functions)
-    implementation(Libs.Firebase.firestore )
-    implementation(Libs.Firebase.config)
     implementation(Libs.Firebase.auth)
+    implementation(Libs.Firebase.config)
+    implementation(Libs.Firebase.firestore)
+    implementation(Libs.Firebase.functions)
+    implementation(Libs.Firebase.messaging)
 
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.feed
+package com.example.useful_photo_album.domain.feed
 
-import com.google.samples.apps.iosched.shared.di.MainDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState.ENDED
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState.STARTED
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState.UPCOMING
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.time.TimeProvider
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.di.MainDispatcher
+import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.domain.feed.ConferenceState.ENDED
+import com.example.useful_photo_album.domain.feed.ConferenceState.STARTED
+import com.example.useful_photo_album.domain.feed.ConferenceState.UPCOMING
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.time.TimeProvider
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay

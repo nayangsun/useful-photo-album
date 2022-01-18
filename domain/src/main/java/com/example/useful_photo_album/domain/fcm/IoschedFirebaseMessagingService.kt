@@ -22,11 +22,9 @@ import android.app.job.JobScheduler.RESULT_FAILURE
 import android.app.job.JobScheduler.RESULT_SUCCESS
 import android.content.ComponentName
 import android.content.Context
-import androidx.core.content.ContextCompat.getSystemService
 import com.example.useful_photo_album.domain.component.job.ConferenceDataService
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.google.samples.apps.iosched.shared.data.job.ConferenceDataService
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
 

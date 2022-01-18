@@ -22,13 +22,13 @@ import com.google.samples.apps.iosched.model.ConferenceDay
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.google.samples.apps.iosched.shared.domain.RefreshConferenceDataUseCase
 import com.google.samples.apps.iosched.shared.domain.prefs.ScheduleUiHintsShownUseCase
-import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndexer
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadScheduleUserSessionsParameters
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadScheduleUserSessionsResult
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadScheduleUserSessionsUseCase
+import com.example.useful_photo_album.domain.sessions.ConferenceDayIndexer
+import com.example.useful_photo_album.domain.sessions.LoadScheduleUserSessionsParameters
+import com.example.useful_photo_album.domain.sessions.LoadScheduleUserSessionsResult
+import com.example.useful_photo_album.domain.sessions.LoadScheduleUserSessionsUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.ObserveConferenceDataUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.fcm.TopicSubscriber
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.domain.fcm.TopicSubscriber
 import com.google.samples.apps.iosched.shared.result.Result.Success
 import com.google.samples.apps.iosched.shared.result.data
 import com.google.samples.apps.iosched.shared.result.successOr
@@ -37,7 +37,6 @@ import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
-import com.google.samples.apps.iosched.ui.sessioncommon.stringRes
 import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel

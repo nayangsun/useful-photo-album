@@ -17,7 +17,6 @@
 package com.example.useful_photo_album.domain.fcm
 
 import com.google.firebase.messaging.FirebaseMessaging
-import com.google.samples.apps.iosched.shared.fcm.TopicSubscriber
 import timber.log.Timber
 
 /**

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.sessions
+package com.example.useful_photo_album.domain.sessions
 
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.data.session.SessionRepository
-import com.google.samples.apps.iosched.shared.domain.MediatorUseCase
-import com.google.samples.apps.iosched.shared.result.Result
+import com.example.useful_photo_album.data.session.SessionRepository
+import com.example.useful_photo_album.domain.MediatorUseCase
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import javax.inject.Inject
 
 open class LoadSessionUseCase @Inject constructor(private val repository: SessionRepository) :

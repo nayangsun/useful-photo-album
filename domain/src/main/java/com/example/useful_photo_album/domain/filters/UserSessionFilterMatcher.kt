@@ -16,11 +16,12 @@
 
 package com.example.useful_photo_album.domain.filters
 
-import com.google.samples.apps.iosched.model.filters.Filter
-import com.google.samples.apps.iosched.model.filters.Filter.DateFilter
-import com.google.samples.apps.iosched.model.filters.Filter.MyScheduleFilter
-import com.google.samples.apps.iosched.model.filters.Filter.TagFilter
-import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.example.useful_photo_album.shared.model.temp.filters.Filter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.DateFilter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.MyScheduleFilter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.TagFilter
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+
 
 class UserSessionFilterMatcher(filters: List<Filter>) {
     private val mySchedule = MyScheduleFilter in filters

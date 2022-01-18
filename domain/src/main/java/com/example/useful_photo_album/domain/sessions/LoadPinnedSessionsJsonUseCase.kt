@@ -18,17 +18,14 @@ package com.example.useful_photo_album.domain.sessions
 
 import com.example.useful_photo_album.di.IoDispatcher
 import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.domain.userevent.DefaultSessionAndUserEventRepository
+import com.example.useful_photo_album.domain.userevent.ObservableUserEvents
+import com.example.useful_photo_album.shared.model.temp.schedule.PinnedSession
+import com.example.useful_photo_album.shared.model.temp.schedule.PinnedSessionsSchedule
 import com.google.gson.Gson
-import com.google.samples.apps.iosched.model.schedule.PinnedSession
-import com.google.samples.apps.iosched.model.schedule.PinnedSessionsSchedule
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.data.userevent.DefaultSessionAndUserEventRepository
-import com.google.samples.apps.iosched.shared.data.userevent.ObservableUserEvents
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.shared.util.toEpochMilli
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.shared.util.toEpochMilli
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

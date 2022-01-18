@@ -24,7 +24,7 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefSaveActionUseCase
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefSaveActionUseCase
 import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefShownActionUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope

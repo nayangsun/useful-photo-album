@@ -16,9 +16,9 @@
 
 package com.google.samples.apps.iosched.shared.domain.prefs
 
-import com.google.samples.apps.iosched.shared.data.prefs.PreferenceStorage
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
+import com.example.useful_photo_album.data.pref.PreferenceStorage
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineDispatcher
 

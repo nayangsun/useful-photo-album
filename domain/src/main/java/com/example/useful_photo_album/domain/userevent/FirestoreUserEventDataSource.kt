@@ -30,11 +30,11 @@ import com.example.useful_photo_album.shared.util.tryOffer
 import com.example.useful_photo_album.shared.result.Result
 import com.example.useful_photo_album.shared.result.Result.Success
 import com.example.useful_photo_album.shared.result.Result.Error
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.CancelAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.SwapAction
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
+import com.example.useful_photo_album.domain.users.ReservationRequestAction
+import com.example.useful_photo_album.domain.users.ReservationRequestAction.CancelAction
+import com.example.useful_photo_album.domain.users.ReservationRequestAction.RequestAction
+import com.example.useful_photo_album.domain.users.ReservationRequestAction.SwapAction
+import com.example.useful_photo_album.domain.users.SwapRequestAction
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

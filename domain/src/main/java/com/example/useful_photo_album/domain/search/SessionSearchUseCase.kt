@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.domain.search
+package com.example.useful_photo_album.domain.search
 
 import androidx.core.os.trace
-import com.google.samples.apps.iosched.model.filters.Filter
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.data.userevent.SessionAndUserEventRepository
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.FlowUseCase
-import com.google.samples.apps.iosched.shared.domain.filters.UserSessionFilterMatcher
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Error
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.FlowUseCase
+import com.example.useful_photo_album.domain.filters.UserSessionFilterMatcher
+import com.example.useful_photo_album.domain.userevent.SessionAndUserEventRepository
+import com.example.useful_photo_album.shared.model.temp.filters.Filter
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Error
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.result.Result.Success
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
