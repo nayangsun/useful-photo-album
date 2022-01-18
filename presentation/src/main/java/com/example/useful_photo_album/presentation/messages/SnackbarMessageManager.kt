@@ -17,8 +17,8 @@
 package com.example.useful_photo_album.presentation.messages
 
 import androidx.annotation.VisibleForTesting
+import com.example.useful_photo_album.data.pref.PreferenceStorage
 import com.example.useful_photo_album.di.ApplicationScope
-import com.example.useful_photo_album.domain.data.spec.pref.PreferenceStorage
 import com.example.useful_photo_album.domain.prefs.StopSnackbarActionUseCase
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager.Companion.MAX_ITEMS

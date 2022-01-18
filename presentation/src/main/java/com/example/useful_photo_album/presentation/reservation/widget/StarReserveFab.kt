@@ -20,6 +20,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.Checkable
 import androidx.annotation.DrawableRes
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.ui.reservation.StarReserveFabMode.RESERVE

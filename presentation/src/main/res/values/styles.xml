@@ -261,5 +261,15 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
+    <!-- Agenda -->
+    <style name="Widget.Upa.DateHeaders">
+        <item name="android:width">@dimen/day_header_decor_width</item>
+        <item name="android:height">@dimen/day_header_decor_height</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/day_header_text_size</item>
+        <item name="verticalBias">0.67</item>
+    </style>
+
 
 </resources>

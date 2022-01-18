@@ -14,17 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.agenda.util
+package com.example.useful_photo_album.presentation.util
 
-import com.example.useful_photo_album.shared.model.temp.Block
-import org.threeten.bp.ZonedDateTime
+import androidx.recyclerview.widget.RecyclerView
 
-/**
- * Find the first block of each day (rounded down to nearest day) and return pairs of
- * index to start time. Assumes that [agendaItems] are sorted by ascending start time.
- */
-fun indexAgendaHeaders(agendaItems: List<Block>): List<Pair<Int, ZonedDateTime>> {
-    return agendaItems
-        .mapIndexed { index, block -> index to block.startTime }
-        .distinctBy { it.second.dayOfMonth }
+fun RecyclerView.clearDecorations() {
+    if (itemDecorationCount > 0) {
+        for (i in itemDecorationCount - 1 downTo 0) {
+            removeItemDecorationAt(i)
+        }
+    }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda.util
 
 import android.content.Context
 import android.graphics.Canvas
@@ -24,16 +24,16 @@ import android.text.Layout.Alignment.ALIGN_CENTER
 import android.text.StaticLayout
 import android.text.TextPaint
 import android.view.View
-import androidx.core.content.res.ResourcesCompat
+import androidx.core.content.res.*
 import androidx.core.graphics.withTranslation
 import androidx.core.view.forEach
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.core.util.newStaticLayout
 import com.example.useful_photo_album.shared.model.temp.Block
-import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.util.newStaticLayout
+import com.example.useful_photo_album.shared.util.TimeUtils
 import kotlin.math.ceil
 import org.threeten.bp.ZonedDateTime
 
@@ -54,7 +54,7 @@ class AgendaHeadersDecoration(
 
     init {
         val attrs = context.obtainStyledAttributes(
-            R.style.Widget_IOSched_DateHeaders,
+            R.style.Widget_Upa_DateHeaders,
             R.styleable.DateHeader
         )
         paint = TextPaint(Paint.ANTI_ALIAS_FLAG or Paint.SUBPIXEL_TEXT_FLAG).apply {

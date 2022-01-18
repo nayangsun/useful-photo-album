@@ -14,27 +14,28 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
-import com.example.useful_photo_album.presentation.agenda.ui.AgendaViewModel
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.agenda.ui.adapter.AgendaAdapter
 import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.databinding.FragmentAgendaBinding
+import com.example.useful_photo_album.presentation.core.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.databinding.FragmentAgendaBinding
+import com.example.useful_photo_album.presentation.signin.util.setupProfileMenuItem
+import com.example.useful_photo_album.presentation.util.clearDecorations
 import com.example.useful_photo_album.shared.model.temp.Block
-import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.clearDecorations
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.agenda.util.AgendaHeadersDecoration
 import dagger.hilt.android.AndroidEntryPoint
 import org.threeten.bp.ZoneId
 
