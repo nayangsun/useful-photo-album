@@ -29,15 +29,16 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.codelabs.ui.CodelabsActionsHandler
+import com.example.useful_photo_album.presentation.core.util.compatRemoveIf
+import com.example.useful_photo_album.presentation.databinding.ItemCodelabBinding
+import com.example.useful_photo_album.presentation.databinding.ItemCodelabsInformationCardBinding
+import com.example.useful_photo_album.shared.model.temp.Codelab
 import com.google.android.flexbox.FlexboxLayoutManager
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemCodelabBinding
-import com.google.samples.apps.iosched.databinding.ItemCodelabsInformationCardBinding
-import com.google.samples.apps.iosched.model.Codelab
-import com.google.samples.apps.iosched.ui.codelabs.CodelabsViewHolder.CodelabItemHolder
-import com.google.samples.apps.iosched.ui.codelabs.CodelabsViewHolder.CodelabsInformationCardHolder
-import com.google.samples.apps.iosched.util.compatRemoveIf
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.codelabs.ui.adapter.CodelabsViewHolder.CodelabItemHolder
+import com.example.useful_photo_album.presentation.codelabs.ui.adapter.CodelabsViewHolder.CodelabsInformationCardHolder
+import com.example.useful_photo_album.presentation.core.util.executeAfter
 
 internal class CodelabsAdapter(
     private val codelabsActionsHandler: CodelabsActionsHandler,

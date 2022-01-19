@@ -35,15 +35,14 @@ import com.example.useful_photo_album.presentation.core.util.doOnApplyWindowInse
 import com.example.useful_photo_album.presentation.databinding.FragmentCodelabsBinding
 import com.example.useful_photo_album.presentation.signin.util.setupProfileMenuItem
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.openWebsiteUri
 import com.example.useful_photo_album.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.model.Codelab
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
 import com.example.useful_photo_album.shared.model.temp.Codelab
 import com.example.useful_photo_album.shared.util.consume
-import com.google.samples.apps.iosched.util.openWebsiteUri
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 import javax.inject.Named
 

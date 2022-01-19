@@ -271,5 +271,16 @@
         <item name="verticalBias">0.67</item>
     </style>
 
+    <!-- Codelabs -->
+    <style name="Widget.Upa.Codelabs.InfoCard" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_marginBottom">@dimen/spacing_tiny</item>
+        <item name="android:layout_marginEnd">?listPreferredItemPaddingEnd</item>
+        <item name="android:layout_marginStart">?listPreferredItemPaddingStart</item>
+        <item name="android:layout_marginTop">@dimen/spacing_tiny</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/highlighted_card_background</item>
+    </style>
+
+
 
 </resources>

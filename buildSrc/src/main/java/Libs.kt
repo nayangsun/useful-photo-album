@@ -134,4 +134,5 @@ object Libs {
     const val lottie = "com.airbnb.android:lottie:3.0.0"
 
     const val googleService = "com.google.gms:google-services:4.3.3"
+    const val flexbox = "com.google.android:flexbox:1.1.0"
 }

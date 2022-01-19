@@ -35,6 +35,7 @@ dependencies {
     kapt(Libs.AndroidX.Lifecycle.compiler)
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.slidingPaneLayout)
+    implementation(Libs.AndroidX.browser)
 
     implementation(Libs.AndroidX.Navigation.fragment)
     implementation(Libs.AndroidX.Navigation.ui)
@@ -50,6 +51,8 @@ dependencies {
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
     implementation(Libs.lottie)
+
+    implementation(Libs.flexbox)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)

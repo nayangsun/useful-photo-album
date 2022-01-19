@@ -115,4 +115,6 @@
     <!-- Iosched -->
     <string name="agenda_duration" translatable="false">%1$s – %2$s</string>
 
+    <string name="got_it" translation_description="The label for dismissing a information messages.">Got it</string>
+
 </resources>
