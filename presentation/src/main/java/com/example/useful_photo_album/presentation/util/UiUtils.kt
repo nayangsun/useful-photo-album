@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.util
+package com.google.samples.apps.iosched.util
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -26,7 +26,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.example.useful_photo_album.presentation.R
+import com.google.samples.apps.iosched.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 

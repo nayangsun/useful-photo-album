@@ -16,12 +16,12 @@
 
 package com.google.samples.apps.iosched.ui.theme
 
-import com.example.useful_photo_album.di.ApplicationScope
-import com.example.useful_photo_album.domain.settings.GetThemeUseCase
-import com.example.useful_photo_album.domain.settings.ObserveThemeModeUseCase
-import com.example.useful_photo_album.shared.result.successOr
-import com.example.useful_photo_album.shared.result.Result.Success
 import com.google.samples.apps.iosched.model.Theme
+import com.google.samples.apps.iosched.shared.di.ApplicationScope
+import com.google.samples.apps.iosched.shared.domain.settings.GetThemeUseCase
+import com.google.samples.apps.iosched.shared.domain.settings.ObserveThemeModeUseCase
+import com.google.samples.apps.iosched.shared.result.Result.Success
+import com.google.samples.apps.iosched.shared.result.successOr
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Malgeon
+ * Copyright 2019 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,23 +14,29 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation
+package com.google.samples.apps.iosched.ui
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.useful_photo_album.domain.ar.LoadArDebugFlagUseCase
-import com.example.useful_photo_album.domain.sessions.LoadPinnedSessionsJsonUseCase
-import com.example.useful_photo_album.shared.result.Result.Success
-import com.example.useful_photo_album.presentation.signin.ui.SignInViewModelDelegate
-import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
-import com.example.useful_photo_album.shared.util.tryOffer
+import com.google.ar.core.ArCoreApk
+import com.google.samples.apps.iosched.shared.domain.ar.LoadArDebugFlagUseCase
+import com.google.samples.apps.iosched.shared.domain.sessions.LoadPinnedSessionsJsonUseCase
+import com.google.samples.apps.iosched.shared.result.Result
+import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
+import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.transformLatest
 import javax.inject.Inject
 
 @HiltViewModel
@@ -51,7 +57,7 @@ class MainActivityViewModel @Inject constructor(
         val uid = user?.getUid()
         if (uid != null) {
             loadPinnedSessionsUseCase(uid).collect { result ->
-                if (result is Success) {
+                if (result is Result.Success) {
                     emit(result.data)
                 }
             }
@@ -62,7 +68,7 @@ class MainActivityViewModel @Inject constructor(
 
     val canSignedInUserDemoAr: StateFlow<Boolean> = userInfo.transformLatest {
         val result = loadArDebugFlagUseCase(Unit)
-        if (result is Success) {
+        if (result is Result.Success) {
             emit(result.data)
         }
     }.stateIn(viewModelScope, WhileViewSubscribed, false)

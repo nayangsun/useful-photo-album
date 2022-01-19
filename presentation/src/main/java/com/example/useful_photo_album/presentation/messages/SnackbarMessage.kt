@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.messages
+package com.google.samples.apps.iosched.ui.messages
 
-import com.example.useful_photo_album.shared.model.temp.Session
+import com.google.samples.apps.iosched.model.Session
 
 data class SnackbarMessage(
     /** Resource string ID of the message to show */

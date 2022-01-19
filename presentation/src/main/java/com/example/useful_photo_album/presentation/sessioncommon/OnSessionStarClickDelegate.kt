@@ -14,20 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.sessioncommon
+package com.google.samples.apps.iosched.ui.sessioncommon
 
-import com.example.useful_photo_album.di.ApplicationScope
-import com.example.useful_photo_album.di.MainDispatcher
-import com.example.useful_photo_album.presentation.R
-import com.example.useful_photo_album.presentation.messages.SnackbarMessage
-import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
-import com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionStarClickListener
-import com.example.useful_photo_album.shared.analytics.AnalyticsActions
-import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
-import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
-import com.example.useful_photo_album.shared.util.tryOffer
-import com.example.useful_photo_album.shared.result.Result
-import com.example.useful_photo_album.presentation.signin.ui.SignInViewModelDelegate
+import com.google.samples.apps.iosched.R
+import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
+import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
+import com.google.samples.apps.iosched.shared.di.ApplicationScope
+import com.google.samples.apps.iosched.shared.di.MainDispatcher
+import com.google.samples.apps.iosched.shared.domain.users.StarEventAndNotifyUseCase
+import com.google.samples.apps.iosched.shared.domain.users.StarEventParameter
+import com.google.samples.apps.iosched.shared.result.Result
+import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.google.samples.apps.iosched.ui.messages.SnackbarMessage
+import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
+import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel

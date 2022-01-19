@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.util
+package com.google.samples.apps.iosched.util
 
 import android.content.Context
 import android.content.Intent
