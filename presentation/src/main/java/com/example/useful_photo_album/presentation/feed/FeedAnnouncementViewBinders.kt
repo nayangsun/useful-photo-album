@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.view.LayoutInflater
 import android.view.View
@@ -23,11 +23,11 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemFeedAnnouncementBinding
-import com.google.samples.apps.iosched.databinding.ItemFeedAnnouncementsHeaderBinding
-import com.google.samples.apps.iosched.model.Announcement
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemFeedAnnouncementBinding
+import com.example.useful_photo_album.presentation.databinding.ItemFeedAnnouncementsHeaderBinding
+import com.example.useful_photo_album.shared.model.temp.Announcement
+import com.example.useful_photo_album.shared.util.TimeUtils
 import kotlinx.coroutines.flow.StateFlow
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime

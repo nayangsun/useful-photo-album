@@ -29,8 +29,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.samples.apps.iosched.databinding.DialogSignInBinding
-import com.google.samples.apps.iosched.ui.signin.SignInNavigationAction.RequestSignIn
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.RequestSignIn
 import com.google.samples.apps.iosched.util.signin.SignInHandler
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

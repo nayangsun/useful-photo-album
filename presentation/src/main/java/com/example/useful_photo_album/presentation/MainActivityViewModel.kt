@@ -22,9 +22,8 @@ import androidx.lifecycle.viewModelScope
 import com.google.ar.core.ArCoreApk
 import com.google.samples.apps.iosched.shared.domain.ar.LoadArDebugFlagUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadPinnedSessionsJsonUseCase
-import com.google.samples.apps.iosched.shared.result.Result
 import com.google.samples.apps.iosched.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -32,7 +31,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn

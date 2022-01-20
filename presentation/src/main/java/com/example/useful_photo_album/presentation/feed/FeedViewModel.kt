@@ -14,56 +14,49 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavDirections
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Announcement
-import com.google.samples.apps.iosched.model.Moment
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.di.MapFeatureEnabledFlag
-import com.google.samples.apps.iosched.shared.di.ReservationEnabledFlag
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState.ENDED
-import com.google.samples.apps.iosched.shared.domain.feed.ConferenceState.UPCOMING
-import com.google.samples.apps.iosched.shared.domain.feed.GetConferenceStateUseCase
-import com.google.samples.apps.iosched.shared.domain.feed.LoadAnnouncementsUseCase
-import com.google.samples.apps.iosched.shared.domain.feed.LoadCurrentMomentUseCase
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadStarredAndReservedSessionsUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.shared.time.TimeProvider
-import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.shared.util.TimeUtils.ConferenceDays
-import com.google.samples.apps.iosched.shared.util.toEpochMilli
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.domain.feed.ConferenceState
+import com.example.useful_photo_album.domain.feed.ConferenceState.UPCOMING
+import com.example.useful_photo_album.domain.feed.ConferenceState.ENDED
+import com.example.useful_photo_album.domain.feed.GetConferenceStateUseCase
+import com.example.useful_photo_album.domain.feed.LoadAnnouncementsUseCase
+import com.example.useful_photo_album.domain.feed.LoadCurrentMomentUseCase
+import com.example.useful_photo_album.domain.sessions.LoadStarredAndReservedSessionsUseCase
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.feed.*
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
+import com.example.useful_photo_album.shared.di.ReservationEnabledFlag
+import com.example.useful_photo_album.shared.model.temp.Announcement
+import com.example.useful_photo_album.shared.model.temp.Moment
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.time.TimeProvider
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.shared.util.TimeUtils.ConferenceDays
+import com.example.useful_photo_album.shared.util.toEpochMilli
+import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessage
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionClickListener
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickListener
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.flow.SharingStarted.Companion.Eagerly
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.flatMapLatest
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.flow.stateIn
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 import javax.inject.Inject
@@ -306,6 +299,7 @@ class FeedViewModel @Inject constructor(
             featureId = session.room?.id,
             startTime = session.startTime.toEpochMilli()
         )
+
         _navigationActions.tryOffer(FeedNavigationAction.NavigateAction(directions))
     }
 

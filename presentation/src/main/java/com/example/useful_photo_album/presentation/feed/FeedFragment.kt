@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,19 +25,21 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.useful_photo_album.presentation.databinding.FragmentFeedBinding
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.common.collect.ImmutableMap
-import com.google.samples.apps.iosched.databinding.FragmentFeedBinding
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.ui.feed.FeedNavigationAction.NavigateAction
-import com.google.samples.apps.iosched.ui.feed.FeedNavigationAction.NavigateToScheduleAction
-import com.google.samples.apps.iosched.ui.feed.FeedNavigationAction.NavigateToSession
-import com.google.samples.apps.iosched.ui.feed.FeedNavigationAction.OpenLiveStreamAction
-import com.google.samples.apps.iosched.ui.feed.FeedNavigationAction.OpenSignInDialogAction
+import com.google.samples.apps.iosched.ui.feed.*
+import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateAction
+import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateToScheduleAction
+import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateToSession
+import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.OpenLiveStreamAction
+import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.OpenSignInDialogAction
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
+import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.openWebsiteUrl
 import dagger.hilt.android.AndroidEntryPoint

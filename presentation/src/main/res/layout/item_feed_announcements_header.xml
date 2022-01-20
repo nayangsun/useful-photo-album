@@ -22,40 +22,40 @@
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.feed.FeedEventListener" />
+            type="com.example.useful_photo_album.presentation.feed.FeedEventListener" />
 
         <variable
             name="announcementsHeaderState"
-            type="com.google.samples.apps.iosched.ui.feed.AnnouncementsHeader" />
+            type="com.example.useful_photo_album.presentation.feed.AnnouncementsHeader" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_small"
-        android:layout_marginTop="@dimen/margin_normal">
+        android:layout_marginBottom="@dimen/spacing_tiny"
+        android:layout_marginTop="@dimen/spacing_small">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="@dimen/margin_normal" />
+            app:layout_constraintGuide_begin="@dimen/spacing_small" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="@dimen/margin_normal" />
+            app:layout_constraintGuide_end="@dimen/spacing_small" />
 
         <TextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/feed_announcement_title"
-            android:textAppearance="@style/TextAppearance.IOSched.Overline"
+            android:textAppearance="@style/TextAppearance.Upa.Overline"
             app:layout_constrainedHeight="true"
             app:layout_constraintEnd_toStartOf="@+id/actionButton"
             app:layout_constraintStart_toStartOf="@+id/guideline_start"

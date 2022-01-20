@@ -33,6 +33,7 @@ dependencies {
     implementation(Libs.AndroidX.Lifecycle.runtime)
     implementation(project(mapOf("path" to ":data")))
     kapt(Libs.AndroidX.Lifecycle.compiler)
+    implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.slidingPaneLayout)
     implementation(Libs.AndroidX.browser)
@@ -44,17 +45,17 @@ dependencies {
     implementation(Libs.Glide.glide)
 
     implementation(Libs.Dagger.hiltAndroid)
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
-
     kapt(Libs.Dagger.hiltCompiler)
     implementation(Libs.timber)
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
     implementation(Libs.lottie)
 
+    implementation(Libs.Firebase.firestore)
+
     implementation(Libs.flexbox)
 
     testImplementation(Libs.Test.junit)
     androidTestImplementation(Libs.Test.junitExt)
-    androidTestImplementation(Libs.Test.espresso)
+    androidTestImplementation(Libs.Test.espressoCore)
 }

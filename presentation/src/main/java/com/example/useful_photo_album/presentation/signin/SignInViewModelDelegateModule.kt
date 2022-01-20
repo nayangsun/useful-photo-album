@@ -16,6 +16,8 @@
 
 package com.google.samples.apps.iosched.ui.signin
 
+import com.example.useful_photo_album.presentation.signin.FirebaseSignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.shared.di.ApplicationScope
 import com.google.samples.apps.iosched.shared.di.IoDispatcher
 import com.google.samples.apps.iosched.shared.di.MainDispatcher

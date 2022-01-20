@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.feed.FeedViewModel" />
+            type="com.example.useful_photo_album.presentation.feed.FeedViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

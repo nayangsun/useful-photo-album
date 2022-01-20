@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.signin
+package com.example.useful_photo_album.presentation.signin
 
 import android.net.Uri
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.di.MainDispatcher
-import com.google.samples.apps.iosched.shared.di.ReservationEnabledFlag
-import com.google.samples.apps.iosched.shared.domain.auth.ObserveUserAuthStateUseCase
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefIsShownUseCase
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Success
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.signin.SignInNavigationAction.ShowNotificationPreferencesDialog
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.di.MainDispatcher
+import com.example.useful_photo_album.domain.auth.ObserveUserAuthStateUseCase
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefIsShownUseCase
+import com.example.useful_photo_album.shared.di.ReservationEnabledFlag
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Success
+import com.example.useful_photo_album.shared.result.data
+import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.ShowNotificationPreferencesDialog
+import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope

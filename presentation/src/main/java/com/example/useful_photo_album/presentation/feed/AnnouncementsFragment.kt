@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,9 +25,9 @@ import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import com.example.useful_photo_album.presentation.databinding.FragmentAnnouncementsBinding
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.google.common.collect.ImmutableMap
-import com.google.samples.apps.iosched.databinding.FragmentAnnouncementsBinding
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem

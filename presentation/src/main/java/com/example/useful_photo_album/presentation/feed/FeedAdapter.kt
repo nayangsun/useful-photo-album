@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil

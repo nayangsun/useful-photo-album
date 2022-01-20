@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.view.LayoutInflater
 import android.view.View
@@ -23,15 +23,15 @@ import android.widget.Button
 import androidx.core.view.isVisible
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemFeedMomentBinding
+import com.example.useful_photo_album.shared.model.temp.Moment
+import com.example.useful_photo_album.shared.model.temp.Moment.Companion.CTA_LIVE_STREAM
+import com.example.useful_photo_album.shared.model.temp.Moment.Companion.CTA_MAP_LOCATION
+import com.example.useful_photo_album.shared.model.temp.Moment.Companion.CTA_SIGNIN
 import com.google.android.material.button.MaterialButton
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemFeedMomentBinding
-import com.google.samples.apps.iosched.model.Moment
-import com.google.samples.apps.iosched.model.Moment.Companion.CTA_LIVE_STREAM
-import com.google.samples.apps.iosched.model.Moment.Companion.CTA_MAP_LOCATION
-import com.google.samples.apps.iosched.model.Moment.Companion.CTA_SIGNIN
 import com.google.samples.apps.iosched.model.Theme
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
 import com.google.samples.apps.iosched.util.executeAfter
 import kotlinx.coroutines.flow.StateFlow
 

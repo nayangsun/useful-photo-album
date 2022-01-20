@@ -23,7 +23,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.feed.AnnouncementsViewModel" />
+            type="com.example.useful_photo_album.presentation.feed.AnnouncementsViewModel" />
     </data>
 
     <LinearLayout
@@ -33,14 +33,14 @@
 
         <View
             android:id="@+id/status_bar"
-            style="@style/Widget.IOSched.AppBar"
+            style="@style/Widget.Upa.AppBar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:visibility="gone" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            style="@style/Widget.IOSched.AppBar"
+            style="@style/Widget.Upa.AppBar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             app:navigationContentDescription="@string/navigate_up"
@@ -52,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingTop="@dimen/spacing_normal"
-            android:paddingBottom="@dimen/spacing_normal"
+            android:paddingTop="@dimen/spacing_tiny"
+            android:paddingBottom="@dimen/spacing_tiny"
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager" />
 

@@ -38,8 +38,6 @@ import com.google.samples.apps.iosched.shared.domain.users.ReservationActionUseC
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.SwapAction
 import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestParameters
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.shared.result.Result.Error
 import com.google.samples.apps.iosched.shared.result.Result.Loading
 import com.google.samples.apps.iosched.shared.result.Result.Success
 import com.google.samples.apps.iosched.shared.result.data
@@ -53,13 +51,12 @@ import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.reservation.RemoveReservationDialogParameters
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickDelegate
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickListener
-import com.google.samples.apps.iosched.ui.sessioncommon.stringRes
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSpeakerDetail
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSwapReservationDialogAction
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToYoutube
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
@@ -69,7 +66,6 @@ import kotlinx.coroutines.flow.SharingStarted.Companion.Eagerly
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.combineTransform
-import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map

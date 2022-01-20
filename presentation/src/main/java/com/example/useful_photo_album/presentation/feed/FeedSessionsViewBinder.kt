@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.os.Parcelable
 import android.view.LayoutInflater
@@ -31,11 +31,11 @@ import androidx.recyclerview.widget.RecyclerView.NO_POSITION
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import androidx.recyclerview.widget.RecyclerView.SCROLL_STATE_IDLE
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemFeedSessionBinding
-import com.google.samples.apps.iosched.databinding.ItemFeedSessionsContainerBinding
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemFeedSessionBinding
+import com.example.useful_photo_album.presentation.databinding.ItemFeedSessionsContainerBinding
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionDiff
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime

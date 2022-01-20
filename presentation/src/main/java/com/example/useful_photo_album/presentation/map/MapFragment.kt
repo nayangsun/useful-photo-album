@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.map
+package com.example.useful_photo_album.presentation.map
 
 import android.Manifest
 import android.app.Dialog
@@ -28,16 +28,15 @@ import android.view.ViewGroup.MarginLayoutParams
 import androidx.activity.addCallback
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.isVisible
-import androidx.core.view.marginBottom
-import androidx.core.view.updateLayoutParams
-import androidx.core.view.updatePadding
+import androidx.core.view.*
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentMapBinding
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.google.android.gms.maps.MapView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.maps.android.data.geojson.GeoJsonLayer
@@ -47,6 +46,7 @@ import com.google.samples.apps.iosched.databinding.FragmentMapBinding
 import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.google.samples.apps.iosched.ui.map.*
 import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle

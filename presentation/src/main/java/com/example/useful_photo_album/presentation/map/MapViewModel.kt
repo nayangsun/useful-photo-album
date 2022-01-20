@@ -33,7 +33,7 @@ import com.google.samples.apps.iosched.shared.domain.prefs.OptIntoMyLocationUseC
 import com.google.samples.apps.iosched.shared.result.successOr
 import com.google.samples.apps.iosched.shared.result.updateOnSuccess
 import com.google.samples.apps.iosched.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import com.google.samples.apps.iosched.widget.BottomSheetBehavior
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -45,7 +45,6 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

@@ -33,8 +33,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.samples.apps.iosched.databinding.DialogSignOutBinding
 import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.ui.signin.SignInNavigationAction.RequestSignOut
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.RequestSignOut
 import com.google.samples.apps.iosched.util.signin.SignInHandler
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

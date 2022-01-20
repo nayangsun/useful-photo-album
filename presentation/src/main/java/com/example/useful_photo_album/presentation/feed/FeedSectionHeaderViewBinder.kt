@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemGenericSectionHeaderBinding
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
 import com.google.samples.apps.iosched.ui.SectionHeader
 
 class FeedSectionHeaderViewBinder :

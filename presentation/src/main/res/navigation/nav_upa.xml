@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@id/navigation_info"
-        android:name="icom.example.useful_photo_album.presentation.info.InfoFragment"
+        android:name="com.example.useful_photo_album.presentation.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
 
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@id/navigation_feed"
-        android:name="com.google.samples.apps.iosched.ui.feed.FeedFragment"
+        android:name="com.example.useful_photo_album.presentation.feed.FeedFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_feed">
         <action
@@ -62,7 +62,7 @@
 
     <fragment
         android:id="@id/navigation_map"
-        android:name="com.google.samples.apps.iosched.ui.map.MapFragment"
+        android:name="com.example.useful_photo_album.presentation.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map">
         <!-- Navigation library doesn't allow nullable arguments of an enum type, so we have to use
@@ -110,7 +110,7 @@
     -->
     <fragment
         android:id="@id/navigation_map_sublevel"
-        android:name="com.google.samples.apps.iosched.ui.map.MapFragment"
+        android:name="com.example.useful_photo_album.presentation.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map" >
         <!-- Unfortunately we have to duplicate the args. -->
@@ -144,7 +144,7 @@
 
     <fragment
         android:id="@+id/announcements_fragment"
-        android:name="com.google.samples.apps.iosched.ui.feed.AnnouncementsFragment"
+        android:name="com.example.useful_photo_album.presentation.feed.AnnouncementsFragment"
         android:label="@string/feed_announcement_title"
         tools:layout="@layout/fragment_announcements" />
 </navigation>

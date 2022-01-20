@@ -102,7 +102,8 @@ object Libs {
     object Test {
         const val junit = "junit:junit:4.13.2"
         const val junitExt = "androidx.test.ext:junit:1.1.3"
-        const val espresso = "androidx.test.espresso:espresso-core:3.4.0"
+        const val espressoCore = "androidx.test.espresso:espresso-core:3.4.0"
+        const val espressoContrib = "androidx.test.espresso:espresso-contrib:3.4.0"
         const val mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:3.2.0"
     }
 

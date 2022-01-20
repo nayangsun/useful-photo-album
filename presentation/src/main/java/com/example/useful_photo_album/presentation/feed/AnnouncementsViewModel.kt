@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.feed
+package com.example.useful_photo_album.presentation.feed
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.shared.domain.feed.LoadAnnouncementsUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.shared.time.TimeProvider
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.domain.feed.LoadAnnouncementsUseCase
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.time.TimeProvider
+import com.example.useful_photo_album.shared.util.TimeUtils
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted.Companion.Eagerly
 import kotlinx.coroutines.flow.StateFlow

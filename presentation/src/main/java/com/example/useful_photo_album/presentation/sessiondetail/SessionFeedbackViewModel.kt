@@ -26,16 +26,14 @@ import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionUseCase
 import com.google.samples.apps.iosched.shared.domain.users.FeedbackParameter
 import com.google.samples.apps.iosched.shared.domain.users.FeedbackUseCase
-import com.google.samples.apps.iosched.shared.result.Result
 import com.google.samples.apps.iosched.shared.result.Result.Success
 import com.google.samples.apps.iosched.shared.result.data
 import com.google.samples.apps.iosched.shared.util.cancelIfActive
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

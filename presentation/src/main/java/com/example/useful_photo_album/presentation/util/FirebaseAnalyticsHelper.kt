@@ -32,13 +32,11 @@ import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStor
 import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_SEND_USAGE_STATISTICS
 import com.google.samples.apps.iosched.shared.data.prefs.PreferenceStorage
 import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.ui.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.flattenMerge
 import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import timber.log.Timber
 

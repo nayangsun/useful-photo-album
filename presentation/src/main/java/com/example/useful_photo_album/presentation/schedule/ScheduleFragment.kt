@@ -46,7 +46,7 @@ import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.Navi
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE
-import com.google.samples.apps.iosched.ui.signin.SignInNavigationAction.ShowNotificationPreferencesDialog
+import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.ShowNotificationPreferencesDialog
 import com.google.samples.apps.iosched.ui.signin.SignOutDialogFragment
 import com.google.samples.apps.iosched.util.clearDecorations
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
