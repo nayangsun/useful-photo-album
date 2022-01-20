@@ -15,7 +15,7 @@
 
         <variable
             name="actionHandler"
-            type="com.example.useful_photo_album.presentation.codelabs.ui.CodelabsActionsHandler" />
+            type="com.example.useful_photo_album.presentation.codelabs.ui.widget.CodelabsActionsHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

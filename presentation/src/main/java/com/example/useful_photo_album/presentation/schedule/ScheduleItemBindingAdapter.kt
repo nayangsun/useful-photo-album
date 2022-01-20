@@ -24,8 +24,6 @@ import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.model.Room
 import com.google.samples.apps.iosched.model.userdata.UserEvent
 import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.reservation.ReservationTextView
-import com.google.samples.apps.iosched.ui.reservation.ReservationViewState
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 

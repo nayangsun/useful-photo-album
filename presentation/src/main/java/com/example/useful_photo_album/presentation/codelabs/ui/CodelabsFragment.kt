@@ -22,27 +22,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updatePadding
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
-import com.example.useful_photo_album.presentation.MainActivityViewModel
 import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.codelabs.ui.widget.CodelabsActionsHandler
 import com.example.useful_photo_album.presentation.codelabs.ui.adapter.CodelabsAdapter
-import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
-import com.example.useful_photo_album.presentation.core.util.doOnApplyWindowInsets
 import com.example.useful_photo_album.presentation.databinding.FragmentCodelabsBinding
 import com.example.useful_photo_album.presentation.signin.util.setupProfileMenuItem
-import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
-import com.example.useful_photo_album.presentation.util.openWebsiteUri
-import com.example.useful_photo_album.shared.analytics.AnalyticsActions
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
-import com.example.useful_photo_album.shared.model.temp.Codelab
 import com.example.useful_photo_album.shared.util.consume
+import com.google.samples.apps.iosched.R
+import com.google.samples.apps.iosched.databinding.FragmentCodelabsBinding
+import com.google.samples.apps.iosched.model.Codelab
+import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
+import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
+import com.google.samples.apps.iosched.shared.di.MapFeatureEnabledFlag
+import com.google.samples.apps.iosched.shared.util.consume
+import com.google.samples.apps.iosched.ui.MainActivityViewModel
+import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.google.samples.apps.iosched.util.openWebsiteUri
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -58,7 +61,7 @@ class CodelabsFragment : MainNavigationFragment(), CodelabsActionsHandler {
     }
 
     @Inject
-    @Named("tagViewPool")
+    @field:Named("tagViewPool")
     lateinit var tagRecycledViewPool: RecycledViewPool
 
     @Inject

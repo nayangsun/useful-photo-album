@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2019 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,17 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.sessioncommon.widget
+package com.example.useful_photo_album.presentation.codelabs.ui.widget
 
-import com.example.useful_photo_album.shared.model.temp.SessionId
-import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.model.temp.Codelab
 
-/**
- * Actions that can be performed on events.
- */
-interface OnSessionClickListener {
-    fun openEventDetail(id: SessionId)
-}
+interface CodelabsActionsHandler {
 
-interface OnSessionStarClickListener {
-    fun onStarClicked(userSession: UserSession)
+    fun dismissCodelabsInfoCard()
+
+    fun openCodelabsOnMap()
+
+    fun launchCodelabsWebsite()
+
+    fun startCodelab(codelab: Codelab)
 }

@@ -86,7 +86,7 @@
 
     <fragment
         android:id="@id/navigation_codelabs"
-        android:name="com.google.samples.apps.iosched.ui.codelabs.CodelabsFragment"
+        android:name="com.example.useful_photo_album.presentation.codelabs.ui.CodelabsFragment"
         android:label="@string/event_codelabs_title"
         tools:layout="@layout/fragment_codelabs">
         <action
@@ -132,13 +132,13 @@
 
     <fragment
         android:id="@id/navigation_no_network_ar"
-        android:name="com.google.samples.apps.iosched.ui.ar.NoNetworkConnectionFragment"
+        android:name="com.example.useful_photo_album.presentation.ar.NoNetworkConnectionFragment"
         android:label="@string/no_network_connection"
         tools:layout="@layout/fragment_no_network" />
 
     <fragment
         android:id="@id/navigation_phone_does_not_support_arcore"
-        android:name="com.google.samples.apps.iosched.ui.ar.ArCoreNotSupportedFragment"
+        android:name="com.example.useful_photo_album.presentation.ar.ArCoreNotSupportedFragment"
         android:label="@string/phone_does_not_support_arcore_title"
         tools:layout="@layout/fragment_arcore_not_supported" />
 

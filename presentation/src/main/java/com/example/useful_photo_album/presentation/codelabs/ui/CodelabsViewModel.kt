@@ -18,18 +18,16 @@ package com.example.useful_photo_album.presentation.codelabs.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.useful_photo_album.domain.codelabs.GetCodelabsInfoCardShownUseCase
-import com.example.useful_photo_album.domain.codelabs.LoadCodelabsUseCase
-import com.example.useful_photo_album.domain.codelabs.SetCodelabsInfoCardShownUseCase
 import com.example.useful_photo_album.presentation.codelabs.ui.adapter.CodelabsInformationCard
-import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
-import com.example.useful_photo_album.shared.model.temp.Codelab
-import com.example.useful_photo_album.shared.result.successOr
+import com.google.samples.apps.iosched.model.Codelab
+import com.google.samples.apps.iosched.shared.domain.codelabs.GetCodelabsInfoCardShownUseCase
+import com.google.samples.apps.iosched.shared.domain.codelabs.LoadCodelabsUseCase
+import com.google.samples.apps.iosched.shared.domain.codelabs.SetCodelabsInfoCardShownUseCase
+import com.google.samples.apps.iosched.shared.result.successOr
+import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.util.Collections.emptyList
 import javax.inject.Inject
