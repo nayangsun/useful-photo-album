@@ -31,7 +31,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
 import com.example.useful_photo_album.presentation.R
-import com.example.useful_photo_album.presentation.agenda.indexAgendaHeaders
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.util.newStaticLayout
