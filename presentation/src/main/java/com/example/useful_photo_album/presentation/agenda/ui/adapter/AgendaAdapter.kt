@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -23,9 +23,9 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.samples.apps.iosched.BR
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Block
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.BR
+import com.example.useful_photo_album.shared.model.temp.Block
 import org.threeten.bp.ZoneId
 
 class AgendaAdapter(var timeZoneId: ZoneId = ZoneId.systemDefault()) :

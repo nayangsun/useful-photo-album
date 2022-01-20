@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda
 
-import com.google.samples.apps.iosched.model.Block
+import com.example.useful_photo_album.shared.model.temp.Block
 import org.threeten.bp.ZonedDateTime
 
 /**

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.model.Block
-import com.google.samples.apps.iosched.shared.domain.agenda.LoadAgendaUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.domain.agenda.LoadAgendaUseCase
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.shared.model.temp.Block
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.shared.result.data
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow

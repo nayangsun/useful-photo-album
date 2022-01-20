@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@id/navigation_agenda"
-        android:name="com.google.samples.apps.iosched.ui.agenda.AgendaFragment"
+        android:name="com.example.useful_photo_album.presentation.agenda.AgendaFragment"
         android:label="@string/agenda"
         tools:layout="@layout/fragment_agenda" />
 

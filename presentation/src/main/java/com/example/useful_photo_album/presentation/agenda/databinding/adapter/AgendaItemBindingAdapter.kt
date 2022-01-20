@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.agenda
+package com.example.useful_photo_album.presentation.agenda
 
 import android.graphics.drawable.GradientDrawable
 import android.view.View
@@ -22,8 +22,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.databinding.BindingAdapter
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.TimeUtils
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 import org.threeten.bp.format.DateTimeFormatter
