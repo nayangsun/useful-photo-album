@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.agenda
+package com.example.useful_photo_album.presentation.agenda.databinding.adapter
 
 import android.graphics.drawable.GradientDrawable
 import android.view.View

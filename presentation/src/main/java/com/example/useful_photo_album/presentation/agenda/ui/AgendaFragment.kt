@@ -32,9 +32,9 @@ import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.core.util.doOnApplyWindowInsets
 import com.example.useful_photo_album.presentation.databinding.FragmentAgendaBinding
-import com.example.useful_photo_album.presentation.signin.util.setupProfileMenuItem
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils
+import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
 import com.google.samples.apps.iosched.util.clearDecorations
 import dagger.hilt.android.AndroidEntryPoint
 import org.threeten.bp.ZoneId
