@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.useful_photo_album.presentation.agenda
+package com.example.useful_photo_album.presentation.agenda.ui.widget
 
 import com.example.useful_photo_album.shared.model.temp.Block
 import org.threeten.bp.ZonedDateTime
