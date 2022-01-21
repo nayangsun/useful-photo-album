@@ -19,6 +19,7 @@ package com.google.samples.apps.iosched.ui.map
 import androidx.annotation.DimenRes
 import androidx.annotation.RawRes
 import androidx.databinding.BindingAdapter
+import com.example.useful_photo_album.presentation.map.MapTileProvider
 import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MapStyleOptions

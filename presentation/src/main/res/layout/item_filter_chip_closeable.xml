@@ -23,11 +23,11 @@
 
         <variable
             name="filterChip"
-            type="com.google.samples.apps.iosched.ui.filters.FilterChip" />
+            type="com.example.useful_photo_album.presentation.filters.FilterChip" />
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.filters.FiltersViewModelDelegate" />
+            type="com.example.useful_photo_album.presentation.filters.FiltersViewModelDelegate" />
     </data>
 
     <com.google.android.material.chip.Chip

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.info
+package com.example.useful_photo_album.presentation.info
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,10 +26,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentInfoBinding
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.google.android.material.tabs.TabLayoutMediator
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentInfoBinding
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem

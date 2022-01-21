@@ -17,8 +17,8 @@
 package com.google.samples.apps.iosched.ui.search
 
 import androidx.fragment.app.viewModels
-import com.google.samples.apps.iosched.ui.filters.FiltersFragment
-import com.google.samples.apps.iosched.ui.filters.FiltersViewModelDelegate
+import com.example.useful_photo_album.presentation.filters.FiltersFragment
+import com.example.useful_photo_album.presentation.filters.FiltersViewModelDelegate
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

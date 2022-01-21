@@ -14,30 +14,25 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.info
+package com.example.useful_photo_album.presentation.info
 
 import android.net.wifi.WifiConfiguration
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.domain.logistics.LoadWifiInfoUseCase
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.domain.logistics.LoadWifiInfoUseCase
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.util.wifi.WifiInstaller
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
+import com.example.useful_photo_album.shared.result.data
+import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessage
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
-import com.google.samples.apps.iosched.util.wifi.WifiInstaller
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
 @HiltViewModel

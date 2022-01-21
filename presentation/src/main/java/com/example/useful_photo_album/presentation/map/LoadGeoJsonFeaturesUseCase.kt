@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.map
+package com.example.useful_photo_album.presentation.map
 
 import android.content.Context
 import android.text.TextUtils
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.domain.UseCase
 import com.google.android.gms.maps.GoogleMap
 import com.google.maps.android.data.geojson.GeoJsonFeature
 import com.google.maps.android.data.geojson.GeoJsonLayer
 import com.google.maps.android.ktx.utils.geojson.geoJsonLayer
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.domain.UseCase
+import com.google.samples.apps.iosched.ui.map.processGeoJsonLayer
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject

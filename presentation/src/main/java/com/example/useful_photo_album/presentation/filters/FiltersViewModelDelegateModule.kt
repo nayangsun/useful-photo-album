@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
+import com.example.useful_photo_album.di.ApplicationScope
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -41,9 +41,6 @@ import com.google.android.gms.maps.MapView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.maps.android.data.geojson.GeoJsonLayer
 import com.google.maps.android.ktx.awaitMap
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentMapBinding
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.map.*

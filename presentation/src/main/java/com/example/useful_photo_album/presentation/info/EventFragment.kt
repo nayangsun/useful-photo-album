@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.info
+package com.example.useful_photo_album.presentation.info
 
 import android.content.Intent
 import android.net.Uri
@@ -30,11 +30,11 @@ import androidx.core.view.updatePadding
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentInfoEventBinding
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
-import com.google.samples.apps.iosched.shared.di.AssistantAppEnabledFlag
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentInfoEventBinding
+import com.example.useful_photo_album.shared.di.AssistantAppEnabledFlag
+import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
+import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets

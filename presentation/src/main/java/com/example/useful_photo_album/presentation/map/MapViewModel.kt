@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.map
+package com.example.useful_photo_album.presentation.map
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.useful_photo_album.domain.prefs.MyLocationOptedInUseCase
+import com.example.useful_photo_album.domain.prefs.OptIntoMyLocationUseCase
+import com.example.useful_photo_album.presentation.BuildConfig
 import com.google.android.gms.maps.CameraUpdate
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -25,26 +28,18 @@ import com.google.android.gms.maps.model.LatLngBounds
 import com.google.maps.android.data.geojson.GeoJsonFeature
 import com.google.maps.android.data.geojson.GeoJsonLayer
 import com.google.maps.android.data.geojson.GeoJsonPoint
-import com.google.samples.apps.iosched.BuildConfig
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.domain.prefs.MyLocationOptedInUseCase
-import com.google.samples.apps.iosched.shared.domain.prefs.OptIntoMyLocationUseCase
-import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.shared.result.updateOnSuccess
-import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.result.updateOnSuccess
+import com.example.useful_photo_album.shared.util.tryOffer
+import com.google.samples.apps.iosched.ui.map.MapVariant
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import com.google.samples.apps.iosched.widget.BottomSheetBehavior
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

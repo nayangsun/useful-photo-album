@@ -1,3 +1,5 @@
+import org.gradle.internal.impldep.org.junit.experimental.categories.Categories.CategoryFilter.exclude
+
 plugins {
     id("com.android.library")
     kotlin("android")
@@ -46,6 +48,12 @@ dependencies {
 
     implementation(Libs.threetenabp)
     implementation(Libs.threetenbp)
+
+    // Maps
+    api(Libs.googleMapUtils) {
+        exclude(group = "com.google.android.gms")
+    }
+    api(Libs.googlePlayServicesMaps)
 
     implementation(Libs.Dagger.hiltAndroid)
     kapt(Libs.Dagger.hiltCompiler)

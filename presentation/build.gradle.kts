@@ -2,9 +2,8 @@ plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("kapt")
-    id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs")
-    id("kotlin-android")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -12,9 +11,30 @@ android {
     defaultConfig {
         minSdk = Versions.minSdk
         targetSdk = Versions.targetSdk
+
+        buildConfigField(
+            "com.google.android.gms.maps.model.LatLng",
+            "MAP_VIEWPORT_BOUND_NE",
+            "new com.google.android.gms.maps.model.LatLng(${project.properties["map_viewport_bound_ne"]})"
+        )
+        buildConfigField(
+            "com.google.android.gms.maps.model.LatLng",
+            "MAP_VIEWPORT_BOUND_SW",
+            "new com.google.android.gms.maps.model.LatLng(${project.properties["map_viewport_bound_sw"]})"
+        )
+
+        buildConfigField("float", "MAP_CAMERA_FOCUS_ZOOM", project.properties["map_camera_focus_zoom"] as String)
+
+        resValue("dimen", "map_camera_bearing", project.properties["map_default_camera_bearing"] as String)
+        resValue("dimen", "map_camera_target_lat", project.properties["map_default_camera_target_lat"] as String)
+        resValue("dimen", "map_camera_target_lng", project.properties["map_default_camera_target_lng"] as String)
+        resValue("dimen", "map_camera_tilt", project.properties["map_default_camera_tilt"] as String)
+        resValue("dimen", "map_camera_zoom", project.properties["map_default_camera_zoom"] as String)
+        resValue("dimen", "map_viewport_min_zoom", project.properties["map_viewport_min_zoom"] as String)
+        resValue("dimen", "map_viewport_max_zoom", project.properties["map_viewport_max_zoom"] as String)
+
     }
     buildFeatures {
-
         viewBinding = true
         dataBinding = true
     }
@@ -59,3 +79,5 @@ dependencies {
     androidTestImplementation(Libs.Test.junitExt)
     androidTestImplementation(Libs.Test.espressoCore)
 }
+
+apply(plugin = "com.google.gms.google-services")

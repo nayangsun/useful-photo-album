@@ -23,16 +23,16 @@
 
         <variable
             name="filterChip"
-            type="com.google.samples.apps.iosched.ui.filters.FilterChip" />
+            type="com.example.useful_photo_album.presentation.filters.FilterChip" />
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.filters.FiltersViewModelDelegate" />
+            type="com.example.useful_photo_album.presentation.filters.FiltersViewModelDelegate" />
     </data>
 
     <com.google.android.material.chip.Chip
         android:id="@+id/filter_label"
-        style="@style/Widget.IOSched.FilterChip.Selectable"
+        style="@style/Widget.Upa.FilterChip.Selectable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="@{filterChip.isSelected}"

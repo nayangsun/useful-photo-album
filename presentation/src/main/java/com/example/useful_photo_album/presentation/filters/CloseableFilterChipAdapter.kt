@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.databinding.ItemFilterChipCloseableBinding
-import com.google.samples.apps.iosched.ui.filters.CloseableFilterChipAdapter.FilterChipViewHolder
+import com.example.useful_photo_album.presentation.databinding.ItemFilterChipCloseableBinding
+import com.example.useful_photo_album.presentation.filters.CloseableFilterChipAdapter.FilterChipViewHolder
 import com.google.samples.apps.iosched.util.executeAfter
 
 // TODO(jdkoren): Maybe combine this with SelectableFilterChipAdapter

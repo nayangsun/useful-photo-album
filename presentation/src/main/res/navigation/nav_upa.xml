@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@id/navigation_schedule"
-        android:name="com.example.useful_photo_album.presentation.schedule.ui.ScheduleTwoPaneFragment"
+        android:name="com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneFragment"
         android:label="@string/title_schedule"
         tools:layout="@layout/fragment_schedule_two_pane">
     </fragment>
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@id/navigation_agenda"
-        android:name="com.example.useful_photo_album.presentation.agenda.AgendaFragment"
+        android:name="com.example.useful_photo_album.presentation.agenda.ui.AgendaFragment"
         android:label="@string/agenda"
         tools:layout="@layout/fragment_agenda" />
 

@@ -1,5 +1,9 @@
 package com.example.useful_photo_album.shared.result
 
+import androidx.lifecycle.MutableLiveData
+import kotlinx.coroutines.flow.MutableStateFlow
+import com.example.useful_photo_album.shared.result.Result.Success
+
 /**
  * A generic class that holds a value with its loading status.
  * @param <T>
@@ -51,5 +55,22 @@ inline fun <R, T> Result<T>.mapCatching(transform: (T) -> R): Result<R> {
         }
         is Result.Error -> Result.Error(exception)
         Result.Loading -> Result.Loading
+    }
+}
+
+/**
+ * Updates value of [liveData] if [Result] is of type [Success]
+ */
+inline fun <reified T> Result<T>.updateOnSuccess(liveData: MutableLiveData<T>) {
+    if (this is Success) {
+        liveData.value = data
+    }
+}
+/**
+ * Updates value of [MutableStateFlow] if [Result] is of type [Success]
+ */
+inline fun <reified T> Result<T>.updateOnSuccess(stateFlow: MutableStateFlow<T>) {
+    if (this is Success) {
+        stateFlow.value = data
     }
 }

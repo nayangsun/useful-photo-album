@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
 import android.graphics.Color
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Tag
-import com.google.samples.apps.iosched.model.filters.Filter
-import com.google.samples.apps.iosched.model.filters.Filter.DateFilter
-import com.google.samples.apps.iosched.model.filters.Filter.MyScheduleFilter
-import com.google.samples.apps.iosched.model.filters.Filter.TagFilter
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.model.temp.Tag
+import com.example.useful_photo_album.shared.model.temp.filters.Filter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.DateFilter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.MyScheduleFilter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter.TagFilter
+import com.example.useful_photo_album.shared.util.TimeUtils
 
 /** Wrapper model for showing [Filter] as a chip in the UI. */
 data class FilterChip(

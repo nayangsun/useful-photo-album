@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
-import com.google.samples.apps.iosched.model.filters.Filter
+import com.example.useful_photo_album.shared.model.temp.filters.Filter
 import com.google.samples.apps.iosched.util.compatRemoveIf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow

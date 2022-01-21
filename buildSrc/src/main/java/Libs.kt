@@ -6,6 +6,7 @@ object Versions {
     const val targetSdk = 30
     const val versionCode = 1
     const val versionName = "1.0.0"
+    const val googleService = "4.3.3"
 }
 
 
@@ -134,6 +135,10 @@ object Libs {
     const val threetenbp = "org.threeten:threetenbp:1.3.6"
     const val lottie = "com.airbnb.android:lottie:3.0.0"
 
-    const val googleService = "com.google.gms:google-services:4.3.3"
     const val flexbox = "com.google.android:flexbox:1.1.0"
+
+    const val googleService = "com.google.gms:google-services:4.3.3"
+    const val googleMapUtils = "com.google.maps.android:maps-utils-ktx:3.0.0"
+    const val googlePlayServicesMaps = "com.google.maps.android:maps-ktx:3.0.0"
+    const val googlePlayServicesVision = "com.google.android.gms:play-services-vision:17.0.2"
 }

@@ -33,7 +33,7 @@
         android:paddingEnd="@{ sectionHeader.useHorizontalPadding ? @dimen/margin_normal : 0 }"
         android:paddingStart="@{ sectionHeader.useHorizontalPadding ? @dimen/margin_normal : 0 }"
         android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.IOSched.Overline"
+        android:textAppearance="@style/TextAppearance.Upa.Overline"
         android:text="@{sectionHeader.titleId}"
         tools:text="@string/speaker_events_subhead" />
 </layout>

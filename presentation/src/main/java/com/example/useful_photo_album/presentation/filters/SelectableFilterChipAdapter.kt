@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemFilterChipSelectableBinding
-import com.google.samples.apps.iosched.databinding.ItemGenericSectionHeaderBinding
-import com.google.samples.apps.iosched.shared.util.exceptionInDebug
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemFilterChipSelectableBinding
+import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
+import com.example.useful_photo_album.shared.util.exceptionInDebug
 import com.google.samples.apps.iosched.ui.SectionHeader
 
 /** Adapter for selectable filters, e.g. ones shown in the filter sheet. */
@@ -35,7 +35,6 @@ class SelectableFilterChipAdapter(
     companion object {
         private const val VIEW_TYPE_HEADING = R.layout.item_generic_section_header
         private const val VIEW_TYPE_FILTER = R.layout.item_filter_chip_selectable
-
         /**
          * Inserts category headings in a list of [FilterChip]s to make a heterogeneous list.
          * Assumes the items are already grouped by [FilterChip.categoryLabel], beginning with

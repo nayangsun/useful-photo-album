@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.map
+package com.example.useful_photo_album.presentation.map
 
+import com.example.useful_photo_album.presentation.BuildConfig
 import com.google.android.gms.maps.model.UrlTileProvider
-import com.google.samples.apps.iosched.BuildConfig
+import com.google.samples.apps.iosched.ui.map.MapVariant
 import java.net.URL
 
 class MapTileProvider(

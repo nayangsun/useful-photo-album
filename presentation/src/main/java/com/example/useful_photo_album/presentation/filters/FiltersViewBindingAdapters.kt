@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.filters
+package com.example.useful_photo_album.presentation.filters
 
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -22,8 +22,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.chip.Chip
-import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.widget.SpaceDecoration
 
 @BindingAdapter("activeFilters", "viewModel", requireAll = true)

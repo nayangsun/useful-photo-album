@@ -28,7 +28,7 @@ import com.google.samples.apps.iosched.shared.domain.search.SessionSearchUseCase
 import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
 import com.google.samples.apps.iosched.shared.result.Result.Loading
 import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.ui.filters.FiltersViewModelDelegate
+import com.example.useful_photo_album.presentation.filters.FiltersViewModelDelegate
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
