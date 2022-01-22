@@ -118,4 +118,42 @@
     <dimen name="countdown_height">300dp</dimen>
     <dimen name="feed_social_buttons_spacing">12dp</dimen>
 
+    <!-- temp -->
+
+    <dimen name="text_size_h1">22sp</dimen>
+    <dimen name="text_size_h2">20sp</dimen>
+    <dimen name="text_size_h3">18sp</dimen>
+
+    <!-- Speaker -->
+    <dimen name="speaker_headshot_size">40dp</dimen>
+    <dimen name="speaker_large_headshot_size">112dp</dimen>
+
+    <!-- Use dp because the time decoration has constrained width and we don't want it to grow if
+         the user sets large text scale in the system settings.
+    -->
+    <dimen name="time_header_time_text_size">20dp</dimen>
+    <dimen name="time_header_meridiem_text_size">14dp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_result_icon_size">24dp</dimen>
+    <!-- How wide the toolbar must be to have the active filters in it. See SearchFragment for
+         details. Calculated as 720dp - 72dp (min width of a NavigationRailView)
+    -->
+    <dimen name="active_filters_in_toolbar_threshold">648dp</dimen>
+
+    <!-- Map -->
+    <dimen name="map_bottom_sheet_peek_height">56dp</dimen>
+
+    <!-- Info -->
+    <dimen name="info_page_margin">17dp</dimen>
+
+    <!-- Profile dialog -->
+    <dimen name="profile_dialog_account_image_size">36dp</dimen>
+    <!-- This is the avatar size + paddingTop + paddingBottom (36 + 16 + 16). This ensures the
+         avatar and text in the dialog header both have at least 16dp "margin" on top and bottom
+         regardless of the user's text scale setting.
+    -->
+    <dimen name="profile_dialog_header_height">68dp</dimen>
+
+
 </resources>

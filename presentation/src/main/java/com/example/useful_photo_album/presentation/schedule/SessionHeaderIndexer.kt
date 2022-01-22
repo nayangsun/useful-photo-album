@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.util.TimeUtils
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 import org.threeten.bp.temporal.ChronoUnit

@@ -55,7 +55,7 @@ import com.example.useful_photo_album.presentation.reservation.RemoveReservation
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogFragment.Companion.DIALOG_REMOVE_RESERVATION
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
 import com.example.useful_photo_album.presentation.reservation.SwapReservationDialogFragment.Companion.DIALOG_SWAP_RESERVATION
-import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
+import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSpeakerDetail

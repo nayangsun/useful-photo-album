@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
 sealed class ScheduleNavigationAction {
     object NavigateToSignInDialogAction : ScheduleNavigationAction()

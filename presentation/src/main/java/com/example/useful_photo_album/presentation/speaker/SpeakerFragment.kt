@@ -36,7 +36,7 @@ import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.databinding.FragmentSpeakerBinding
 import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
+import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.setContentMaxWidth

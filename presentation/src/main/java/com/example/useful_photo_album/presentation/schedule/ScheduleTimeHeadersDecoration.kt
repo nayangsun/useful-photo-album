@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
 import android.content.Context
 import android.graphics.Canvas
@@ -37,8 +37,8 @@ import androidx.core.view.isEmpty
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Session
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.model.temp.Session
 import com.google.samples.apps.iosched.util.isRtl
 import com.google.samples.apps.iosched.util.newStaticLayout
 import org.threeten.bp.ZoneId
@@ -69,7 +69,7 @@ class ScheduleTimeHeadersDecoration(
 
     init {
         val attrs = context.obtainStyledAttributes(
-            R.style.Widget_IOSched_TimeHeaders,
+            R.style.Widget_Upa_TimeHeaders,
             R.styleable.TimeHeader
         )
         paint = TextPaint(ANTI_ALIAS_FLAG).apply {

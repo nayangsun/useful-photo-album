@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
 import androidx.lifecycle.ViewModel
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionClickListener
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel

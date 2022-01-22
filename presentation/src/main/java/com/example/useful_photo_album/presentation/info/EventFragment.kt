@@ -39,7 +39,7 @@ import com.example.useful_photo_album.presentation.messages.SnackbarMessageManag
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.widget.FadingSnackbar
+import com.example.useful_photo_album.presentation.widget.FadingSnackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject

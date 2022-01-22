@@ -33,6 +33,8 @@ object Libs {
         const val startup = "androidx.startup:startup-runtime:1.1.0-beta01"
         const val annotation = "androidx.annotation:annotation:1.3.0"
         const val slidingPaneLayout = "androidx.slidingpanelayout:slidingpanelayout:1.2.0-alpha01"
+        const val cardView = "androidx.cardview:cardview:1.0.0"
+        const val swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
         object Lifecycle {
             private const val lifecycleVersion = "2.4.0"

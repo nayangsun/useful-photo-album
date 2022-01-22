@@ -57,6 +57,8 @@ dependencies {
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.slidingPaneLayout)
     implementation(Libs.AndroidX.browser)
+    implementation(Libs.AndroidX.cardView)
+    implementation(Libs.AndroidX.swiperefreshlayout)
 
     implementation(Libs.AndroidX.Navigation.fragment)
     implementation(Libs.AndroidX.Navigation.ui)

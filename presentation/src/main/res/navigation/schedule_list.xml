@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/navigation_schedule_list"
-        android:name="com.example.useful_photo_album.presentation.schedule.ui.ScheduleFragment"
+        android:name="com.example.useful_photo_album.presentation.schedule.ScheduleFragment"
         android:label="@string/title_schedule"
         tools:layout="@layout/fragment_schedule">
         <action

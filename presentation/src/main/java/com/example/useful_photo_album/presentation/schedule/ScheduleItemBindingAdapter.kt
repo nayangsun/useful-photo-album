@@ -14,16 +14,18 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Room
-import com.google.samples.apps.iosched.model.userdata.UserEvent
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.reservation.ReservationTextView
+import com.example.useful_photo_album.presentation.reservation.ReservationViewState
+import com.example.useful_photo_album.shared.model.temp.Room
+import com.example.useful_photo_album.shared.model.temp.userdata.UserEvent
+import com.example.useful_photo_album.shared.util.TimeUtils
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 

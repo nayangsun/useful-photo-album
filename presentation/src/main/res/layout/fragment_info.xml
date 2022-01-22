@@ -63,7 +63,7 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:pageMargin="@{@dimen/info_page_margin}" />
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <com.example.useful_photo_album.presentation.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

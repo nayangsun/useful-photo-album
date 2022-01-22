@@ -26,7 +26,7 @@ import com.google.samples.apps.iosched.shared.domain.prefs.ScheduleUiHintsShownU
 import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.sessioncommon.stringRes
-import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints
+import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.ShowScheduleUiHints
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.example.useful_photo_album.shared.model.temp.ConferenceDay
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
@@ -37,7 +37,6 @@ import com.example.useful_photo_album.shared.result.data
 import com.example.useful_photo_album.shared.result.successOr
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow.DROP_LATEST

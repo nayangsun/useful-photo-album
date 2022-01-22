@@ -35,7 +35,7 @@ import com.google.samples.apps.iosched.databinding.FragmentSearchBinding
 import com.google.samples.apps.iosched.databinding.SearchActiveFiltersNarrowBinding
 import com.google.samples.apps.iosched.databinding.SearchActiveFiltersWideBinding
 import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
+import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle

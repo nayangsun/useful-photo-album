@@ -107,7 +107,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <com.example.useful_photo_album.presentation.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"
