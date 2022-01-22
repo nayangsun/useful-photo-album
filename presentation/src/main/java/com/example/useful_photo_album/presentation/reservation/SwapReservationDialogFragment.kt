@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.reservation
+package com.example.useful_photo_album.presentation.reservation
 
 import android.app.Dialog
 import android.content.res.Resources
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.lifecycle.coroutineScope
+import com.example.useful_photo_album.domain.users.SwapActionUseCase
+import com.example.useful_photo_album.domain.users.SwapRequestParameters
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.domain.users.SwapActionUseCase
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
 import com.google.samples.apps.iosched.util.makeBold
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.onboarding
+package com.example.useful_photo_album.presentation.onboarding
 
 import android.animation.ValueAnimator
 import android.view.animation.AnimationUtils

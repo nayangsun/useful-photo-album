@@ -50,11 +50,11 @@ import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
 import com.google.samples.apps.iosched.shared.notifications.AlarmBroadcastReceiver
 import com.google.samples.apps.iosched.shared.result.successOr
 import com.google.samples.apps.iosched.shared.util.toEpochMilli
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.reservation.RemoveReservationDialogFragment
-import com.google.samples.apps.iosched.ui.reservation.RemoveReservationDialogFragment.Companion.DIALOG_REMOVE_RESERVATION
-import com.google.samples.apps.iosched.ui.reservation.RemoveReservationDialogParameters
-import com.google.samples.apps.iosched.ui.reservation.SwapReservationDialogFragment.Companion.DIALOG_SWAP_RESERVATION
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogFragment
+import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogFragment.Companion.DIALOG_REMOVE_RESERVATION
+import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
+import com.example.useful_photo_album.presentation.reservation.SwapReservationDialogFragment.Companion.DIALOG_SWAP_RESERVATION
 import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction

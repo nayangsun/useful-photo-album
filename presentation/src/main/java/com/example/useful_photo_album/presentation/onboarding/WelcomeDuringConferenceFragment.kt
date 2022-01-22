@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.onboarding
+package com.example.useful_photo_album.presentation.onboarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,7 +23,7 @@ import android.view.ViewGroup
 import androidx.core.view.doOnLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.google.samples.apps.iosched.databinding.FragmentOnboardingWelcomeDuringBinding
+import com.example.useful_photo_album.presentation.databinding.FragmentOnboardingWelcomeDuringBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 /**

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.reservation
+package com.example.useful_photo_album.presentation.reservation
 
 import android.app.Dialog
 import android.content.res.Resources
@@ -28,9 +28,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.SessionId
 import com.google.samples.apps.iosched.util.makeBold
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

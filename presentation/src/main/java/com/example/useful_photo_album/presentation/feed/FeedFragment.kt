@@ -37,8 +37,8 @@ import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.Nav
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateToSession
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.OpenLiveStreamAction
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.OpenSignInDialogAction
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.openWebsiteUrl

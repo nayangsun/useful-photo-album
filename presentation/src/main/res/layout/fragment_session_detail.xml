@@ -151,7 +151,7 @@
             app:elevation="6dp"
             app:fabAlignmentMode="end" />
 
-        <com.google.samples.apps.iosched.ui.reservation.StarReserveFab
+        <com.example.useful_photo_album.presentation.reservation.StarReserveFab
             android:id="@+id/session_detail_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

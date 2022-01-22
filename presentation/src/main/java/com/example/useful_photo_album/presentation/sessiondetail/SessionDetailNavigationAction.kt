@@ -19,7 +19,7 @@ package com.google.samples.apps.iosched.ui.sessiondetail
 import com.google.samples.apps.iosched.model.SessionId
 import com.google.samples.apps.iosched.model.SpeakerId
 import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
-import com.google.samples.apps.iosched.ui.reservation.RemoveReservationDialogParameters
+import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
 
 sealed class SessionDetailNavigationAction {
     object NavigateToSignInDialogAction : SessionDetailNavigationAction()

@@ -46,8 +46,8 @@ import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.shared.util.TimeUtils.ConferenceDays
 import com.example.useful_photo_album.shared.util.toEpochMilli
 import com.example.useful_photo_album.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessage
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.SnackbarMessage
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionClickListener
 import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickListener
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate

@@ -27,8 +27,8 @@ import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.example.useful_photo_album.shared.result.data
 import com.example.useful_photo_album.shared.util.tryOffer
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessage
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.SnackbarMessage
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel

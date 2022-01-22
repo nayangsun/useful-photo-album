@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.onboarding
+package com.example.useful_photo_album.presentation.onboarding
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -28,8 +28,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.viewModels
-import com.google.samples.apps.iosched.databinding.FragmentOnboardingBinding
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.databinding.FragmentOnboardingBinding
+import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivity
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint

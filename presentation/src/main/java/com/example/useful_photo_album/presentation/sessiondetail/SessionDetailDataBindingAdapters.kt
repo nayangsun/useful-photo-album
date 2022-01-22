@@ -33,8 +33,8 @@ import com.google.samples.apps.iosched.model.SessionType.OFFICE_HOURS
 import com.google.samples.apps.iosched.model.SessionType.SESSION
 import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.reservation.ReservationViewState.RESERVABLE
-import com.google.samples.apps.iosched.ui.reservation.StarReserveFab
+import com.example.useful_photo_album.presentation.reservation.ReservationViewState.RESERVABLE
+import com.example.useful_photo_album.presentation.reservation.StarReserveFab
 import org.threeten.bp.Duration
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime

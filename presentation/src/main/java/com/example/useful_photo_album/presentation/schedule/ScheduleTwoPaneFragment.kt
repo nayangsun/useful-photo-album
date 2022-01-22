@@ -30,8 +30,8 @@ import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.ScheduleDetailNavGraphDirections
 import com.google.samples.apps.iosched.databinding.FragmentScheduleTwoPaneBinding
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.google.samples.apps.iosched.ui.schedule.ScheduleTwoPaneViewModel
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint

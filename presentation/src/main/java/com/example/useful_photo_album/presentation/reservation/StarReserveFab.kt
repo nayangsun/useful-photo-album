@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.reservation
+package com.example.useful_photo_album.presentation.reservation
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.Checkable
 import androidx.annotation.DrawableRes
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.ui.reservation.StarReserveFabMode.RESERVE
-import com.google.samples.apps.iosched.ui.reservation.StarReserveFabMode.STAR
+import com.example.useful_photo_album.presentation.reservation.StarReserveFabMode.RESERVE
+import com.example.useful_photo_album.presentation.reservation.StarReserveFabMode.STAR
 
 /**
  * An extension to the [FloatingActionButton] supporting multiple custom states, representing the

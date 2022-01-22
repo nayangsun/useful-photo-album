@@ -35,8 +35,8 @@ import com.example.useful_photo_album.presentation.databinding.FragmentInfoEvent
 import com.example.useful_photo_album.shared.di.AssistantAppEnabledFlag
 import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.messages.SnackbarMessageManager
-import com.google.samples.apps.iosched.ui.messages.setupSnackbarManager
+import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.widget.FadingSnackbar

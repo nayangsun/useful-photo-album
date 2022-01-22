@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.onboarding
+package com.example.useful_photo_album.presentation.onboarding
 
 import android.os.Bundle
 import android.widget.FrameLayout
@@ -26,8 +26,9 @@ import androidx.core.view.updatePadding
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.util.inTransaction
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.inTransaction
+import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

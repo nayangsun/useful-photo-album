@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.reservation
+package com.example.useful_photo_album.presentation.reservation
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
 
 /**
  * An [AppCompatTextView] extension supporting multiple custom states, representing the status

@@ -43,6 +43,7 @@ android {
 dependencies {
     implementation(project(":domain"))
     implementation(project(":shared"))
+    implementation(project(":data"))
 
     implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.appcompat)
@@ -51,7 +52,6 @@ dependencies {
 
     implementation(Libs.AndroidX.Lifecycle.viewModel)
     implementation(Libs.AndroidX.Lifecycle.runtime)
-    implementation(project(mapOf("path" to ":data")))
     kapt(Libs.AndroidX.Lifecycle.compiler)
     implementation(Libs.AndroidX.core)
     implementation(Libs.AndroidX.recyclerview)
