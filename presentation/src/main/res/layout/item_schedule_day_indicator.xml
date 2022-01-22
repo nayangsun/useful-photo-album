@@ -24,11 +24,11 @@
 
         <variable
             name="indicator"
-            type="com.example.useful_photo_album.presentation.schedule.widget.DayIndicator" />
+            type="com.example.useful_photo_album.presentation.schedule.DayIndicator" />
 
         <variable
             name="viewModel"
-            type="com.example.useful_photo_album.presentation.schedule.ui.ScheduleViewModel" />
+            type="com.example.useful_photo_album.presentation.schedule.ScheduleViewModel" />
     </data>
 
     <CheckedTextView

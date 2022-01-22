@@ -41,8 +41,7 @@ import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndex
 import com.google.samples.apps.iosched.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
-import com.example.useful_photo_album.presentation.schedule.DayIndicator
-import com.example.useful_photo_album.presentation.schedule.DayIndicatorAdapter
+import com.example.useful_photo_album.presentation.schedule.*
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
 import com.google.samples.apps.iosched.ui.schedule.ScheduleNavigationAction.ShowScheduleUiHints

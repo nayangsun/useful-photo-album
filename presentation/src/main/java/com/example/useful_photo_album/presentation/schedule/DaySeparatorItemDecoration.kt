@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.schedule
+package com.example.useful_photo_album.presentation.schedule
 
 import android.content.Context
 import android.graphics.Canvas
@@ -35,6 +35,9 @@ import androidx.core.view.forEach
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
+import com.example.useful_photo_album.domain.sessions.ConferenceDayIndexer
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.shared.domain.sessions.ConferenceDayIndexer
 import com.google.samples.apps.iosched.shared.util.TimeUtils
@@ -60,7 +63,7 @@ class DaySeparatorItemDecoration(
 
     init {
         val attrs = context.obtainStyledAttributes(
-            R.style.Widget_IOSched_DaySeparatorDecoration,
+            R.style.Widget_Upa_DaySeparatorDecoration,
             R.styleable.DaySeparatorDecoration
         )
 

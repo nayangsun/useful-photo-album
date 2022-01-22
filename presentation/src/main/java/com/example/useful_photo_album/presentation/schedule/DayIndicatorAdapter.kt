@@ -24,9 +24,9 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.DiffUtil.ItemCallback
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.databinding.ItemScheduleDayIndicatorBinding
-import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.schedule.ScheduleViewModel
+import com.example.useful_photo_album.presentation.databinding.ItemScheduleDayIndicatorBinding
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.google.samples.apps.iosched.util.executeAfter
 
 class DayIndicatorAdapter(
     private val scheduleViewModel: ScheduleViewModel,
