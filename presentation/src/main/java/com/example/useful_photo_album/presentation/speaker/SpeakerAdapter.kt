@@ -31,11 +31,10 @@ import com.google.samples.apps.iosched.databinding.ItemSessionBinding
 import com.google.samples.apps.iosched.databinding.ItemSpeakerInfoBinding
 import com.google.samples.apps.iosched.model.userdata.UserSession
 import com.google.samples.apps.iosched.ui.SectionHeader
-import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionClickListener
+import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
 import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.HeaderViewHolder
 import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.SpeakerInfoViewHolder
 import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.SpeakerSessionViewHolder
-import com.google.samples.apps.iosched.util.executeAfter
 import java.util.Collections.emptyList
 
 /**

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.MainDispatcher
-import com.google.samples.apps.iosched.shared.domain.users.StarEventAndNotifyUseCase
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.MainDispatcher
+import com.example.useful_photo_album.domain.users.StarEventAndNotifyUseCase
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

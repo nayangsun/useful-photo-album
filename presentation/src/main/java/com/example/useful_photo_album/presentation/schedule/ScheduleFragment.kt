@@ -41,7 +41,7 @@ import com.example.useful_photo_album.presentation.messages.SnackbarMessageManag
 import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.NavigateToSignInDialogAction
 import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
 import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.ShowScheduleUiHints
-import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
+import com.example.useful_photo_album.presentation.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE
 import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.ShowNotificationPreferencesDialog
 import com.example.useful_photo_album.shared.analytics.AnalyticsActions

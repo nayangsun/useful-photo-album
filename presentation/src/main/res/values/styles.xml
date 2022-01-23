@@ -453,5 +453,10 @@
         <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
     </style>
 
+    <!-- Non-top-level screens should inflate with this theme to replace the keyline. -->
+    <style name="AppTheme.Detail">
+        <item name="sessionListKeyline">@dimen/spacing_small</item>
+    </style>
+
 
 </resources>

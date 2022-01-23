@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -23,9 +23,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.useful_photo_album.presentation.databinding.ItemSessionBinding
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.google.android.flexbox.FlexboxLayoutManager
-import com.google.samples.apps.iosched.databinding.ItemSessionBinding
-import com.google.samples.apps.iosched.model.userdata.UserSession
 import kotlinx.coroutines.flow.StateFlow
 import org.threeten.bp.ZoneId
 

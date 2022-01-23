@@ -30,7 +30,7 @@ import com.google.samples.apps.iosched.shared.result.Result.Loading
 import com.google.samples.apps.iosched.shared.result.data
 import com.google.samples.apps.iosched.shared.result.successOr
 import com.google.samples.apps.iosched.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickDelegate
+import com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickDelegate
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel

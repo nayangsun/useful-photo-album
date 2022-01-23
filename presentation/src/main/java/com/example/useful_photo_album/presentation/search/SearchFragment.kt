@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.search
+package com.example.useful_photo_album.presentation.search
 
 import android.os.Bundle
 import android.view.ContextThemeWrapper
@@ -30,13 +30,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentSearchBinding
-import com.google.samples.apps.iosched.databinding.SearchActiveFiltersNarrowBinding
-import com.google.samples.apps.iosched.databinding.SearchActiveFiltersWideBinding
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentSearchBinding
+import com.example.useful_photo_album.presentation.databinding.SearchActiveFiltersNarrowBinding
+import com.example.useful_photo_album.presentation.databinding.SearchActiveFiltersWideBinding
 import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
-import com.google.samples.apps.iosched.ui.sessioncommon.SessionsAdapter
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.presentation.sessioncommon.SessionsAdapter
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.setContentMaxWidth

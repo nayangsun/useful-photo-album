@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 
 /**
  * Actions that can be performed on events.

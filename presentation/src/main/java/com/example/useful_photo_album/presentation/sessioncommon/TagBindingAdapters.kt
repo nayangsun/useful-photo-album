@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
 import android.content.Context
 import android.graphics.Color.TRANSPARENT
@@ -25,8 +25,8 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Tag
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.model.temp.Tag
 
 @BindingAdapter("topicTags")
 fun topicTags(recyclerView: RecyclerView, topicTags: List<Tag>?) {

@@ -14,20 +14,21 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.MainDispatcher
-import com.google.samples.apps.iosched.shared.domain.users.StarEventAndNotifyUseCase
-import com.google.samples.apps.iosched.shared.domain.users.StarEventParameter
-import com.google.samples.apps.iosched.shared.util.tryOffer
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.MainDispatcher
+import com.example.useful_photo_album.domain.users.StarEventAndNotifyUseCase
+import com.example.useful_photo_album.domain.users.StarEventParameter
+import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.util.tryOffer
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel

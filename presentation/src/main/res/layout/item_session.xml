@@ -29,11 +29,11 @@
 
         <variable
             name="sessionClickListener"
-            type="com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionClickListener" />
+            type="com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener" />
 
         <variable
             name="sessionStarClickListener"
-            type="com.example.useful_photo_album.presentation.sessioncommon.widget.OnSessionStarClickListener" />
+            type="com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickListener" />
 
         <variable
             name="showReservations"

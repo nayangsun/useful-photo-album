@@ -33,6 +33,6 @@
 
     <fragment
         android:id="@+id/navigation_schedule_search"
-        android:name="com.google.samples.apps.iosched.ui.search.SearchFragment"
+        android:name="com.example.useful_photo_album.presentation.search.SearchFragment"
         tools:layout="@layout/fragment_search" />
 </navigation>

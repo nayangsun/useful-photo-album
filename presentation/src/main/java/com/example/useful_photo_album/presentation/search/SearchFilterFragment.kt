@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.search
+package com.example.useful_photo_album.presentation.search
 
 import androidx.fragment.app.viewModels
 import com.example.useful_photo_album.presentation.filters.FiltersFragment

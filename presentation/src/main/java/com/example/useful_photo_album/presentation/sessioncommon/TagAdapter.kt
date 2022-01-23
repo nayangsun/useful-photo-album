@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessioncommon
+package com.example.useful_photo_album.presentation.sessioncommon
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.google.samples.apps.iosched.databinding.ItemInlineTagBinding
-import com.google.samples.apps.iosched.model.Tag
+import com.example.useful_photo_album.presentation.databinding.ItemInlineTagBinding
+import com.example.useful_photo_album.shared.model.temp.Tag
 
 class TagAdapter : RecyclerView.Adapter<TagViewHolder>() {
 

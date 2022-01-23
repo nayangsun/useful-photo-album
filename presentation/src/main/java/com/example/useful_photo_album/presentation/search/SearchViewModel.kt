@@ -14,22 +14,24 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.search
+package com.example.useful_photo_album.presentation.search
 
 import androidx.core.os.trace
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.domain.search.LoadSearchFiltersUseCase
-import com.google.samples.apps.iosched.shared.domain.search.SessionSearchUseCase
-import com.google.samples.apps.iosched.shared.domain.search.SessionSearchUseCaseParams
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.successOr
+import com.example.useful_photo_album.domain.search.LoadSearchFiltersUseCase
+import com.example.useful_photo_album.domain.search.SessionSearchUseCase
+import com.example.useful_photo_album.domain.search.SessionSearchUseCaseParams
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
 import com.example.useful_photo_album.presentation.filters.FiltersViewModelDelegate
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.util.TimeUtils
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay

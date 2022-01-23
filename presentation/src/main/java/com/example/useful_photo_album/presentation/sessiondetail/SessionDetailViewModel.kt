@@ -49,8 +49,8 @@ import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
-import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickDelegate
-import com.google.samples.apps.iosched.ui.sessioncommon.OnSessionStarClickListener
+import com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickDelegate
+import com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickListener
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction
 import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSpeakerDetail

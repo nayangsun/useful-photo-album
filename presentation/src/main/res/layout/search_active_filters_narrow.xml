@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.search.SearchViewModel" />
+            type="com.example.useful_photo_album.presentation.search.SearchViewModel" />
     </data>
 
     <androidx.recyclerview.widget.RecyclerView

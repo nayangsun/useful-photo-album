@@ -36,7 +36,7 @@ import com.example.useful_photo_album.presentation.databinding.ItemFeedSessionBi
 import com.example.useful_photo_album.presentation.databinding.ItemFeedSessionsContainerBinding
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.sessioncommon.SessionDiff
+import com.example.useful_photo_album.presentation.sessioncommon.SessionDiff
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 
