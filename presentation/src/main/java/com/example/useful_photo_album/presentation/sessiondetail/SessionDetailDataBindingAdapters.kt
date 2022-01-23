@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessiondetail
+package com.example.useful_photo_album.presentation.sessiondetail
 
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -23,18 +23,19 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionType.AFTER_DARK
-import com.google.samples.apps.iosched.model.SessionType.APP_REVIEW
-import com.google.samples.apps.iosched.model.SessionType.GAME_REVIEW
-import com.google.samples.apps.iosched.model.SessionType.KEYNOTE
-import com.google.samples.apps.iosched.model.SessionType.OFFICE_HOURS
-import com.google.samples.apps.iosched.model.SessionType.SESSION
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.reservation.ReservationViewState
 import com.example.useful_photo_album.presentation.reservation.ReservationViewState.RESERVABLE
 import com.example.useful_photo_album.presentation.reservation.StarReserveFab
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SessionType.AFTER_DARK
+import com.example.useful_photo_album.shared.model.temp.SessionType.APP_REVIEW
+import com.example.useful_photo_album.shared.model.temp.SessionType.GAME_REVIEW
+import com.example.useful_photo_album.shared.model.temp.SessionType.KEYNOTE
+import com.example.useful_photo_album.shared.model.temp.SessionType.OFFICE_HOURS
+import com.example.useful_photo_album.shared.model.temp.SessionType.SESSION
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.util.TimeUtils
 import org.threeten.bp.Duration
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime

@@ -33,7 +33,7 @@ import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.databinding.FragmentAgendaBinding
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
+import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
 import com.google.samples.apps.iosched.util.clearDecorations
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint

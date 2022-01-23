@@ -28,7 +28,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.shared.util.inTransaction
-import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
+import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

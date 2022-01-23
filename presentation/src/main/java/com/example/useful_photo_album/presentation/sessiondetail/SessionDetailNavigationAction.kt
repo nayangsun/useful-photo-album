@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessiondetail
+package com.example.useful_photo_album.presentation.sessiondetail
 
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.SpeakerId
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
+import com.example.useful_photo_album.domain.users.SwapRequestParameters
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
+import com.example.useful_photo_album.shared.model.temp.SessionId
+import com.example.useful_photo_album.shared.model.temp.SpeakerId
 
 sealed class SessionDetailNavigationAction {
     object NavigateToSignInDialogAction : SessionDetailNavigationAction()

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.settings
+package com.example.useful_photo_album.presentation.settings
 
 import android.app.Dialog
 import android.os.Bundle
@@ -25,8 +25,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.model.Theme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

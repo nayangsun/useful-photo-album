@@ -22,7 +22,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewModel" />
+            type="com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

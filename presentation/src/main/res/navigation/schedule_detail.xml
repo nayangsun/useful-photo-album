@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@id/navigation_session_detail"
-        android:name="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailFragment"
+        android:name="com.example.useful_photo_album.presentation.sessiondetail.SessionDetailFragment"
         tools:layout="@layout/fragment_session_detail">
         <argument
             android:name="session_id"

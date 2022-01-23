@@ -44,7 +44,7 @@ import com.google.maps.android.ktx.awaitMap
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.map.*
-import com.google.samples.apps.iosched.ui.signin.setupProfileMenuItem
+import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.slideOffsetToAlpha

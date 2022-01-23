@@ -14,22 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.settings
+package com.example.useful_photo_album.presentation.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefSaveActionUseCase
+import com.example.useful_photo_album.domain.settings.*
+import com.example.useful_photo_album.shared.result.data
+import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.model.Theme
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefSaveActionUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetAnalyticsSettingUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetAvailableThemesUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetNotificationsSettingUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetThemeUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.SetAnalyticsSettingUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.SetThemeUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.SetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.google.samples.apps.iosched.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessiondetail
+package com.example.useful_photo_album.presentation.sessiondetail
 
 import android.app.Dialog
 import android.os.Bundle
@@ -26,12 +26,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentSessionFeedbackBinding
+import com.example.useful_photo_album.presentation.databinding.ItemQuestionBinding
+import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentSessionFeedbackBinding
-import com.google.samples.apps.iosched.databinding.ItemQuestionBinding
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.result.data
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.widget.SimpleRatingBar
 import dagger.hilt.android.AndroidEntryPoint

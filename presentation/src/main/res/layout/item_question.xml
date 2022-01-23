@@ -22,7 +22,7 @@
 
         <variable
             name="question"
-            type="com.google.samples.apps.iosched.ui.sessiondetail.Question" />
+            type="com.example.useful_photo_album.presentation.sessiondetail.Question" />
 
     </data>
 

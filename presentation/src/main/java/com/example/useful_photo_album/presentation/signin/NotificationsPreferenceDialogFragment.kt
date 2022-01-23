@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.signin
+package com.example.useful_photo_album.presentation.signin
 
 import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.lifecycle.lifecycleScope
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefSaveActionUseCase
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefSaveActionUseCase
 import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefShownActionUseCase
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope

@@ -39,7 +39,7 @@ import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.Ope
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.OpenSignInDialogAction
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
-import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment
+import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.openWebsiteUrl
 import dagger.hilt.android.AndroidEntryPoint

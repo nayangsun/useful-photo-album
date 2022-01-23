@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessiondetail
+package com.example.useful_photo_album.presentation.sessiondetail
 
 import android.content.Intent
 import android.os.Bundle
@@ -26,10 +26,7 @@ import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.app.ShareCompat
 import androidx.core.net.toUri
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.doOnNextLayout
-import androidx.core.view.forEach
-import androidx.core.view.updatePadding
+import androidx.core.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.activityViewModels
@@ -38,33 +35,36 @@ import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import androidx.transition.TransitionInflater
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.R.style
-import com.google.samples.apps.iosched.databinding.FragmentSessionDetailBinding
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SpeakerId
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.di.MapFeatureEnabledFlag
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestParameters
-import com.google.samples.apps.iosched.shared.notifications.AlarmBroadcastReceiver
-import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.shared.util.toEpochMilli
+import com.example.useful_photo_album.domain.component.notifications.AlarmBroadcastReceiver
+import com.example.useful_photo_album.domain.users.SwapRequestParameters
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.R.style
+import com.example.useful_photo_album.presentation.databinding.FragmentSessionDetailBinding
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogFragment
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogFragment.Companion.DIALOG_REMOVE_RESERVATION
 import com.example.useful_photo_album.presentation.reservation.RemoveReservationDialogParameters
+import com.example.useful_photo_album.presentation.reservation.SwapReservationDialogFragment
 import com.example.useful_photo_album.presentation.reservation.SwapReservationDialogFragment.Companion.DIALOG_SWAP_RESERVATION
 import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSpeakerDetail
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToSwapReservationDialogAction
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.NavigateToYoutube
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.RemoveReservationDialogAction
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailNavigationAction.ShowNotificationsPrefAction
-import com.google.samples.apps.iosched.ui.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE
-import com.google.samples.apps.iosched.ui.signin.SignInDialogFragment.Companion.DIALOG_SIGN_IN
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
+import com.example.useful_photo_album.shared.model.temp.Session
+import com.example.useful_photo_album.shared.model.temp.SpeakerId
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.util.toEpochMilli
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.NavigateToSessionFeedback
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.NavigateToSignInDialogAction
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.NavigateToSpeakerDetail
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.NavigateToSwapReservationDialogAction
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.NavigateToYoutube
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.RemoveReservationDialogAction
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailNavigationAction.ShowNotificationsPrefAction
+import com.example.useful_photo_album.presentation.signin.NotificationsPreferenceDialogFragment
+import com.example.useful_photo_album.presentation.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE
+import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
+import com.example.useful_photo_album.presentation.signin.SignInDialogFragment.Companion.DIALOG_SIGN_IN
 import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
 import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.util.openWebsiteUrl
@@ -410,3 +410,4 @@ class SessionDetailFragment : Fragment(), SessionFeedbackFragment.Listener {
         private const val FRAGMENT_SESSION_FEEDBACK = "feedback"
     }
 }
+

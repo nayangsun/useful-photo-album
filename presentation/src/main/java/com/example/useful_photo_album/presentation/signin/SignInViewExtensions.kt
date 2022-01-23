@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.signin
+package com.example.useful_photo_album.presentation.signin
 
 import android.content.Context
 import android.content.res.Resources
@@ -31,8 +31,8 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
+import com.example.useful_photo_album.presentation.R
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.util.asGlideTarget
 import kotlinx.coroutines.flow.collect

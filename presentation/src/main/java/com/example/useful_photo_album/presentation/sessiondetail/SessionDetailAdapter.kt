@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.sessiondetail
+package com.example.useful_photo_album.presentation.sessiondetail
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -25,19 +25,19 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemGenericSectionHeaderBinding
-import com.google.samples.apps.iosched.databinding.ItemSessionBinding
-import com.google.samples.apps.iosched.databinding.ItemSessionInfoBinding
-import com.google.samples.apps.iosched.databinding.ItemSpeakerBinding
-import com.google.samples.apps.iosched.model.Speaker
-import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
+import com.example.useful_photo_album.presentation.databinding.ItemSessionBinding
+import com.example.useful_photo_album.presentation.databinding.ItemSessionInfoBinding
+import com.example.useful_photo_album.presentation.databinding.ItemSpeakerBinding
 import com.google.samples.apps.iosched.ui.SectionHeader
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewHolder.HeaderViewHolder
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewHolder.RelatedViewHolder
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewHolder.SessionInfoViewHolder
-import com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewHolder.SpeakerViewHolder
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.HeaderViewHolder
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.RelatedViewHolder
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.SessionInfoViewHolder
+import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.SpeakerViewHolder
+import com.example.useful_photo_album.shared.model.temp.Speaker
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 
 /**
  * [RecyclerView.Adapter] for presenting a session details, composed of information about the

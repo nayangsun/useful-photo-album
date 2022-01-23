@@ -14,16 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.signin
+package com.example.useful_photo_album.presentation.signin
 
-import com.example.useful_photo_album.presentation.signin.FirebaseSignInViewModelDelegate
-import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
-import com.google.samples.apps.iosched.shared.di.IoDispatcher
-import com.google.samples.apps.iosched.shared.di.MainDispatcher
-import com.google.samples.apps.iosched.shared.di.ReservationEnabledFlag
-import com.google.samples.apps.iosched.shared.domain.auth.ObserveUserAuthStateUseCase
-import com.google.samples.apps.iosched.shared.domain.prefs.NotificationsPrefIsShownUseCase
+import com.example.useful_photo_album.di.ApplicationScope
+import com.example.useful_photo_album.di.IoDispatcher
+import com.example.useful_photo_album.di.MainDispatcher
+import com.example.useful_photo_album.domain.auth.ObserveUserAuthStateUseCase
+import com.example.useful_photo_album.domain.prefs.NotificationsPrefIsShownUseCase
+import com.example.useful_photo_album.shared.di.ReservationEnabledFlag
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
