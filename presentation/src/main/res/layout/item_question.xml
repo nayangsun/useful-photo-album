@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="How are you?" />
 
-        <com.google.samples.apps.iosched.widget.SimpleRatingBar
+        <com.example.useful_photo_album.presentation.widget.SimpleRatingBar
             android:id="@+id/rating"
             style="@style/Widget.AppCompat.SeekBar.Discrete"
             android:layout_width="match_parent"

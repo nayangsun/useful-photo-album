@@ -24,7 +24,7 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.useful_photo_album.presentation.R
 import com.google.android.material.chip.Chip
-import com.google.samples.apps.iosched.widget.SpaceDecoration
+import com.example.useful_photo_album.presentation.widget.SpaceDecoration
 
 @BindingAdapter("activeFilters", "viewModel", requireAll = true)
 fun activeFilters(

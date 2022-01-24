@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.content.Context
 import android.graphics.Canvas
@@ -24,7 +24,7 @@ import android.util.AttributeSet
 import android.view.Window
 import android.view.WindowInsets
 import android.widget.FrameLayout
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
 import kotlin.LazyThreadSafetyMode.NONE
 
 /**
@@ -64,7 +64,7 @@ class NavigationBarContentFrameLayout @JvmOverloads constructor(
             attrs,
             R.styleable.NavigationBarContentFrameLayout,
             defStyleAttr,
-            R.style.Widget_IOSched_NavigationBarContentFrameLayout
+            R.style.Widget_Upa_NavigationBarContentFrameLayout
         )
 
         navigationBarDividerColor = a.getColor(

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.SeekBar
 import androidx.appcompat.widget.AppCompatSeekBar
 import androidx.core.content.res.ResourcesCompat
-import com.google.samples.apps.iosched.R
+import com.example.useful_photo_album.presentation.R
 
 /**
  * This is like [android.widget.RatingBar],  but looks like SeekBar.

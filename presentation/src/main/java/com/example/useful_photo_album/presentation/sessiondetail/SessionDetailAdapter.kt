@@ -30,7 +30,7 @@ import com.example.useful_photo_album.presentation.databinding.ItemGenericSectio
 import com.example.useful_photo_album.presentation.databinding.ItemSessionBinding
 import com.example.useful_photo_album.presentation.databinding.ItemSessionInfoBinding
 import com.example.useful_photo_album.presentation.databinding.ItemSpeakerBinding
-import com.google.samples.apps.iosched.ui.SectionHeader
+import com.example.useful_photo_album.presentation.SectionHeader
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
 import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.HeaderViewHolder
 import com.example.useful_photo_album.presentation.sessiondetail.SessionDetailViewHolder.RelatedViewHolder

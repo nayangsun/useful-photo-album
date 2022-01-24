@@ -28,8 +28,8 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.example.useful_photo_album.presentation.agenda.ui.widget.AgendaHeadersDecoration
 import com.example.useful_photo_album.presentation.agenda.ui.adapter.AgendaAdapter
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.example.useful_photo_album.presentation.databinding.FragmentAgendaBinding
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils

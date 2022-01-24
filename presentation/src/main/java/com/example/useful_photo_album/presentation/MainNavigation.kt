@@ -14,14 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui
+package com.example.useful_photo_album.presentation
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.google.samples.apps.iosched.R
 
 /**
  * To be implemented by components that host top-level navigation destinations.

@@ -30,8 +30,8 @@ import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.FragmentInfoBinding
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.google.android.material.tabs.TabLayoutMediator
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
 import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint

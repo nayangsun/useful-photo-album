@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.graphics.Rect
 import android.view.View

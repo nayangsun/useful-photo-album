@@ -25,7 +25,7 @@ import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.ItemFilterChipSelectableBinding
 import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
 import com.example.useful_photo_album.shared.util.exceptionInDebug
-import com.google.samples.apps.iosched.ui.SectionHeader
+import com.example.useful_photo_album.presentation.SectionHeader
 
 /** Adapter for selectable filters, e.g. ones shown in the filter sheet. */
 class SelectableFilterChipAdapter(

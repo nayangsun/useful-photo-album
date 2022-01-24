@@ -36,8 +36,8 @@ import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
 import com.example.useful_photo_album.shared.model.temp.Codelab
 import com.example.useful_photo_album.shared.util.consume
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
 import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle

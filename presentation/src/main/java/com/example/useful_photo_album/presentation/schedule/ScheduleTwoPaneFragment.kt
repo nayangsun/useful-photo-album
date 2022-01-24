@@ -30,7 +30,7 @@ import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.ScheduleDetailNavGraphDirections
 import com.example.useful_photo_album.presentation.databinding.FragmentScheduleTwoPaneBinding
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment

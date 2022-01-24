@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui
+package com.example.useful_photo_album.presentation
 
 import androidx.annotation.StringRes
 

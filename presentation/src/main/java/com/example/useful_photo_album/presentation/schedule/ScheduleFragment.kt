@@ -36,7 +36,7 @@ import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import com.example.useful_photo_album.domain.sessions.ConferenceDayIndexer
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.FragmentScheduleBinding
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainActivityViewModel
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.NavigateToSignInDialogAction
 import com.example.useful_photo_album.presentation.schedule.ScheduleNavigationAction.NavigateToSignOutDialogAction
@@ -54,9 +54,9 @@ import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
 import com.example.useful_photo_album.presentation.signin.SignOutDialogFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
 import com.example.useful_photo_album.presentation.util.*
-import com.google.samples.apps.iosched.widget.BubbleDecoration
+import com.example.useful_photo_album.presentation.widget.BubbleDecoration
 import com.example.useful_photo_album.presentation.widget.FadingSnackbar
-import com.google.samples.apps.iosched.widget.JumpSmoothScroller
+import com.example.useful_photo_album.presentation.widget.JumpSmoothScroller
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

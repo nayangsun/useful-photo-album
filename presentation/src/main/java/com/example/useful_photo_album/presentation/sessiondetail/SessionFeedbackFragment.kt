@@ -32,7 +32,7 @@ import com.example.useful_photo_album.presentation.databinding.ItemQuestionBindi
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.widget.SimpleRatingBar
+import com.example.useful_photo_album.presentation.widget.SimpleRatingBar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collect

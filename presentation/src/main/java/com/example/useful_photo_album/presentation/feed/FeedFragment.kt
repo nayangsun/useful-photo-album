@@ -29,8 +29,8 @@ import com.example.useful_photo_album.presentation.databinding.FragmentFeedBindi
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.common.collect.ImmutableMap
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.feed.*
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateAction
 import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.NavigateToScheduleAction

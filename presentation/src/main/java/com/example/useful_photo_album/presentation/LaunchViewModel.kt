@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui
+package com.example.useful_photo_album.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.shared.domain.prefs.OnboardingCompletedUseCase
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.ui.LaunchNavigatonAction.NavigateToMainActivityAction
-import com.google.samples.apps.iosched.ui.LaunchNavigatonAction.NavigateToOnboardingAction
+import com.example.useful_photo_album.domain.prefs.OnboardingCompletedUseCase
+import com.example.useful_photo_album.presentation.LaunchNavigatonAction.NavigateToMainActivityAction
+import com.example.useful_photo_album.presentation.LaunchNavigatonAction.NavigateToOnboardingAction
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.result.data
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted.Companion.Eagerly
 import kotlinx.coroutines.flow.map

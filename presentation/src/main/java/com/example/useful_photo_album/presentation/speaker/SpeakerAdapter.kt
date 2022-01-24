@@ -29,7 +29,7 @@ import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
 import com.example.useful_photo_album.presentation.databinding.ItemSessionBinding
 import com.example.useful_photo_album.presentation.databinding.ItemSpeakerInfoBinding
-import com.google.samples.apps.iosched.ui.SectionHeader
+import com.example.useful_photo_album.presentation.SectionHeader
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
 import com.example.useful_photo_album.presentation.speaker.SpeakerViewHolder.HeaderViewHolder
 import com.example.useful_photo_album.presentation.speaker.SpeakerViewHolder.SpeakerInfoViewHolder

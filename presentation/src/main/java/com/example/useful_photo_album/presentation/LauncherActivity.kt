@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui
+package com.example.useful_photo_album.presentation
 
 import android.content.Intent
 import android.os.Bundle
@@ -23,10 +23,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.google.samples.apps.iosched.ui.LaunchNavigatonAction.NavigateToMainActivityAction
-import com.google.samples.apps.iosched.ui.LaunchNavigatonAction.NavigateToOnboardingAction
+import com.example.useful_photo_album.presentation.LaunchNavigatonAction.NavigateToMainActivityAction
+import com.example.useful_photo_album.presentation.LaunchNavigatonAction.NavigateToOnboardingAction
 import com.example.useful_photo_album.presentation.onboarding.OnboardingActivity
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 /**

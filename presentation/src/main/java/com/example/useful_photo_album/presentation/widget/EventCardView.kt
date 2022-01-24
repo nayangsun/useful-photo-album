@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.card.MaterialCardView
-import com.google.samples.apps.iosched.R
 
 class EventCardView @JvmOverloads constructor(
     context: Context,
@@ -32,7 +32,7 @@ class EventCardView @JvmOverloads constructor(
 
     init {
         val arr = context.obtainStyledAttributes(
-            attrs, R.styleable.EventCardView, defStyleAttr, R.style.Widget_IOSched_EventCardView
+            attrs, R.styleable.EventCardView, defStyleAttr, R.style.Widget_Upa_EventCardView
         )
         val eventTitle = arr.getString(R.styleable.EventCardView_eventTitle)
         val eventDescription = arr.getString(R.styleable.EventCardView_eventDescription)

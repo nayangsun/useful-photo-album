@@ -21,7 +21,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
-import com.google.samples.apps.iosched.ui.SectionHeader
+import com.example.useful_photo_album.presentation.SectionHeader
 
 class FeedSectionHeaderViewBinder :
     FeedItemViewBinder<SectionHeader, SectionHeaderViewHolder>(SectionHeader::class.java) {

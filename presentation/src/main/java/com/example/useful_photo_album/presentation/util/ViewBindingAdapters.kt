@@ -41,8 +41,8 @@ import com.google.android.material.color.MaterialColors
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.samples.apps.iosched.model.Theme
 import com.google.samples.apps.iosched.model.Theme.DARK
-import com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout
-import com.google.samples.apps.iosched.widget.SpaceDecoration
+import com.example.useful_photo_album.presentation.widget.CustomSwipeRefreshLayout
+import com.example.useful_photo_album.presentation.widget.SpaceDecoration
 import timber.log.Timber
 
 @BindingAdapter("goneUnless")

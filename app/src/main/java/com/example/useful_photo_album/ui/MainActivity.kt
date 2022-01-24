@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Malgeon
+ * Copyright 2018 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,30 +16,52 @@
 
 package com.example.useful_photo_album.ui
 
+import android.app.Activity
+import android.content.Intent
 import android.net.ConnectivityManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.example.useful_photo_album.R
 import com.example.useful_photo_album.databinding.ActivityMainBinding
-import com.example.useful_photo_album.presentation.MainActivityViewModel
-import com.example.useful_photo_album.presentation.core.ui.MainNavigationFragment
-import com.example.useful_photo_album.presentation.core.ui.NavigationHost
-import com.example.useful_photo_album.shared.analytics.AnalyticsActions
-import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.presentation.R
+import com.firebase.ui.auth.IdpResponse
+import com.google.samples.apps.iosched.ar.ArActivity
+import com.google.samples.apps.iosched.databinding.ActivityMainBinding
+import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
+import com.google.samples.apps.iosched.shared.domain.ar.ArConstants
+import com.example.useful_photo_album.presentation.messages.SnackbarMessage
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
+import com.example.useful_photo_album.presentation.signin.SignOutDialogFragment
+import com.example.useful_photo_album.presentation.util.HeightTopWindowInsetsListener
+import com.example.useful_photo_album.presentation.util.signin.FirebaseAuthErrorCodeConverter
+import com.example.useful_photo_album.presentation.util.updateForTheme
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.shared.di.CodelabsEnabledFlag
+import com.example.useful_photo_album.shared.di.ExploreArEnabledFlag
+import com.example.useful_photo_album.shared.di.MapFeatureEnabledFlag
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationAction
+import com.example.useful_photo_album.presentation.MainNavigationFragment
+import com.example.useful_photo_album.presentation.NavigationHost
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
+import timber.log.Timber
+import java.util.UUID
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -69,24 +91,45 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     lateinit var snackbarMessageManager: SnackbarMessageManager
 
     @Inject
+    lateinit var connectivityManager: ConnectivityManager
+
+    @Inject
     lateinit var analyticsHelper: AnalyticsHelper
 
     @Inject
-    lateinit var connectivityManager: ConnectivityManager
+    @JvmField
+    @MapFeatureEnabledFlag
+    var mapFeatureEnabled: Boolean = false
 
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: NavController
-    private lateinit var navHostFragment: NavHostFragment
+    @Inject
+    @JvmField
+    @CodelabsEnabledFlag
+    var codelabsFeatureEnabled: Boolean = false
+
+    @Inject
+    @JvmField
+    @ExploreArEnabledFlag
+    var exploreArFeatureEnabled: Boolean = false
 
     private val viewModel: MainActivityViewModel by viewModels()
 
+    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var navController: NavController
+    private lateinit var navHostFragment: NavHostFragment
     private var currentNavId = NAV_ID_NONE
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Update for Dark Mode straight away
+        updateForTheme(viewModel.currentTheme)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.statusBarScrim.setOnApplyWindowInsetsListener(HeightTopWindowInsetsListener)
 
         navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
@@ -103,7 +146,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             setupWithNavController(navController)
             setOnItemReselectedListener { } // prevent navigating to the same item
         }
-
         binding.navigationRail?.apply {
             configureNavMenu(menu)
             setupWithNavController(navController)
@@ -116,6 +158,37 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             navigateTo(requestedNavId)
         }
 
+        lifecycleScope.launch {
+            lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch {
+                    viewModel.navigationActions.collect { action ->
+                        when (action) {
+                            MainNavigationAction.OpenSignIn -> openSignInDialog()
+                            MainNavigationAction.OpenSignOut -> openSignOutDialog()
+                        }
+                    }
+                }
+                launch {
+                    viewModel.theme.collect { theme ->
+                        updateForTheme(theme)
+                    }
+                }
+                // AR-related Flows
+                launch {
+                    viewModel.arCoreAvailability.collect { result ->
+                        // Do nothing - activate flow
+                        Timber.d("ArCoreAvailability = $result")
+                    }
+                }
+                launch {
+                    viewModel.pinnedSessionsJson.collect { /* Do nothing - activate flow */ }
+                }
+                launch {
+                    viewModel.canSignedInUserDemoAr.collect { /* Do nothing - activate flow  */ }
+                }
+            }
+        }
+
         binding.navigationRail?.let {
             ViewCompat.setOnApplyWindowInsetsListener(it) { view, insets ->
                 // Pad the Navigation Rail so its content is not behind system bars.
@@ -124,7 +197,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
                 insets
             }
         }
-
         ViewCompat.setOnApplyWindowInsetsListener(binding.rootContainer) { view, insets ->
             // Hide the bottom navigation view whenever the keyboard is visible.
             val imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
@@ -150,20 +222,20 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     }
 
     private fun configureNavMenu(menu: Menu) {
-        menu.findItem(R.id.navigation_map)?.isVisible = false
-        menu.findItem(R.id.navigation_codelabs)?.isVisible = false
+        menu.findItem(R.id.navigation_map)?.isVisible = mapFeatureEnabled
+        menu.findItem(R.id.navigation_codelabs)?.isVisible = codelabsFeatureEnabled
         menu.findItem(R.id.navigation_explore_ar)?.apply {
             // Handle launching new activities, otherwise assume the destination is handled
             // by the nav graph. We want to launch a new Activity for only the AR menu item.
-            isVisible = false
+            isVisible = exploreArFeatureEnabled
             setOnMenuItemClickListener {
                 if (connectivityManager.activeNetworkInfo?.isConnected == true) {
-                    if (false) {
+                    if (viewModel.arCoreAvailability.value?.isSupported == true) {
                         analyticsHelper.logUiEvent(
                             "Navigate to Explore I/O ARCore supported",
                             AnalyticsActions.CLICK
                         )
-//                        openExploreAr()
+                        openExploreAr()
                     } else {
                         analyticsHelper.logUiEvent(
                             "Navigate to Explore I/O ARCore NOT supported",
@@ -179,16 +251,35 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         }
     }
 
-    private fun navigateTo(navId: Int) {
-        if (navId == currentNavId) {
-            return // user tapped the current item
-        }
-        navController.navigate(navId)
-    }
-
     override fun registerToolbarWithNavigation(toolbar: Toolbar) {
         val appBarConfiguration = AppBarConfiguration(TOP_LEVEL_DESTINATIONS)
         toolbar.setupWithNavController(navController, appBarConfiguration)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        currentNavId = navController.currentDestination?.id ?: NAV_ID_NONE
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_CANCELED) {
+            Timber.d("An activity returned RESULT_CANCELED")
+            val response = IdpResponse.fromResultIntent(data)
+            response?.error?.let {
+                snackbarMessageManager.addMessage(
+                    SnackbarMessage(
+                        messageId = FirebaseAuthErrorCodeConverter.convert(it.errorCode),
+                        requestChangeId = UUID.randomUUID().toString()
+                    )
+                )
+            }
+        }
+    }
+
+    override fun onUserInteraction() {
+        super.onUserInteraction()
+        getCurrentFragment()?.onUserInteraction()
     }
 
     private fun getCurrentFragment(): MainNavigationFragment? {
@@ -197,18 +288,32 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             .primaryNavigationFragment as? MainNavigationFragment
     }
 
-//    private fun openExploreAr() {
-//        val intent = Intent(
-//            this,
-//            ArActivity::class.java
-//        ).apply {
-//            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
-//            putExtra(ArConstants.CAN_SIGNED_IN_USER_DEMO_AR, viewModel.canSignedInUserDemoAr.value)
-//            putExtra(ArConstants.PINNED_SESSIONS_JSON_KEY, viewModel.pinnedSessionsJson.value)
-//        }
-//        startActivity(intent)
-//    }
+    private fun navigateTo(navId: Int) {
+        if (navId == currentNavId) {
+            return // user tapped the current item
+        }
+        navController.navigate(navId)
+    }
 
+    private fun openSignInDialog() {
+        SignInDialogFragment().show(supportFragmentManager, DIALOG_SIGN_IN)
+    }
+
+    private fun openSignOutDialog() {
+        SignOutDialogFragment().show(supportFragmentManager, DIALOG_SIGN_OUT)
+    }
+
+    private fun openExploreAr() {
+        val intent = Intent(
+            this,
+            ArActivity::class.java
+        ).apply {
+            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            putExtra(ArConstants.CAN_SIGNED_IN_USER_DEMO_AR, viewModel.canSignedInUserDemoAr.value)
+            putExtra(ArConstants.PINNED_SESSIONS_JSON_KEY, viewModel.pinnedSessionsJson.value)
+        }
+        startActivity(intent)
+    }
 
     private fun openNoConnection() {
         navigateTo(R.id.navigation_no_network_ar)

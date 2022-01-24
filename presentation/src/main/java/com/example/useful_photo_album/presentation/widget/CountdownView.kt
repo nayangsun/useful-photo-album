@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -28,8 +28,8 @@ import androidx.core.view.postDelayed
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieComposition
 import com.airbnb.lottie.LottieCompositionFactory
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.TimeUtils
 import kotlin.properties.ObservableProperty
 import kotlin.reflect.KProperty
 import org.threeten.bp.Duration

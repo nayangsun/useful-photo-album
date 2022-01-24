@@ -34,9 +34,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
 import androidx.core.view.ViewCompat
 import androidx.customview.view.AbsSavedState
 import androidx.customview.widget.ViewDragHelper
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.shared.util.readBooleanUsingCompat
-import com.google.samples.apps.iosched.shared.util.writeBooleanUsingCompat
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.shared.util.readBooleanUsingCompat
+import com.example.useful_photo_album.shared.util.writeBooleanUsingCompat
 import java.lang.ref.WeakReference
 import kotlin.math.absoluteValue
 

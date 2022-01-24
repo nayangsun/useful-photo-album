@@ -28,8 +28,8 @@ import androidx.databinding.BindingAdapter
 import androidx.fragment.app.viewModels
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.FragmentSettingsBinding
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

@@ -41,8 +41,8 @@ import com.google.android.gms.maps.MapView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.maps.android.data.geojson.GeoJsonLayer
 import com.google.maps.android.ktx.awaitMap
-import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.ui.MainNavigationFragment
+import com.example.useful_photo_album.presentation.MainActivityViewModel
+import com.example.useful_photo_album.presentation.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.map.*
 import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import com.example.useful_photo_album.presentation.util.slideOffsetToAlpha

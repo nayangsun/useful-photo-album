@@ -14,27 +14,25 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui
+package com.example.useful_photo_album.presentation
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.useful_photo_album.domain.ar.LoadArDebugFlagUseCase
+import com.example.useful_photo_album.domain.sessions.LoadPinnedSessionsJsonUseCase
 import com.google.ar.core.ArCoreApk
-import com.google.samples.apps.iosched.shared.domain.ar.LoadArDebugFlagUseCase
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadPinnedSessionsJsonUseCase
-import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
 import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegate
 import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.data
+import com.example.useful_photo_album.shared.util.tryOffer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.transformLatest
+import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
 @HiltViewModel
