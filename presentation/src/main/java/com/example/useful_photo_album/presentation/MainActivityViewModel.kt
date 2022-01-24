@@ -24,8 +24,8 @@ import com.google.samples.apps.iosched.shared.domain.ar.LoadArDebugFlagUseCase
 import com.google.samples.apps.iosched.shared.domain.sessions.LoadPinnedSessionsJsonUseCase
 import com.google.samples.apps.iosched.shared.util.tryOffer
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
-import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegate
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.channels.Channel

@@ -23,7 +23,7 @@ import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.shared.result.data
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow

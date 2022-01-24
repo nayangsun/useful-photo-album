@@ -31,7 +31,7 @@ import androidx.fragment.app.viewModels
 import com.example.useful_photo_album.presentation.databinding.FragmentOnboardingBinding
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.google.samples.apps.iosched.ui.MainActivity
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 

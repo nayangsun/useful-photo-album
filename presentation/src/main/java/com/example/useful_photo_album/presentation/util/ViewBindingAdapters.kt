@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util
+package com.example.useful_photo_album.presentation.util
 
 import android.content.Context
 import android.content.Intent
@@ -36,9 +36,9 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.example.useful_photo_album.presentation.R
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.model.Theme
 import com.google.samples.apps.iosched.model.Theme.DARK
 import com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout

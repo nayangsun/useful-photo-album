@@ -124,7 +124,7 @@ object Libs {
         // 클라우드 메시징
         const val messaging = "com.google.firebase:firebase-messaging:20.1.6"
         const val uiAuth = "com.firebaseui:firebase-ui-auth:4.0.0"
-
+        const val crashlytics = "com.google.firebase:firebase-crashlytics:17.2.2"
     }
 
     const val timber = "com.jakewharton.timber:timber:4.7.1"

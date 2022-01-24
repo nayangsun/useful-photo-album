@@ -34,7 +34,7 @@ import com.bumptech.glide.request.target.Target
 import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
 import com.example.useful_photo_album.presentation.R
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
-import com.google.samples.apps.iosched.util.asGlideTarget
+import com.example.useful_photo_album.presentation.util.asGlideTarget
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 

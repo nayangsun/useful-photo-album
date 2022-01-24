@@ -19,7 +19,7 @@ package com.example.useful_photo_album.presentation.messages
 import androidx.core.text.HtmlCompat
 import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
 import androidx.fragment.app.Fragment
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import com.example.useful_photo_album.presentation.widget.FadingSnackbar
 import kotlinx.coroutines.flow.collect
 

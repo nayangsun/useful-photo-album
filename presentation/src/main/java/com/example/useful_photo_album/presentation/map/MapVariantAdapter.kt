@@ -27,7 +27,6 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.google.samples.apps.iosched.R
 import com.google.samples.apps.iosched.databinding.ItemMapVariantBinding
-import com.google.samples.apps.iosched.util.executeAfter
 
 internal class MapVariantAdapter(
     private val callback: (MapVariant) -> Unit

@@ -51,8 +51,8 @@ import com.example.useful_photo_album.presentation.messages.SnackbarMessageManag
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickListener
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
-import com.google.samples.apps.iosched.ui.theme.ThemedActivityDelegate
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegate
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*

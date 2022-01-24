@@ -37,8 +37,8 @@ import com.example.useful_photo_album.shared.model.temp.ConferenceWifiInfo
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import com.example.useful_photo_album.presentation.widget.FadingSnackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

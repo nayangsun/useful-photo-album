@@ -25,7 +25,7 @@ import com.example.useful_photo_album.domain.users.SwapActionUseCase
 import com.example.useful_photo_album.domain.users.SwapRequestParameters
 import com.example.useful_photo_album.presentation.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.util.makeBold
+import com.example.useful_photo_album.presentation.util.makeBold
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject

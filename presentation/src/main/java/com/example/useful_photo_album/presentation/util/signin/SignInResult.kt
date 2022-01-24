@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util.signin
+package com.example.useful_photo_album.presentation.util.signin
 
 import com.firebase.ui.auth.FirebaseUiException
 

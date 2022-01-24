@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util
+package com.example.useful_photo_album.presentation.util
 
 import android.view.View
 import android.view.WindowInsets

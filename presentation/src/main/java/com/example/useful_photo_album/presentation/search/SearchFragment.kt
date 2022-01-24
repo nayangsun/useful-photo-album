@@ -37,9 +37,9 @@ import com.example.useful_photo_album.presentation.databinding.SearchActiveFilte
 import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
 import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.presentation.sessioncommon.SessionsAdapter
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.setContentMaxWidth
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.setContentMaxWidth
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject

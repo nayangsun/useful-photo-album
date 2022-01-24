@@ -21,7 +21,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import com.google.samples.apps.iosched.util.isRtl
+import com.example.useful_photo_album.presentation.util.isRtl
 
 /** ItemDecoration that adds space around items. */
 class SpaceDecoration(

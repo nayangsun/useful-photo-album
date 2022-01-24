@@ -27,7 +27,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
 import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.util.isRtl
+import com.example.useful_photo_album.presentation.util.isRtl
 import kotlin.math.max
 import kotlin.math.roundToInt
 

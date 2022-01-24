@@ -136,7 +136,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:layout_marginBottom="?actionBarSize"
-            app:layout_behavior="com.google.samples.apps.iosched.widget.BottomSheetBehavior"
+            app:layout_behavior=".widget.BottomSheetBehavior"
             app:behavior_hideable="true"
             app:behavior_peekHeight="0dp"
             app:behavior_skipCollapsed="true"

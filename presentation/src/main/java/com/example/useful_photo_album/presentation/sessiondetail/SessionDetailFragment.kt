@@ -65,10 +65,10 @@ import com.example.useful_photo_album.presentation.signin.NotificationsPreferenc
 import com.example.useful_photo_album.presentation.signin.NotificationsPreferenceDialogFragment.Companion.DIALOG_NOTIFICATIONS_PREFERENCE
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment.Companion.DIALOG_SIGN_IN
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.openWebsiteUrl
-import com.google.samples.apps.iosched.util.setContentMaxWidth
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.openWebsiteUrl
+import com.example.useful_photo_album.presentation.util.setContentMaxWidth
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.collect

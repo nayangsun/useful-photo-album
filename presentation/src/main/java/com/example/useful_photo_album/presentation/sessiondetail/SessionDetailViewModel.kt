@@ -58,7 +58,7 @@ import com.example.useful_photo_album.shared.time.TimeProvider
 import com.example.useful_photo_album.shared.util.NetworkUtils
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.shared.util.tryOffer
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.channels.Channel.Factory.CONFLATED

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.widget
+package com.example.useful_photo_album.presentation.widget
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -828,7 +828,8 @@ class BottomSheetBehavior<V : View> : Behavior<V> {
     /** SavedState implementation */
     internal class SavedState : AbsSavedState {
 
-        @State internal val state: Int
+        @State
+        internal val state: Int
         internal val peekHeight: Int
         internal val isFitToContents: Boolean
         internal val isHideable: Boolean

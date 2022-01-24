@@ -29,7 +29,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
 import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.util.lerp
+import com.example.useful_photo_album.presentation.util.lerp
 import kotlin.math.max
 import kotlin.math.min
 

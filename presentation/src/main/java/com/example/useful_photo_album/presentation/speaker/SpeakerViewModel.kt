@@ -14,32 +14,28 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.speaker
+package com.example.useful_photo_album.presentation.speaker
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.samples.apps.iosched.model.Speaker
-import com.google.samples.apps.iosched.model.SpeakerId
-import com.google.samples.apps.iosched.model.userdata.UserSession
-import com.google.samples.apps.iosched.shared.domain.sessions.LoadUserSessionsUseCase
-import com.google.samples.apps.iosched.shared.domain.settings.GetTimeZoneUseCase
-import com.google.samples.apps.iosched.shared.domain.speakers.LoadSpeakerUseCase
-import com.google.samples.apps.iosched.shared.domain.speakers.LoadSpeakerUseCaseResult
-import com.google.samples.apps.iosched.shared.result.Result.Loading
-import com.google.samples.apps.iosched.shared.result.data
-import com.google.samples.apps.iosched.shared.result.successOr
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import com.example.useful_photo_album.domain.sessions.LoadUserSessionsUseCase
+import com.example.useful_photo_album.domain.settings.GetTimeZoneUseCase
+import com.example.useful_photo_album.domain.speakers.LoadSpeakerUseCase
+import com.example.useful_photo_album.domain.speakers.LoadSpeakerUseCaseResult
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionStarClickDelegate
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.shared.model.temp.Speaker
+import com.example.useful_photo_album.shared.model.temp.SpeakerId
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.shared.result.Result
+import com.example.useful_photo_album.shared.result.Result.Loading
+import com.example.useful_photo_album.shared.result.data
+import com.example.useful_photo_album.shared.result.successOr
+import com.example.useful_photo_album.shared.util.TimeUtils
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.mapLatest
-import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.transformLatest
+import kotlinx.coroutines.flow.*
 import org.threeten.bp.ZoneId
 import javax.inject.Inject
 

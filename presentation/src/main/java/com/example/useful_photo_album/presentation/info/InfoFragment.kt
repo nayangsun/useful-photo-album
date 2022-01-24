@@ -33,7 +33,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

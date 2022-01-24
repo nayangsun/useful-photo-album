@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.theme
+package com.example.useful_photo_album.presentation.theme
 
 import androidx.lifecycle.ViewModel
+import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

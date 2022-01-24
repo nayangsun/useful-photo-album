@@ -30,14 +30,13 @@ import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.FragmentFiltersBinding
 import com.google.android.flexbox.FlexboxItemDecoration
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.slideOffsetToAlpha
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior.BottomSheetCallback
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior.Companion.STATE_COLLAPSED
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior.Companion.STATE_EXPANDED
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior.Companion.STATE_HIDDEN
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.slideOffsetToAlpha
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior.BottomSheetCallback
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior.Companion.STATE_COLLAPSED
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior.Companion.STATE_EXPANDED
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior.Companion.STATE_HIDDEN
 import kotlinx.coroutines.flow.collect
 
 /**

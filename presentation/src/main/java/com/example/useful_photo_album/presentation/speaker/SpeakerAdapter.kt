@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.speaker
+package com.example.useful_photo_album.presentation.speaker
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -25,16 +25,17 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.ItemGenericSectionHeaderBinding
-import com.google.samples.apps.iosched.databinding.ItemSessionBinding
-import com.google.samples.apps.iosched.databinding.ItemSpeakerInfoBinding
-import com.google.samples.apps.iosched.model.userdata.UserSession
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.ItemGenericSectionHeaderBinding
+import com.example.useful_photo_album.presentation.databinding.ItemSessionBinding
+import com.example.useful_photo_album.presentation.databinding.ItemSpeakerInfoBinding
 import com.google.samples.apps.iosched.ui.SectionHeader
 import com.example.useful_photo_album.presentation.sessioncommon.OnSessionClickListener
-import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.HeaderViewHolder
-import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.SpeakerInfoViewHolder
-import com.google.samples.apps.iosched.ui.speaker.SpeakerViewHolder.SpeakerSessionViewHolder
+import com.example.useful_photo_album.presentation.speaker.SpeakerViewHolder.HeaderViewHolder
+import com.example.useful_photo_album.presentation.speaker.SpeakerViewHolder.SpeakerInfoViewHolder
+import com.example.useful_photo_album.presentation.speaker.SpeakerViewHolder.SpeakerSessionViewHolder
+import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
+import com.example.useful_photo_album.presentation.util.executeAfter
 import java.util.Collections.emptyList
 
 /**

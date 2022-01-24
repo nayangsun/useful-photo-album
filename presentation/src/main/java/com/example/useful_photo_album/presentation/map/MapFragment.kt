@@ -44,12 +44,10 @@ import com.google.maps.android.ktx.awaitMap
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.google.samples.apps.iosched.ui.map.*
-import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.slideOffsetToAlpha
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior.BottomSheetCallback
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.slideOffsetToAlpha
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior.BottomSheetCallback
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

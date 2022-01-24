@@ -39,8 +39,8 @@ import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.shared.model.temp.Session
-import com.google.samples.apps.iosched.util.isRtl
-import com.google.samples.apps.iosched.util.newStaticLayout
+import com.example.useful_photo_album.presentation.util.isRtl
+import com.example.useful_photo_album.presentation.util.newStaticLayout
 import org.threeten.bp.ZoneId
 import org.threeten.bp.ZonedDateTime
 import org.threeten.bp.format.DateTimeFormatter

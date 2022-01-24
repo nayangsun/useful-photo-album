@@ -24,7 +24,7 @@ import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.maps.model.TileOverlayOptions
-import com.google.samples.apps.iosched.util.getFloatUsingCompat
+import com.example.useful_photo_album.presentation.util.getFloatUsingCompat
 
 @BindingAdapter("mapStyle")
 fun mapStyle(mapView: MapView, @RawRes resId: Int) {

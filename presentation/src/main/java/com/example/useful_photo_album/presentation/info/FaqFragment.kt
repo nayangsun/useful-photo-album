@@ -24,7 +24,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.example.useful_photo_album.presentation.R
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

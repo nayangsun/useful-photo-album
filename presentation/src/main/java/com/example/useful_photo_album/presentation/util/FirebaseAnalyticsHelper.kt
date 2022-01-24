@@ -14,29 +14,28 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util
+package com.example.useful_photo_album.presentation.util
 
 import android.app.Activity
+import android.util.StatsLog.logEvent
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_CODELABS_INFO_SHOWN
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_CONFERENCE_TIME_ZONE
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_MY_LOCATION_OPTED_IN
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_NOTIFICATIONS_SHOWN
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_ONBOARDING
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_RECEIVE_NOTIFICATIONS
+import com.example.useful_photo_album.data.pref.DataStorePreferenceStorage.PreferencesKeys.PREF_SEND_USAGE_STATISTICS
+import com.example.useful_photo_album.data.pref.PreferenceStorage
+import com.example.useful_photo_album.di.ApplicationScope
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
 import com.google.firebase.ktx.Firebase
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsActions
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_CODELABS_INFO_SHOWN
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_CONFERENCE_TIME_ZONE
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_MY_LOCATION_OPTED_IN
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_NOTIFICATIONS_SHOWN
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_ONBOARDING
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_RECEIVE_NOTIFICATIONS
-import com.google.samples.apps.iosched.shared.data.prefs.DataStorePreferenceStorage.PreferencesKeys.PREF_SEND_USAGE_STATISTICS
-import com.google.samples.apps.iosched.shared.data.prefs.PreferenceStorage
-import com.google.samples.apps.iosched.shared.di.ApplicationScope
 import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegate
+import com.example.useful_photo_album.shared.analytics.AnalyticsActions
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import timber.log.Timber
 

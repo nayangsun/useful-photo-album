@@ -17,7 +17,7 @@
 package com.example.useful_photo_album.presentation.filters
 
 import com.example.useful_photo_album.shared.model.temp.filters.Filter
-import com.google.samples.apps.iosched.util.compatRemoveIf
+import com.example.useful_photo_album.presentation.util.compatRemoveIf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

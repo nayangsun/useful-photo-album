@@ -25,7 +25,7 @@ import com.example.useful_photo_album.temp.login.datasources.StagingAuthStateUse
 import com.example.useful_photo_album.temp.login.datasources.StagingRegisteredUserDataSource
 import com.example.useful_photo_album.data.signin.datasources.AuthStateUserDataSource
 import com.example.useful_photo_album.data.signin.datasources.RegisteredUserDataSource
-import com.google.samples.apps.iosched.util.signin.SignInHandler
+import com.example.useful_photo_album.presentation.util.signin.SignInHandler
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

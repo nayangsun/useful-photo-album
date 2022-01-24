@@ -29,7 +29,7 @@ import com.example.useful_photo_album.presentation.signin.SignInViewModelDelegat
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.example.useful_photo_album.shared.model.temp.userdata.UserSession
 import com.example.useful_photo_album.shared.result.data
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.channels.Channel

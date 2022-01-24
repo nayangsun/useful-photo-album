@@ -32,7 +32,7 @@ import com.example.useful_photo_album.shared.model.temp.Moment.Companion.CTA_MAP
 import com.example.useful_photo_album.shared.model.temp.Moment.Companion.CTA_SIGNIN
 import com.google.android.material.button.MaterialButton
 import com.google.samples.apps.iosched.model.Theme
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.util.executeAfter
 import kotlinx.coroutines.flow.StateFlow
 
 // Countdown is shown before the Keynote

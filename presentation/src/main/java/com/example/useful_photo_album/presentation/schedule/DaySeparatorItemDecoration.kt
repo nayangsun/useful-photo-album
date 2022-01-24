@@ -38,7 +38,7 @@ import androidx.recyclerview.widget.RecyclerView.State
 import com.example.useful_photo_album.domain.sessions.ConferenceDayIndexer
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.util.newStaticLayout
+import com.example.useful_photo_album.presentation.util.newStaticLayout
 import kotlin.math.ceil
 import org.threeten.bp.ZoneId
 

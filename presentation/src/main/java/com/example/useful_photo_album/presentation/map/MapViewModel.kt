@@ -35,8 +35,8 @@ import com.example.useful_photo_album.shared.result.successOr
 import com.example.useful_photo_album.shared.result.updateOnSuccess
 import com.example.useful_photo_album.shared.util.tryOffer
 import com.google.samples.apps.iosched.ui.map.MapVariant
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
-import com.google.samples.apps.iosched.widget.BottomSheetBehavior
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.widget.BottomSheetBehavior
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*

@@ -31,7 +31,7 @@ import com.example.useful_photo_album.presentation.databinding.FragmentSessionFe
 import com.example.useful_photo_album.presentation.databinding.ItemQuestionBinding
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import com.google.samples.apps.iosched.widget.SimpleRatingBar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.speaker
+package com.example.useful_photo_album.presentation.speaker
 
 import android.os.Bundle
 import android.view.ContextThemeWrapper
@@ -30,16 +30,16 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import androidx.transition.TransitionInflater
+import com.example.useful_photo_album.presentation.R
+import com.example.useful_photo_album.presentation.databinding.FragmentSpeakerBinding
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
-import com.google.samples.apps.iosched.R
-import com.google.samples.apps.iosched.databinding.FragmentSpeakerBinding
-import com.google.samples.apps.iosched.shared.analytics.AnalyticsHelper
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.schedule.ScheduleTwoPaneViewModel
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.setContentMaxWidth
+import com.example.useful_photo_album.shared.analytics.AnalyticsHelper
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.setContentMaxWidth
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

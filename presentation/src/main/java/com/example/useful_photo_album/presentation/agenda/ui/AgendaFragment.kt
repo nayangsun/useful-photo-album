@@ -34,8 +34,8 @@ import com.example.useful_photo_album.presentation.databinding.FragmentAgendaBin
 import com.example.useful_photo_album.shared.model.temp.Block
 import com.example.useful_photo_album.shared.util.TimeUtils
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.clearDecorations
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.clearDecorations
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 import org.threeten.bp.ZoneId
 

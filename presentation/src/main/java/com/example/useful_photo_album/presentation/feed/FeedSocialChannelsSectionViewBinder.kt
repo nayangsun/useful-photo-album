@@ -25,7 +25,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.presentation.databinding.ItemFeedSocialChannelsBinding
-import com.google.samples.apps.iosched.util.getColorFromTheme
+import com.example.useful_photo_album.presentation.util.getColorFromTheme
 
 object FeedSocialChannelsSection
 

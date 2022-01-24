@@ -31,7 +31,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.example.useful_photo_album.presentation.R
 import com.example.useful_photo_album.shared.model.temp.SessionId
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.samples.apps.iosched.util.makeBold
+import com.example.useful_photo_album.presentation.util.makeBold
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

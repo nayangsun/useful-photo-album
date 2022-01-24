@@ -103,7 +103,7 @@
                 android:background="@drawable/filters_sheet_background"
                 android:backgroundTint="?attr/colorSurface"
                 android:elevation="@dimen/bottom_sheet_elevation"
-                app:layout_behavior="com.google.samples.apps.iosched.widget.BottomSheetBehavior"
+                app:layout_behavior=".widget.BottomSheetBehavior"
                 app:behavior_hideable="true"
                 app:behavior_peekHeight="@dimen/map_bottom_sheet_peek_height">
 

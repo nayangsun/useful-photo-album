@@ -53,7 +53,7 @@ import com.example.useful_photo_album.presentation.signin.NotificationsPreferenc
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
 import com.example.useful_photo_album.presentation.signin.SignOutDialogFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.*
+import com.example.useful_photo_album.presentation.util.*
 import com.google.samples.apps.iosched.widget.BubbleDecoration
 import com.example.useful_photo_album.presentation.widget.FadingSnackbar
 import com.google.samples.apps.iosched.widget.JumpSmoothScroller

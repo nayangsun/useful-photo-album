@@ -26,7 +26,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.useful_photo_album.presentation.databinding.ItemScheduleDayIndicatorBinding
 import com.example.useful_photo_album.shared.util.TimeUtils
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.util.executeAfter
 
 class DayIndicatorAdapter(
     private val scheduleViewModel: ScheduleViewModel,

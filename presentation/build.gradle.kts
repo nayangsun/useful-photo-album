@@ -57,6 +57,7 @@ dependencies {
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.slidingPaneLayout)
     implementation(Libs.AndroidX.browser)
+    implementation(Libs.AndroidX.startup)
     implementation(Libs.AndroidX.cardView)
     implementation(Libs.AndroidX.swiperefreshlayout)
 
@@ -73,7 +74,11 @@ dependencies {
     implementation(Libs.threetenbp)
     implementation(Libs.lottie)
 
+    implementation(Libs.Firebase.auth)
+    implementation(Libs.Firebase.uiAuth)
     implementation(Libs.Firebase.firestore)
+    implementation(Libs.Firebase.crashlytics)
+    implementation(Libs.Firebase.analytics)
 
     implementation(Libs.flexbox)
 

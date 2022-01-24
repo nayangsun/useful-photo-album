@@ -34,7 +34,7 @@ import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

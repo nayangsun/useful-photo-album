@@ -23,7 +23,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.useful_photo_album.presentation.databinding.ItemFilterChipCloseableBinding
 import com.example.useful_photo_album.presentation.filters.CloseableFilterChipAdapter.FilterChipViewHolder
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.util.executeAfter
 
 // TODO(jdkoren): Maybe combine this with SelectableFilterChipAdapter
 /** Adapter for closeable filters, e.g. those shown above search results. */

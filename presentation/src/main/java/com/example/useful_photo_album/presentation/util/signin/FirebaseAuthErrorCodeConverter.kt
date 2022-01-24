@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util.signin
+package com.example.useful_photo_album.presentation.util.signin
 
+import com.example.useful_photo_album.presentation.R
 import com.firebase.ui.auth.ErrorCodes
-import com.google.samples.apps.iosched.R
 import timber.log.Timber
 
 /**

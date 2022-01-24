@@ -16,6 +16,7 @@
 
 package com.google.samples.apps.iosched.util.signin
 
+import com.example.useful_photo_album.presentation.util.signin.SignInResult
 import com.firebase.ui.auth.FirebaseUiException
 
 sealed class SignInResult

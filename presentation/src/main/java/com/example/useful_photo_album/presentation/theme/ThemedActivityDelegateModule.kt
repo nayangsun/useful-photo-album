@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.ui.theme
+package com.example.useful_photo_album.presentation.theme
 
+import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegate
+import com.example.useful_photo_album.presentation.theme.ThemedActivityDelegateImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.speaker.SpeakerViewModel" />
+            type="com.example.useful_photo_album.presentation.speaker.SpeakerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

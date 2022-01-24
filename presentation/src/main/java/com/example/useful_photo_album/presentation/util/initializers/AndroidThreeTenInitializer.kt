@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.util.initializers
+package com.example.useful_photo_album.presentation.util.initializers
 
 import android.content.Context
 import androidx.startup.Initializer

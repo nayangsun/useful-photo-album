@@ -20,9 +20,9 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import com.example.useful_photo_album.temp.login.datasources.StagingAuthenticatedUserInfo
-import com.google.samples.apps.iosched.util.signin.SignInHandler
-import com.google.samples.apps.iosched.util.signin.SignInResult
-import com.google.samples.apps.iosched.util.signin.SignInSuccess
+import com.example.useful_photo_album.presentation.util.signin.SignInHandler
+import com.example.useful_photo_album.presentation.util.signin.SignInResult
+import com.example.useful_photo_album.presentation.util.signin.SignInSuccess
 import timber.log.Timber
 
 /**

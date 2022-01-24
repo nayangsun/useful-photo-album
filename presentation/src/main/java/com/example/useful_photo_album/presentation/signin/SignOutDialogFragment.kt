@@ -34,8 +34,8 @@ import com.example.useful_photo_album.data.signin.AuthenticatedUserInfo
 import com.example.useful_photo_album.presentation.databinding.DialogSignOutBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.example.useful_photo_album.presentation.signin.SignInNavigationAction.RequestSignOut
-import com.google.samples.apps.iosched.util.executeAfter
-import com.google.samples.apps.iosched.util.signin.SignInHandler
+import com.example.useful_photo_album.presentation.util.executeAfter
+import com.example.useful_photo_album.presentation.util.signin.SignInHandler
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@id/navigation_speaker_detail"
-        android:name="com.google.samples.apps.iosched.ui.speaker.SpeakerFragment"
+        android:name="com.example.useful_photo_album.presentation.speaker.SpeakerFragment"
         tools:layout="@layout/fragment_speaker">
         <argument
             android:name="speaker_id"

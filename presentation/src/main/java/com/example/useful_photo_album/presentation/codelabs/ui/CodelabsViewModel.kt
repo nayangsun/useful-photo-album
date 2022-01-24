@@ -24,7 +24,7 @@ import com.example.useful_photo_album.domain.codelabs.SetCodelabsInfoCardShownUs
 import com.example.useful_photo_album.presentation.codelabs.ui.adapter.CodelabsInformationCard
 import com.example.useful_photo_album.shared.model.temp.Codelab
 import com.example.useful_photo_album.shared.result.successOr
-import com.google.samples.apps.iosched.util.WhileViewSubscribed
+import com.example.useful_photo_album.presentation.util.WhileViewSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow

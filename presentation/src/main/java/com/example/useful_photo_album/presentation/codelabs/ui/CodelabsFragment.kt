@@ -39,9 +39,9 @@ import com.example.useful_photo_album.shared.util.consume
 import com.google.samples.apps.iosched.ui.MainActivityViewModel
 import com.google.samples.apps.iosched.ui.MainNavigationFragment
 import com.example.useful_photo_album.presentation.signin.setupProfileMenuItem
-import com.google.samples.apps.iosched.util.doOnApplyWindowInsets
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.openWebsiteUri
+import com.example.useful_photo_album.presentation.util.doOnApplyWindowInsets
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.openWebsiteUri
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject

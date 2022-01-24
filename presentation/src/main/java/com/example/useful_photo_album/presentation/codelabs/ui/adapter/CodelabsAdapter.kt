@@ -37,8 +37,8 @@ import com.example.useful_photo_album.presentation.codelabs.ui.widget.CodelabsAc
 import com.example.useful_photo_album.presentation.databinding.ItemCodelabBinding
 import com.example.useful_photo_album.presentation.databinding.ItemCodelabsInformationCardBinding
 import com.example.useful_photo_album.shared.model.temp.Codelab
-import com.google.samples.apps.iosched.util.compatRemoveIf
-import com.google.samples.apps.iosched.util.executeAfter
+import com.example.useful_photo_album.presentation.util.compatRemoveIf
+import com.example.useful_photo_album.presentation.util.executeAfter
 
 internal class CodelabsAdapter(
     private val codelabsActionsHandler: CodelabsActionsHandler,

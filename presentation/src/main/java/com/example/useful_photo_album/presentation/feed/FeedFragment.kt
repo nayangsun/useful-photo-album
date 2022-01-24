@@ -40,8 +40,8 @@ import com.example.useful_photo_album.presentation.feed.FeedNavigationAction.Ope
 import com.example.useful_photo_album.presentation.messages.SnackbarMessageManager
 import com.example.useful_photo_album.presentation.messages.setupSnackbarManager
 import com.example.useful_photo_album.presentation.signin.SignInDialogFragment
-import com.google.samples.apps.iosched.util.launchAndRepeatWithViewLifecycle
-import com.google.samples.apps.iosched.util.openWebsiteUrl
+import com.example.useful_photo_album.presentation.util.launchAndRepeatWithViewLifecycle
+import com.example.useful_photo_album.presentation.util.openWebsiteUrl
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
