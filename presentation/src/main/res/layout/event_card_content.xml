@@ -6,7 +6,7 @@
     tools:layout_height="wrap_content"
     tools:layout_width="match_parent"
     tools:parentTag="com.google.android.material.card.MaterialCardView"
-    tools:style="@style/Widget.IOSched.EventCardView">
+    tools:style="@style/Widget.Upa.EventCardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

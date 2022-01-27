@@ -47,12 +47,12 @@
             android:id="@+id/username_email_container"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginStart="@dimen/spacing_tiny"
             android:gravity="center_vertical"
             android:minHeight="@dimen/profile_dialog_header_height"
             android:orientation="vertical"
-            android:paddingBottom="@dimen/margin_normal"
-            android:paddingTop="@dimen/margin_normal"
+            android:paddingBottom="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_small"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/user_avatar"
             app:layout_constraintTop_toTopOf="parent">
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="1"
-                android:textAppearance="@style/TextAppearance.IOSched.AccountDialog.Username"
+                android:textAppearance="@style/TextAppearance.Upa.AccountDialog.Username"
                 app:username="@{viewModel.userInfo}"
                 tools:text="User Name" />
 
@@ -90,7 +90,7 @@
 
         <Button
             android:id="@+id/manage_account"
-            style="@style/Widget.IOSched.AccountDialog.ManageAccountButton"
+            style="@style/Widget.Upa.AccountDialog.ManageAccountButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/manage_google_account"
@@ -115,7 +115,7 @@
             style="?materialAlertDialogBodyTextStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/dialog_sign_out_content"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
@@ -125,10 +125,10 @@
 
         <TextView
             android:id="@+id/sign_out"
-            style="@style/Widget.IOSched.AccountDialog.ActionButton"
+            style="@style/Widget.Upa.AccountDialog.ActionButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:drawableStart="@drawable/ic_logout"
             android:onClick="@{() -> viewModel.onSignOut()}"
             android:text="@string/sign_out"
@@ -147,7 +147,7 @@
 
         <Button
             android:id="@+id/privacy_policy"
-            style="@style/Widget.IOSched.BorderlessButton.NormalText"
+            style="@style/Widget.Upa.BorderlessButton.NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_privacy_policy"
@@ -171,7 +171,7 @@
 
         <Button
             android:id="@+id/terms_of_service"
-            style="@style/Widget.IOSched.BorderlessButton.NormalText"
+            style="@style/Widget.Upa.BorderlessButton.NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_tos"

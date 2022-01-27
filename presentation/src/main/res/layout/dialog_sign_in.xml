@@ -47,14 +47,14 @@
             android:id="@+id/welcome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/spacing_small"
             android:gravity="center_vertical"
             android:lines="1"
             android:minHeight="@dimen/profile_dialog_header_height"
-            android:paddingBottom="@dimen/margin_normal"
-            android:paddingTop="@dimen/margin_normal"
+            android:paddingBottom="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_small"
             android:text="@string/welcome"
-            android:textAppearance="@style/TextAppearance.IOSched.AccountDialog.Username"
+            android:textAppearance="@style/TextAppearance.Upa.AccountDialog.Username"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/user_avatar"
             app:layout_constraintTop_toTopOf="parent" />
@@ -84,7 +84,7 @@
             style="?materialAlertDialogBodyTextStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/dialog_sign_in_content"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
@@ -94,10 +94,10 @@
 
         <TextView
             android:id="@+id/sign_in"
-            style="@style/Widget.IOSched.AccountDialog.ActionButton"
+            style="@style/Widget.Upa.AccountDialog.ActionButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:drawableStart="@drawable/ic_login"
             android:onClick="@{() -> viewModel.onSignIn()}"
             android:text="@string/sign_in"
@@ -116,7 +116,7 @@
 
         <Button
             android:id="@+id/privacy_policy"
-            style="@style/Widget.IOSched.BorderlessButton.NormalText"
+            style="@style/Widget.Upa.BorderlessButton.NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_privacy_policy"
@@ -140,7 +140,7 @@
 
         <Button
             android:id="@+id/terms_of_service"
-            style="@style/Widget.IOSched.BorderlessButton.NormalText"
+            style="@style/Widget.Upa.BorderlessButton.NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_tos"

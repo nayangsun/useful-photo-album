@@ -21,8 +21,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingEnd="@dimen/margin_large"
-    android:paddingStart="@dimen/margin_large"
+    android:paddingEnd="@dimen/spacing_medium"
+    android:paddingStart="@dimen/spacing_medium"
     tools:targetApi="o">
 
     <TextView
@@ -30,7 +30,7 @@
         style="?materialAlertDialogBodyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="@dimen/margin_normal"
+        android:drawablePadding="@dimen/spacing_small"
         android:drawableStart="@drawable/ic_star_border"
         android:text="@string/schedule_hint_star_event"
         tools:style="@style/AlertDialog.BodyText"
@@ -41,8 +41,8 @@
         style="?materialAlertDialogBodyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:drawablePadding="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:drawablePadding="@dimen/spacing_small"
         android:drawableStart="@drawable/ic_reservable"
         android:text="@string/schedule_hint_reserve_session_seat"
         tools:style="@style/AlertDialog.BodyText"
