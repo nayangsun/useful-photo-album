@@ -7,27 +7,15 @@ plugins {
 }
 
 android {
-    compileSdk = Versions.compileSdk
+    compileSdk = Versions.COMPILE_SDK
     defaultConfig {
         applicationId = "com.example.useful_photo_album"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        minSdk = Versions.minSdk
-        targetSdk = Versions.targetSdk
-        versionCode = Versions.versionCode
+        minSdk = Versions.MIN_SDK
+        targetSdk = Versions.TARGET_SDK
+        versionCode = Versions.versionCodeMobile
         versionName = Versions.versionName
 
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments["room.incremental"] = "true"
-            }
-        }
-    }
-
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
@@ -35,18 +23,11 @@ android {
         dataBinding = true
     }
 
-    kapt {
-        correctErrorTypes = true
-    }
-
-    // Required for AR because it includes a library built with Java 8
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    // To avoid the compile error: "Cannot inline bytecode built with JVM target 1.8
-    // into bytecode that is being built with JVM target 1.6"
     kotlinOptions {
         val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
         options.jvmTarget = "1.8"
@@ -54,26 +35,16 @@ android {
 }
 
 dependencies {
+    api(platform(project(":depconstraints")))
+    kapt(platform(project(":depconstraints")))
+    androidTestApi(platform(project(":depconstraints")))
+
     implementation(project(":presentation"))
     implementation(project(":shared"))
     implementation(project(":domain"))
     implementation(project(":data"))
-    implementation(Libs.AndroidX.core)
-    implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.AndroidX.material)
-    implementation(Libs.AndroidX.constraintLayout)
-    implementation(Libs.AndroidX.Navigation.fragment)
-    implementation(Libs.AndroidX.Navigation.ui)
-    implementation(Libs.AndroidX.startup)
 
-    implementation(Libs.Dagger.hiltAndroid)
-    kapt(Libs.Dagger.hiltCompiler)
-
-    implementation(Libs.Kotlin.coroutine)
-
-    implementation(Libs.timber)
-
-    testImplementation(Libs.Test.junit)
-    androidTestImplementation(Libs.Test.junitExt)
-    androidTestImplementation(Libs.Test.espresso)
+    testImplementation("junit:junit:4.+")
+    androidTestImplementation("androidx.test.ext:junit:1.1.3")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 }

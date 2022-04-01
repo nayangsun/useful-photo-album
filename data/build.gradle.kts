@@ -6,34 +6,23 @@ plugins {
 }
 
 android {
-    compileSdk = Versions.compileSdk
+    compileSdk = Versions.COMPILE_SDK
     defaultConfig {
-        minSdk = Versions.minSdk
-        targetSdk = Versions.targetSdk
+        minSdk = Versions.MIN_SDK
+        targetSdk = Versions.TARGET_SDK
+    }
+
+    // To avoid the compile error: "Cannot inline bytecode built with JVM target 1.8
+    // into bytecode that is being built with JVM target 1.6"
+    kotlinOptions {
+        val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
+        options.jvmTarget = "1.8"
     }
 }
 
 dependencies {
     implementation(project(":shared"))
     implementation(project(":domain"))
-
-    implementation(Libs.AndroidX.dataStorePreferences)
-
-    implementation(Libs.Dagger.hiltAndroid)
-    kapt(Libs.Dagger.hiltCompiler)
-
-    api(Libs.Gson.gson)
-
-    api(Libs.Square.retrofit)
-    api(Libs.Square.converter_gson)
-    implementation(Libs.Square.okhttp3_logging)
-
-
-    implementation(Libs.timber)
-
-    testImplementation(Libs.Test.junit)
-    androidTestImplementation(Libs.Test.junitExt)
-    androidTestImplementation(Libs.Test.espresso)
 
 }
 
