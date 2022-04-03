@@ -1,5 +1,8 @@
 ## Useful-Photo-Album
 
+### Deprecated
+ - 더 이상 업데이트를 하지 않습니다.
+
 ### Update History
 
 #### Spec
